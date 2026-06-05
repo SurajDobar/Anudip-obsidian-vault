@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Anudip/sql.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "sql"
+              "title": "README"
             }
           }
         ]
@@ -201,30 +201,30 @@
       "omnisearch:Omnisearch": false,
       "obsidian-trash-explorer:Open trash explorer": false,
       "homepage:Open homepage": false,
-      "obsidian-importer:Open Importer": false,
-      "note-annotations:Enable highlighting mode": false,
       "quick-snippets-and-navigation:Quick snippets and navigation: Search tags": false,
       "obsidian-git:Open Git source control": false,
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "726744cd3cfdc5f0",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "Anudip/src/Pasted image 20260605165519.png",
-    "Anudip/sql.md",
-    "Anudip/src/Pasted image 20260605165729.png",
-    "Anudip/src/Pasted image 20260605165211.png",
-    "Anudip/src/Pasted image 20260605165021.png",
-    "Anudip/src/Pasted image 20260605164351.png",
-    "Anudip/src/Pasted image 20260605164241.png",
-    "Anudip/src/Pasted image 20260605164128.png",
-    "Anudip/src/Pasted image 20260605163710.png",
-    "Anudip/src/Pasted image 20260603163734.png",
-    "Untitled.md",
+    "sql/sql.md",
+    "README.md",
+    "sql",
+    "src/IMG20260605211417.jpg",
+    "src/IMG20260605211358.jpg",
+    "src",
+    "src/Pasted image 20260605205532.png",
+    "src/Pasted image 20260605205437.png",
+    "src/Pasted image 20260605205133.png",
+    "sql/sql-src/Pasted image 20260605165519.png",
+    "sql/sql-src/Pasted image 20260605165729.png",
+    "sql/sql-src/Pasted image 20260605165211.png",
+    "sql/sql-src/Pasted image 20260605165021.png",
+    "sql/sql-src/Pasted image 20260605164351.png",
     "Untitled.base",
     "Untitled 1.base",
-    "Anudip/src/WhatsApp Image 2026-06-02 at 5.08.33 PM.jpeg",
-    "Anudip/src",
+    "sql/sql-src",
     "Excalidraw/Drawing 2025-08-18 11.48.24.excalidraw.md",
     "Excalidraw/Drawing 2026-01-01 21.34.33.excalidraw.md",
     "Anudip",
@@ -245,8 +245,6 @@
     "my study/back end/node js/node js.md",
     "my study/back end/databases ig/sql and nosql database intro.md",
     "gg.md",
-    "my study/back end/databases ig/src",
-    "my study/back end/databases ig",
     "my study/Untitled.md",
     "notes online class.md",
     "projects ig maybe il add this too -_-.md",
