@@ -1,0 +1,10 @@
+{
+  "workspace:export-pdf": [
+    {
+      "modifiers": [
+        "Shift"
+      ],
+      "key": "ContextMenu"
+    }
+  ]
+}

@@ -1,0 +1,256 @@
+{
+  "main": {
+    "id": "5324373015726ba8",
+    "type": "split",
+    "children": [
+      {
+        "id": "4509724f8bf84da7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e7a7b303c61786dc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Anudip/sql.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "sql"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8f1f467c7e2de67b",
+    "type": "split",
+    "children": [
+      {
+        "id": "feb72a3b38cff588",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "726744cd3cfdc5f0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "45cd6bef261b0e13",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "a430213974ced620",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "fb7c7234387998af",
+            "type": "leaf",
+            "state": {
+              "type": "trash-explorer",
+              "state": {},
+              "icon": "trash",
+              "title": "Trash explorer"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "1e68ceae576d9685",
+    "type": "split",
+    "children": [
+      {
+        "id": "5c083239f23339a5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "20f54018ecdda376",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "my study/front end/react aah/React js library.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for React js library"
+            }
+          },
+          {
+            "id": "e6972da7cfd8f933",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "my study/front end/react aah/React js library.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from React js library"
+            }
+          },
+          {
+            "id": "6733dd70866cacf4",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "1bd48690ae6ac170",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "my study/front end/react aah/React js library.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of React js library"
+            }
+          },
+          {
+            "id": "570b5d31d318710e",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          },
+          {
+            "id": "03f5b210f48c9cdd",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {},
+              "icon": "calendar-with-checkmark",
+              "title": "Calendar"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 282.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "bases:Create new base": false,
+      "templates:Insert template": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "command-palette:Open command palette": false,
+      "switcher:Open quick switcher": false,
+      "omnisearch:Omnisearch": false,
+      "obsidian-trash-explorer:Open trash explorer": false,
+      "homepage:Open homepage": false,
+      "obsidian-importer:Open Importer": false,
+      "note-annotations:Enable highlighting mode": false,
+      "quick-snippets-and-navigation:Quick snippets and navigation: Search tags": false,
+      "obsidian-git:Open Git source control": false,
+      "obsidian-excalidraw-plugin:New drawing": false
+    }
+  },
+  "active": "726744cd3cfdc5f0",
+  "lastOpenFiles": [
+    "Anudip/src/Pasted image 20260605165519.png",
+    "Anudip/sql.md",
+    "Anudip/src/Pasted image 20260605165729.png",
+    "Anudip/src/Pasted image 20260605165211.png",
+    "Anudip/src/Pasted image 20260605165021.png",
+    "Anudip/src/Pasted image 20260605164351.png",
+    "Anudip/src/Pasted image 20260605164241.png",
+    "Anudip/src/Pasted image 20260605164128.png",
+    "Anudip/src/Pasted image 20260605163710.png",
+    "Anudip/src/Pasted image 20260603163734.png",
+    "Untitled.md",
+    "Untitled.base",
+    "Untitled 1.base",
+    "Anudip/src/WhatsApp Image 2026-06-02 at 5.08.33 PM.jpeg",
+    "Anudip/src",
+    "Excalidraw/Drawing 2025-08-18 11.48.24.excalidraw.md",
+    "Excalidraw/Drawing 2026-01-01 21.34.33.excalidraw.md",
+    "Anudip",
+    "flwo.mp4",
+    "my study/front end/projects on javascript/projects ig maybe il add this too -_-.md",
+    "hi.md",
+    "my study/front end/react aah/React js library.md",
+    "my study/front end/🧑‍💻 my javascript notes/Javascript fundaments s15.md",
+    "my study/front end/react aah/src",
+    "em/when burnout check list.md",
+    "SPD emergency.md",
+    "my study/front end/github section/git basics.md",
+    "Infinite_Page_Loader.md",
+    "Sleek Expense Tracker.md",
+    "my study/front end/react aah/src",
+    "my study/front end/react aah",
+    "Dictionary App.md",
+    "my study/back end/node js/node js.md",
+    "my study/back end/databases ig/sql and nosql database intro.md",
+    "gg.md",
+    "my study/back end/databases ig/src",
+    "my study/back end/databases ig",
+    "my study/Untitled.md",
+    "notes online class.md",
+    "projects ig maybe il add this too -_-.md",
+    "hello there how are you doing.md",
+    "🧑‍💻 my javascript notes/Javascript fundaments s15.md"
+  ]
+}

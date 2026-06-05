@@ -1,0 +1,9 @@
+{
+  "theme": "obsidian",
+  "cssTheme": "Vanilla AMOLED",
+  "interfaceFontFamily": "SF Display",
+  "textFontFamily": "Inter,Inter 28pt 28pt",
+  "monospaceFontFamily": "JetBrains Mono",
+  "baseFontSize": 20,
+  "baseFontSizeAction": false
+}
