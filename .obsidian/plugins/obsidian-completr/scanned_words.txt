@@ -1474,6 +1474,7 @@ improves
 install
 interpersonal
 introduction
+internships
 for
 failure
 final
@@ -2707,6 +2708,7 @@ welfare
 workplace
 worldwide
 whole
+white
 the
 to
 these
@@ -6726,6 +6728,7 @@ PCM
 Postmortem
 Paperwork
 Primary
+Place
 Each
 Example
 Everything
@@ -7512,6 +7515,7 @@ boe
 behavioral
 becoming
 border
+black
 upon
 underneath
 use
@@ -8774,6 +8778,8 @@ SMART
 Soft
 Skills
 Self
+Strengths
+Srno
 JavaScript
 JS
 JJJ
@@ -10472,6 +10478,7 @@ Gathering
 Generic
 Gold
 Gather
+Goals
 Common
 CIr
 CBB
@@ -12968,6 +12975,7 @@ Operations
 Optimizing
 Organize
 OCR
+Opening
 KQ
 KU
 KLL
@@ -13394,6 +13402,7 @@ Quantitative
 Query
 Question
 Qko
+Qualifications
 Vi
 VJ
 VN

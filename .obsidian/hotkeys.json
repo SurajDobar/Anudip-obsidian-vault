@@ -2,9 +2,10 @@
   "workspace:export-pdf": [
     {
       "modifiers": [
+        "Mod",
         "Shift"
       ],
-      "key": "ContextMenu"
+      "key": ";"
     }
   ]
 }
