@@ -224,47 +224,48 @@ alter table employee rename to employee_details;
 ```
 ![[Pasted image 20260605165211.png]]
 
-
+---
 
 ### Aggregation
 
 **aggregation** means **combining multiple rows of data into a single summarized value**.
 
 5 functions
-sum()  ⇒ value of submission 
+1. sum()  ⇒ value of submission 
 
 ```sql 
 select sum(Total_price) from orderdetails;
 ```
 ![[Pasted image 20260608164418.png]]
 
-avg()=> average
+2. avg()=> average
 
 ```sql 
 select avg(Total_price) from orderdetails;
 ```
 ![[Pasted image 20260608164605.png]]
 
-count () ⇒ used to count number of rows in the set 
+3. count () ⇒ used to count number of rows in the set 
 
 ```sql 
 select count(*) from orderdetails; 
 ```
 ![[Pasted image 20260608164834.png]]
 
-max()=> returns the maximum value out of the set 
+4. max()=> returns the maximum value out of the set 
 ```sql
 select max(quantity) from orderdetails;
 ```
 ![[Pasted image 20260608165019.png]]
 
-min()=> returns the minimum value out of the set 
+5. min()=> returns the minimum value out of the set 
 ```sql 
 select min(quantity) from orderdetails;
 ```
 
 
-### Boolean operators
+### Operators
+#### Boolean operators 
 
 and ⇒  if both condition are true then the condition is valid
 ```sQL
@@ -278,7 +279,7 @@ select * from orderdetails where quantity=10 or Order_status='pending';
 ```
 ![[Pasted image 20260608170100.png]]
 
-### Between operator 
+#### Between operator 
 to filter the data within a specific range 
 
 .value must be from minimum to maximum
@@ -293,6 +294,65 @@ not between
 select * from orderdetails where Order_date not between '2026-07-29' and '2026-08-01' ;
 ```
 ![[Pasted image 20260608171524.png]]
+
+#### in operator 
+
+ is used to specify the specific value , based on it we have to retrieve the data 
+```sQL
+select * from orderdetails where order_ID in ('o101','0103','o104');
+```
+![[Pasted image 20260608172338.png]]
+
+not in 
+opposite
+```sql 
+select * from orderdetails where quantity not in (20,5);
+```
+![[Pasted image 20260608172656.png]]
+
+#### is operator 
+to check the null value is present in the database
+```sql 
+select * from orderdetails where quantity is null;
+```
+![[Pasted image 20260608173133.png]]
+
+is not
+```sql 
+select * from orderdetails where quantity is not null;
+```
+![[Pasted image 20260608173203.png]]
+
+---
+
+### clause
+#### order by  
+organise the data by ascending or descending order 
+```sql 
+select * from orderdetails order by quantity;
+```
+![[Pasted image 20260608173844.png]]
+
+for descending 
+```sql 
+select * from orderdetails order by quantity desc; 
+--desc at the end for making it descending 
+```
+![[Pasted image 20260608173949.png]]
+
+#### limit 
+(doesnt work in sql server database )
+```sql 
+select * from orderdetails limit 2 ;
+```
+![[Pasted image 20260608174439.png]]
+
+#### top
+not included in mysql 
+
+
+
+
 
 ---
 
