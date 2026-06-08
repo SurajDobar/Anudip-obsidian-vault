@@ -27,3 +27,21 @@ R - Relevant: Ensure the goal aligns with your job, career path, or personal gro
 
 T - Time-bound: Set a strict deadline or timeframe to create a sense of urgency.
 ```
+
+
+## Self introduction 
+→ good morning (12am-11:59am) , afternoon (12 - 4:59) , evening (5 - night )
+![[Pasted image 20260608113225.png]]
+⇒ enhusiasm to be more active and smile when introduction
+⇒ Opening statement , Name , Place,  Qualifications ,Skill, Projects/internships ,Goals, Strengths, Closing statement
+![[Pasted image 20260608113654.png]]
+
+```example 
+Good morning, and thank you for having me. My name is Suraj Dobar, and I am from Mumbai. I recently graduated with an IT degree from Chandrabhan Sharma College.
+
+I really enjoy frontend web development, especially using React to make websites look clean and run smoothly. To practice my skills, I have built a few real projects, like a secure certificate platform called AuthMint and a fun web-based party game called flwo.
+
+I am a choosy problem solver, and I care a lot about building solid, unbreakable websites. For example, when making flwo, I spent a lot of time testing and tightening the logic just to make sure users couldn't break the game no matter what they clicked . 
+
+Right now, I am looking for an internship or a junior developer role where I can work with a great team, learn how things are done in the real world, and contribute to actual projects. Thank you for your time.
+```
