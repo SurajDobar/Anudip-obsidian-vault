@@ -1,4 +1,4 @@
-# Database Management Systems (DBMS)
+ Database Management Systems (DBMS)
 	
 > [!summary] Core Concepts
 > **DBMS** stands for Database Management System. Its core operations are based on **CRUD**:
@@ -219,9 +219,80 @@ alter table employee_details drop primary key;
 ```sql 
 alter table employee rename to employee_details;
 -- renamed the entire table
+
+
 ```
 ![[Pasted image 20260605165211.png]]
 
+
+
+### Aggregation
+
+**aggregation** means **combining multiple rows of data into a single summarized value**.
+
+5 functions
+sum()  ⇒ value of submission 
+
+```sql 
+select sum(Total_price) from orderdetails;
+```
+![[Pasted image 20260608164418.png]]
+
+avg()=> average
+
+```sql 
+select avg(Total_price) from orderdetails;
+```
+![[Pasted image 20260608164605.png]]
+
+count () ⇒ used to count number of rows in the set 
+
+```sql 
+select count(*) from orderdetails; 
+```
+![[Pasted image 20260608164834.png]]
+
+max()=> returns the maximum value out of the set 
+```sql
+select max(quantity) from orderdetails;
+```
+![[Pasted image 20260608165019.png]]
+
+min()=> returns the minimum value out of the set 
+```sql 
+select min(quantity) from orderdetails;
+```
+
+
+### Boolean operators
+
+and ⇒  if both condition are true then the condition is valid
+```sQL
+select * from orderdetails where quantity=10 and Order_status='shipped';
+```
+![[Pasted image 20260608165857.png]]
+
+or ⇒ if one of the condition is true the condition is valid
+```sql
+select * from orderdetails where quantity=10 or Order_status='pending'; 
+```
+![[Pasted image 20260608170100.png]]
+
+### Between operator 
+to filter the data within a specific range 
+
+.value must be from minimum to maximum
+  
+```sql
+select * from orderdetails where Order_Id between 'o101' and 'o103';
+```
+![[Pasted image 20260608170902.png]]
+
+not between
+```sql 
+select * from orderdetails where Order_date not between '2026-07-29' and '2026-08-01' ;
+```
+![[Pasted image 20260608171524.png]]
 
 ---
 

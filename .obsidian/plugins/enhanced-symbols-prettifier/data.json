@@ -25,7 +25,7 @@
       "replaced": "=>",
       "value": "⇒",
       "group": "Arrows",
-      "count": 15
+      "count": 19
     },
     "=/=": {
       "replaced": "=/=",
@@ -212,7 +212,8 @@
     "sum": {
       "replaced": "sum",
       "value": "∑",
-      "group": "Mathematical Operators"
+      "group": "Mathematical Operators",
+      "count": 2
     },
     "prod": {
       "replaced": "prod",

@@ -4,25 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "4509724f8bf84da7",
+        "id": "1e9e058f7eb697a4",
         "type": "tabs",
         "children": [
           {
-            "id": "e7a7b303c61786dc",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "SS/Soft skills.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Soft skills"
-            }
-          },
-          {
-            "id": "3af27a0da7a94ead",
+            "id": "6dd820d58a627742",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -33,38 +19,9 @@
               },
               "icon": "lucide-file",
               "title": "sql"
-            }
-          },
-          {
-            "id": "f6453bd6ab1b3c51",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "sql/sql.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "sql"
-            }
-          },
-          {
-            "id": "69f4defd47af2a91",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "HOME.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "HOME"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -229,8 +186,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 282.5,
-    "collapsed": true
+    "width": 282.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -249,25 +205,26 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "69f4defd47af2a91",
+  "active": "6dd820d58a627742",
   "lastOpenFiles": [
+    "Pasted image 20260608171524.png",
+    "Pasted image 20260608170902.png",
+    "sql/sql-src/Pasted image 20260608170100.png",
+    "sql/sql-src/Pasted image 20260608165857.png",
+    "sql/sql-src/Pasted image 20260608165019.png",
+    "sql/sql-src/Pasted image 20260608164834.png",
+    "sql/sql-src/Pasted image 20260608164605.png",
+    "sql/sql-src/Pasted image 20260608164418.png",
     "sql/sql.md",
+    "README.md",
     "HOME.md",
     "SS/Soft skills.md",
-    "Pasted image 20260608113654.png",
+    "SS/src/Pasted image 20260608113654.png",
     "SS/src",
     "SS/src/Pasted image 20260608113225.png",
-    "README.md",
     "sql",
     "src/IMG20260605211417.jpg",
-    "src/IMG20260605211358.jpg",
     "src",
-    "src/Pasted image 20260605205532.png",
-    "src/Pasted image 20260605205437.png",
-    "src/Pasted image 20260605205133.png",
-    "sql/sql-src/Pasted image 20260605165519.png",
-    "sql/sql-src/Pasted image 20260605165729.png",
-    "sql/sql-src/Pasted image 20260605165211.png",
     "Untitled.base",
     "Untitled 1.base",
     "sql/sql-src",
