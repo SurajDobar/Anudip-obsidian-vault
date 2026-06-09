@@ -45,3 +45,26 @@ I am a choosy problem solver, and I care a lot about building solid, unbreakable
 
 Right now, I am looking for an internship or a junior developer role where I can work with a great team, learn how things are done in the real world, and contribute to actual projects. Thank you for your time.
 ```
+
+---
+## Resume ATS
+![[Pasted image 20260609111805.png]]
+
+![[Pasted image 20260609112128.png]]
+![[Pasted image 20260609114651.png]]
+
+![[Pasted image 20260609115234.png]]
+
+
+
+
+
+
+ATS checker by mam
+	use only one so u can be consistent 
+[https://1millionresume.com/resume-checker](https://1millionresume.com/resume-checker) 
+[https://resume.naukri.com/resume-quality-score]
+[https://www.mployee.me/resumescan]
+[https://www.weekday.works/resume-checker-and-scoring-tool]
+
+
