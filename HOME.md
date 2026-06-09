@@ -1,7 +1,6 @@
 ---
 ~
 ---
-
 ## Easy access notes homepage
 
 
