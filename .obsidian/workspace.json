@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HOME.md",
+                "file": "sql/sql.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "HOME"
+              "title": "sql"
             }
           }
         ],
@@ -222,17 +222,17 @@
   },
   "active": "c16fdaf89bcd0c49",
   "lastOpenFiles": [
-    "sql/sql.md",
-    "HOME.md",
-    "Untitled.md",
-    "SS/Soft skills.md",
-    "GEMINI.md",
-    "README.md",
     "sql/sql-src/Pasted image 20260609170701.png",
     "sql/sql-src/Pasted image 20260609170222.png",
     "sql/sql-src/Pasted image 20260609164940.png",
     "sql/sql-src/Pasted image 20260609164925.png",
     "sql/sql-src/Pasted image 20260609164610.png",
+    "GEMINI.md",
+    "HOME.md",
+    "sql/sql.md",
+    "Untitled.md",
+    "SS/Soft skills.md",
+    "README.md",
     "SS/src/Pasted image 20260609115234.png",
     "SS/src/Pasted image 20260609114651.png",
     "SS/src/Pasted image 20260609112128.png",
@@ -266,7 +266,6 @@
     "my study/Untitled.md",
     "notes online class.md",
     "projects ig maybe il add this too -_-.md",
-    "hello there how are you doing.md",
-    "🧑‍💻 my javascript notes/Javascript fundaments s15.md"
+    "hello there how are you doing.md"
   ]
 }

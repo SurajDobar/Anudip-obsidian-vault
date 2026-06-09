@@ -1,4 +1,3 @@
-
 ## Table of Contents 
 
 - [MySQL Benefits](#mysql""benefits)
