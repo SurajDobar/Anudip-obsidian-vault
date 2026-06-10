@@ -402,6 +402,7 @@ phXt
 pOb
 pOr
 prep
+parentheses
 and
 allows
 associate
@@ -791,6 +792,7 @@ anchor
 alter
 arrange
 align
+asses
 changing
 created
 completed
@@ -1193,6 +1195,7 @@ commands
 column
 clauses
 career
+compatibility
 is
 instead
 immediately
@@ -2780,6 +2783,7 @@ wTgG
 wFx
 wef
 waiting
+weaknesses
 the
 to
 these
@@ -3923,6 +3927,7 @@ hiy
 headings
 heading
 having
+hyphens
 eventual
 each
 event
@@ -4733,6 +4738,7 @@ specify
 sCU
 strictly
 styling
+strength
 or
 of
 one
@@ -4996,6 +5002,8 @@ oHV
 oLq
 orr
 okh
+opportunity
+opportunities
 reason
 return
 returning
@@ -8478,6 +8486,7 @@ WRE
 Wikilinks
 Where
 Welcome
+Word
 But
 BG
 BaE
@@ -9029,6 +9038,7 @@ Standardization
 Separation
 Standards
 STRICTLY
+SWOT
 JavaScript
 JS
 JJJ
@@ -10060,6 +10070,7 @@ qfc
 qß
 qPH
 qbKn
+question
 get
 generators
 generator
@@ -11077,6 +11088,7 @@ Case
 Content
 Clause
 CONSUMPTION
+Concatenation
 Modules
 MDN
 Ms
@@ -13776,6 +13788,7 @@ Qdz
 QvQ
 QYcJ
 QZR
+Quoted
 Vi
 VJ
 VN

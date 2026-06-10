@@ -67,4 +67,28 @@ ATS checker by mam
 [https://www.mployee.me/resumescan]
 [https://www.weekday.works/resume-checker-and-scoring-tool]
 
+## SWOT analysis
+strength ,weaknesses , opportunity , threats analysis 
+![[Pasted image 20260610112517.png]]
 
+helps to asses your life and where your career is 
+
+. question 4
+Q. list all of your Strengths
+	![[Pasted image 20260610113002.png]]
+	![[Pasted image 20260610113016.png]]
+
+Q. weaknesses 
+	![[Pasted image 20260610113030.png]]
+	![[Pasted image 20260610113044.png]]
+
+q. opportunities 
+	![[Pasted image 20260610113104.png]]
+	![[Pasted image 20260610113118.png]]
+	![[Pasted image 20260610113127.png]]
+	![[Pasted image 20260610114832.png]]
+	![[Pasted image 20260610115113.png]]
+
+q. threats
+	![[Pasted image 20260610115224.png]]
+	
