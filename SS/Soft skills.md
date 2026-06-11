@@ -91,4 +91,6 @@ q. opportunities
 
 q. threats
 	![[Pasted image 20260610115224.png]]
-	
+
+
+![[Pasted image 20260611113656.png]]

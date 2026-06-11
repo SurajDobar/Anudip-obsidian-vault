@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SS/Soft skills.md",
+                "file": "sql/sql.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Soft skills"
+              "title": "sql"
             }
           }
         ]
@@ -206,21 +206,21 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "726744cd3cfdc5f0",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "HOME.md",
     "SS/Soft skills.md",
+    "sql/sql.md",
+    "HOME.md",
+    "SS/src/Pasted image 20260611113656.png",
+    "SS/src/Pasted image 20260611113641.png",
+    "sql/sql-src/Pasted image 20260610170720.png",
+    "sql/sql-src/Pasted image 20260610170612.png",
+    "sql/sql-src/Pasted image 20260610170356.png",
+    "sql/sql-src/Pasted image 20260610170121.png",
+    "sql/sql-src/Pasted image 20260610165930.png",
+    "sql/sql-src/Pasted image 20260610163053.png",
     "SS/src/Pasted image 20260610115224.png",
     "SS/src/Pasted image 20260610115113.png",
-    "SS/src/Pasted image 20260610114832.png",
-    "sql/sql.md",
-    "SS/src/Pasted image 20260610113127.png",
-    "SS/src/Pasted image 20260610113118.png",
-    "SS/src/Pasted image 20260610113104.png",
-    "SS/src/Pasted image 20260610113044.png",
-    "SS/src/Pasted image 20260610113030.png",
-    "SS/src/Pasted image 20260610113016.png",
-    "SS/src/Pasted image 20260610113002.png",
     "GEMINI.md",
     "Untitled.md",
     "README.md",

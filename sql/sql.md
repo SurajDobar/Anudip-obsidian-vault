@@ -1,42 +1,39 @@
-## Table of Contents 
+- [Database Management Systems](#"Database""Management""Systems")
+- [MySQL Benefits](#"MySQL""Benefits")
+- [ER Diagrams](#"ER""Diagrams")
+- [SQL Commands](#"SQL""Commands")
+  - [Database Operations](#"Database""Operations")
+  - [Table Operations](#"Table""Operations")
+    - [Example Creating A Table](#"Example""Creating""A""Table")
+    - [Example Inserting Data](#"Example""Inserting""Data")
+    - [Example Creating Foreign Key](#"Example""Creating""Foreign""Key")
+  - [Select Operations In Table](#"Select""Operations""In""Table")
+    - [Example For Select](#"Example""For""Select")
+    - [Example Underscore For Select](#"Example""Underscore""For""Select")
+  - [Delete Truncate And Drop](#"Delete""Truncate""And""Drop")
+  - [Update And Alter](#"Update""And""Alter")
+  - [Alter](#"Alter")
+    - [Add](#"Add")
+    - [Modify](#"Modify")
+    - [Drop](#"Drop")
+    - [Rename](#"Rename")
+  - [Aggregation](#"Aggregation")
+  - [Operators](#"Operators")
+    - [Boolean Operators](#"Boolean""Operators")
+    - [Between Operator](#"Between""Operator")
+    - [In Operator](#"In""Operator")
+    - [Is Operator](#"Is""Operator")
+  - [Clause](#"Clause")
+    - [From](#"From")
+    - [Where](#"Where")
+    - [Order By](#"Order""By")
+    - [Limit](#"Limit")
+    - [Top](#"Top")
+    - [Group By](#"Group""By")
+    - [Having](#"Having")
+  - [Joins](#"Joins")
 
-- [MySQL Benefits](#mysql""benefits)
-- [SQL Commands](#sql-commands)
-  - [Database Operations](#database-operations)
-  - [Table Operations](#table-operations)
-    - [Example Creating a Table](#example-creating-a-table)
-    - [Example Inserting Data](#example-inserting-data)
-    - [Example Creating Foreign Key](#example-creating-foreign-key)
-  - [Select Operations in Table](#select-operations-in-table)
-    - [Example for Select](#example-for-select)
-    - [Example Underscore for Select](#example-underscore-for-select)
-  - [Delete Truncate and Drop](#delete-truncate-and-drop)
-  - [Update and Alter](#update-and-alter)
-  - [Alter](#alter)
-    - [Add](#add)
-    - [Modify](#modify)
-    - [Drop](#drop)
-    - [Rename](#rename)
-  - [Aggregation](#aggregation)
-  - [Operators](#operators)
-    - [Boolean Operators](#boolean-operators)
-    - [Between Operator](#between-operator)
-    - [In Operator](#in-operator)
-    - [Is Operator](#is-operator)
-  - [Clause](#clause)
-    - [From](#from)
-    - [Where](#where)
-    - [Order By](#order-by)
-    - [Limit](#limit)
-    - [Top](#top)
-    - [Group By](#group-by)
-    - [Having](#having)
-- [ER Diagrams](#er-diagrams)
-
- 
- 
-
-## Database Management Systems (DBMS)
+## Database Management Systems
 > [!summary] Core Concepts
 > **DBMS** stands for Database Management System. Its core operations are based on **CRUD**:
 > - **C**reate
@@ -57,6 +54,15 @@
 > [!question] Interview Question: `CHAR` vs `VARCHAR`
 > - **`CHAR`**: Fixed-length string. If the data is shorter than the defined length, it pads the rest with spaces.
 > - **`VARCHAR`**: Variable-length string. The length adapts based on the specific requirement of the data entered, saving storage space.
+
+---
+## ER Diagrams
+
+*Note: The original text referenced ![[Pasted image 20260603163734.png]]
+
+- **Primary Key:** Uniquely identifies a record in a table. Every entity must have one primary key.
+- **Attributes:** The specific properties or traits that describe an entity (e.g., a "Product" entity has attributes like *price*, *name*, and *stock*). 
+- **Foreign Key:** A field used to establish and maintain a relationship between two or more tables.
 
 ---
 
@@ -80,7 +86,7 @@ DESC table_name;           -- Gives the description (schema) of the table
 SELECT * FROM table_name;  -- Selects and displays all records from the table
 ```
 
-#### Example Creating a Table
+#### Example Creating A Table
 ```sql
 CREATE TABLE product (
     product_id VARCHAR(10) NOT NULL PRIMARY KEY, 
@@ -120,8 +126,8 @@ CREATE TABLE orderdetails (
         REFERENCES product(product_id)
 );
 ```
-### Select Operations in Table 
-#### Example for Select 
+### Select Operations In Table
+#### Example For Select
 for pattern matching
 
 ```sql 
@@ -138,7 +144,7 @@ SELECT * FROM customer
 WHERE Name LIKE '%R%';
 ```
 
-#### Example Underscore for Select
+#### Example Underscore For Select
 one _  = 1 value
 ```sql 
 -- City ends with 'i' (5 characters before i)
@@ -178,7 +184,7 @@ WHERE name LIKE '_an___';
 
 
 
-### Delete Truncate and Drop 
+### Delete Truncate And Drop
 
 1. Delete only remove records and not the whole structure of a particular database 
 	u can remove specific rows
@@ -200,7 +206,7 @@ truncate table student;
 drop table student;
 ```
 
-### Update and Alter
+### Update And Alter
 
 used to modify the existing data ;
 
@@ -249,7 +255,7 @@ alter table employee_details drop primary key;
 ![[Pasted image 20260605165519.png]]
 
 
-#### Rename 
+#### Rename
 ```sql 
  alter table employee rename column email to emp_email, rename column phone to emp_phone;
 ```
@@ -303,7 +309,7 @@ select min(quantity) from orderdetails;
 
 
 ### Operators
-#### Boolean Operators 
+#### Boolean Operators
 
 and ⇒  if both condition are true then the condition is valid
 ```sQL
@@ -317,7 +323,7 @@ select * from orderdetails where quantity=10 or Order_status='pending';
 ```
 ![[Pasted image 20260608170100.png]]
 
-#### Between Operator 
+#### Between Operator
 to filter the data within a specific range 
 
 .value must be from minimum to maximum
@@ -333,7 +339,7 @@ select * from orderdetails where Order_date not between '2026-07-29' and '2026-0
 ```
 ![[Pasted image 20260608171524.png]]
 
-#### In Operator 
+#### In Operator
 
  is used to specify the specific value , based on it we have to retrieve the data 
 ```sQL
@@ -348,7 +354,7 @@ select * from orderdetails where quantity not in (20,5);
 ```
 ![[Pasted image 20260608172656.png]]
 
-#### Is Operator 
+#### Is Operator
 to check the null value is present in the database
 ```sql 
 select * from orderdetails where quantity is null;
@@ -365,7 +371,7 @@ select * from orderdetails where quantity is not null;
 
 ### Clause
 
-#### From 
+#### From
 Used to retrieve (fetch) data from one or more tables in a database.
 ```sQL
 SELECT * FROM employee;
@@ -390,7 +396,7 @@ select * from orderdetails order by quantity desc;
 ```
 ![[Pasted image 20260608173949.png]]
 
-#### Limit 
+#### Limit
 (doesnt work in sql server database )
 ```sql 
 select * from orderdetails limit 2 ;
@@ -401,7 +407,7 @@ select * from orderdetails limit 2 ;
 not included in mysql 
 
 #### Group By
-arrange the data in the group format,for grouping purpose always use the elevation function 
+arrange the data in the group format , for grouping purpose always use the Aggregation function  , grouping the rows , 
 ```sql
 select dept,count(*) as total_employee from employee group by dept;
 ```
@@ -412,8 +418,8 @@ select dept,sum(salary) as total_salary from employee group by dept;
 ```
 ![[Pasted image 20260609164940.png]]
 
-#### Having 
-used to filter the column, after grouping ,always comes with group by , can be used in aggregation function 
+#### Having
+used to filter the group, after grouping ,always comes with group by , can be used in aggregation function 
 ```sQL
 select dept,count(*) as total from employee group by dept having count(*) > 1;
 		--value greater then one 
@@ -425,14 +431,63 @@ select dept,sum(salary) as total from employee group by dept having sum(salary) 
 ```
 ![[Pasted image 20260609170701.png]]
 
+---
+### Joins
+combine the rows from two or more tables  based on the related table 
+
+inner joins , left joins ,  right outer join , full join , self join , cross join
+![[Pasted image 20260610163053.png]]
+
+1. inner joins.
+   only returns the matching rows of the both table 
+
+2. left join 
+	returns all the rows of the left table and matching rows of the right table 
+
+3.  right join 
+	returns all the rows of the right table and matching rows of the left table 
+
+4. full join 
+	return all the rows from both table 
+
+5. cross join represents the cartesian product 
+	 every record is connected to the other table record 
+
+6. self join 
+	when one table connecting to itself is called the self join 
+
+inner join 
+```sQL
+select emp_name, dept_name from employee inner join dept on employee.dept_id = dept.dept_id;
+```
+![[Pasted image 20260610165930.png]]
+
+left join 
+```sQL
+select emp_name, dept_name from employee left join dept on employee.dept_id = dept.dept_id;
+```
+![[Pasted image 20260610170121.png]]
+
+right join 
+```sql 
+select emp_name, dept_name from employee right join dept on employee.dept_id = dept.dept_id;
+```
+![[Pasted image 20260610170356.png]]
+
+full join 
+my sql does not support full outer join 
+```sql 
+select emp_name, dept_name from employee full join dept;
+```
+![[Pasted image 20260610170612.png]]
+
+cross join 
+```sql 
+select emp_name, dept_name from employee cross join dept ;
+```
+![[Pasted image 20260610170720.png]]
+
 
 
 ---
 
-## ER Diagrams
-
-*Note: The original text referenced ![[Pasted image 20260603163734.png]]
-
-- **Primary Key:** Uniquely identifies a record in a table. Every entity must have one primary key.
-- **Attributes:** The specific properties or traits that describe an entity (e.g., a "Product" entity has attributes like *price*, *name*, and *stock*). 
-- **Foreign Key:** A field used to establish and maintain a relationship between two or more tables.

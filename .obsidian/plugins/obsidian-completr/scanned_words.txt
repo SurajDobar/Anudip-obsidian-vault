@@ -1196,6 +1196,8 @@ column
 clauses
 career
 compatibility
+cartesian
+connecting
 is
 instead
 immediately
@@ -1516,6 +1518,7 @@ iNe
 integrity
 image
 inserting
+inner
 for
 failure
 final
@@ -5004,6 +5007,7 @@ orr
 okh
 opportunity
 opportunities
+outer
 reason
 return
 returning
@@ -7442,6 +7446,8 @@ jln
 jkls
 jpK
 jGQv
+joins
+join
 by
 based
 brand
@@ -9834,6 +9840,7 @@ AUv
 Always
 AND
 Agenda
+And
 queue
 qGG
 qv
