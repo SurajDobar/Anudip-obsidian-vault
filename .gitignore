@@ -1,0 +1,7 @@
+# Obsidian UI state (frequently changes)
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+
+# OS-specific files
+.DS_Store
+Thumbs.db

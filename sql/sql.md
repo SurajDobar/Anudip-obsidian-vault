@@ -55,6 +55,12 @@
 > - **`CHAR`**: Fixed-length string. If the data is shorter than the defined length, it pads the rest with spaces.
 > - **`VARCHAR`**: Variable-length string. The length adapts based on the specific requirement of the data entered, saving storage space.
 
+## Components of dbms
+query processor 
+database engine 
+user interface
+
+
 ---
 ## ER Diagrams
 
@@ -218,7 +224,9 @@ update employee set emp_name = 'jhaduwala' where emp_ID = 'e106';
 
 ### Alter
 
-used to modify and do changes in columns , table 
+used to **modify the structure of an existing table** without deleting it or losing its data.
+
+It allows you to make changes to the table’s schema as requirements evolve 
 
 #### Add
 ```sql
@@ -377,7 +385,7 @@ Used to retrieve (fetch) data from one or more tables in a database.
 SELECT * FROM employee;
 ```
 #### Where
-Used to filter  the rows  , before the grouping ,not in aggregation funciton
+ based on condition Used to filter  the rows  , before the grouping ,not in aggregation function 
 ```sQL
 SELECT * FROM employee
 WHERE salary > 20000;
