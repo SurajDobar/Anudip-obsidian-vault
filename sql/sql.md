@@ -1,7 +1,7 @@
 - [Database Management Systems](#"Database""Management""Systems")
 - [MySQL Benefits](#"MySQL""Benefits")
 - [ER Diagrams](#"ER""Diagrams")
-- [SQL Commands](#"SQL""Commands")
+	- [SQL Commands](#"SQL""Commands")
   - [Database Operations](#"Database""Operations")
   - [Table Operations](#"Table""Operations")
     - [Example Creating A Table](#"Example""Creating""A""Table")
@@ -85,7 +85,7 @@ CREATE DATABASE db_name; -- Creates a new database
 USE db_name;             -- Selects the specific database to use
 ```
 
-### Table Operations
+r### Table Operations
 ```sql
 SHOW TABLES;               -- Shows all tables in the current database
 DESC table_name;           -- Gives the description (schema) of the table
@@ -498,4 +498,48 @@ select emp_name, dept_name from employee cross join dept ;
 
 
 ---
+## Normalization
+is the process of organizing data in database to reduce redundancy
+
+first normal form (1NF)
+second normal form(2NF)
+third normal form  (3NF)
+Boyce Codd Normal form (BCNF)
+
+first normal form (1NF)
+	cant report multiple values in one cell
+	![[Pasted image 20260612162928.png]]
+second nf(2nf)
+	must be in 1NF and all non-key attributes must depend on the entire primary key,
+	split the table based on the primary key 
+	![[Pasted image 20260612163135.png]]
+	![[Pasted image 20260612163400.png]]![[Pasted image 20260612163408.png]]
+Third Normal form (3NF)
+	must be in 2NF and there should be no transitive dependency (non-key attribute depending on another non-key attribute)
+	![[Pasted image 20260612163535.png]]
+	![[Pasted image 20260612163617.png]]
+Boyce Codd Normal form (BCNF)
+	for every functional dependency ,the determinant must be a candidate key.
+	**candidate key** is a column which can uniquely identify the rows. 
+	candidate key can contain the multiple primary key 
+	![[Pasted image 20260612163930.png]]
+	![[Pasted image 20260612164128.png]]
+	
+
+![[Pasted image 20260612164154.png]]
+
+## Keys
+- **Primary Key:** Uniquely identifies a record in a table. Every entity must have one primary key.
+- **Attributes:** The specific properties or traits that describe an entity (e.g., a "Product" entity has attributes like *price*, *name*, and *stock*). 
+- **Foreign Key:** A field used to establish and maintain a relationship between two or more tables.
+- **Composite key** is a key where multiple records together to uniquely identify the rows  .
+- **Candidate key** is a column which can uniquely identify the rows.
+	candidate key can contain the multiple primary key 
+
+ - **Unique key** all the values in the column is unique , only one null value is allowed
+ 
+
+
+
+
 

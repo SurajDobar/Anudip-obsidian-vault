@@ -794,6 +794,7 @@ alter
 arrange
 align
 asses
+attribute
 changing
 created
 completed
@@ -1199,6 +1200,9 @@ career
 compatibility
 cartesian
 connecting
+cant
+cell
+composite
 is
 instead
 immediately
@@ -1520,6 +1524,8 @@ integrity
 image
 inserting
 inner
+iDv
+iSdd
 for
 failure
 final
@@ -1834,6 +1840,7 @@ foundational
 foreign
 funciton
 format
+fvW
 value
 values
 variable
@@ -2788,6 +2795,7 @@ wFx
 wef
 waiting
 weaknesses
+wWE
 the
 to
 these
@@ -3118,6 +3126,7 @@ tZZ
 twuo
 twwggg
 trailing
+transitive
 It
 Invokes
 Inside
@@ -4307,6 +4316,7 @@ edited
 except
 embeds
 elevation
+ejxX
 success
 synchronous
 supply
@@ -4744,6 +4754,9 @@ strictly
 styling
 strength
 schema
+sfd
+sVWI
+split
 or
 of
 one
@@ -5010,6 +5023,8 @@ okh
 opportunity
 opportunities
 outer
+oUu
+oBM
 reason
 return
 returning
@@ -5371,6 +5386,7 @@ reliability
 requested
 reformatted
 recent
+redundancy
 This
 The
 There
@@ -5657,6 +5673,8 @@ TkL
 TOC
 Title
 THIS
+Tkd
+Third
 lets
 like
 looks
@@ -6273,6 +6291,7 @@ mam
 mcc
 mandates
 markdown
+mpi
 diagram
 doesnt
 does
@@ -6620,6 +6639,10 @@ dWK
 dYW
 diagrams
 dbms
+depend
+dependency
+depending
+determinant
 Protoypal
 Purpose
 Promise
@@ -7994,6 +8017,7 @@ uQV
 unless
 unaltered
 underscore
+uniquely
 Hello
 HKM
 Haa
@@ -8742,6 +8766,8 @@ Between
 BqP
 Branching
 Base
+Boyce
+BCNF
 Syntax
 SS
 SvIB
@@ -9049,6 +9075,7 @@ Separation
 Standards
 STRICTLY
 SWOT
+Sfi
 JavaScript
 JS
 JJJ
@@ -11102,6 +11129,8 @@ Content
 Clause
 CONSUMPTION
 Concatenation
+Cyi
+Codd
 Modules
 MDN
 Ms
@@ -11875,6 +11904,10 @@ NZi
 Name
 NIA
 NwC
+NVF
+NxO
+Normalization
+Normal
 Xn
 XE
 XR
@@ -13134,6 +13167,7 @@ UCh
 UgL
 Update
 Underscore
+UTf
 OL
 Od
 Op
@@ -13575,6 +13609,7 @@ KTX
 KQB
 Kkb
 KJG
+KqK
 QJM
 Ql
 Qss
@@ -13802,6 +13837,7 @@ QvQ
 QYcJ
 QZR
 Quoted
+Qagv
 Vi
 VJ
 VN
@@ -14002,6 +14038,8 @@ VpU
 VGD
 Vxx
 Vault
+VWWWTT
+VFd
 zzi
 zz
 zyy
@@ -14219,6 +14257,7 @@ zRlv
 zPC
 zgY
 zhf
+zWa
 ZV
 ZZZ
 ZQQ
