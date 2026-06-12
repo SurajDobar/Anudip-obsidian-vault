@@ -94,3 +94,8 @@ q. threats
 
 
 ![[Pasted image 20260611113656.png]]
+
+## Goals 
+
+![[Pasted image 20260612112614.png]]
+![[Pasted image 20260612115847.png]]
