@@ -1,29 +1,30 @@
 - [Database Management Systems](#"Database""Management""Systems")
 - [MySQL Benefits](#"MySQL""Benefits")
+- [Components Of DBMS](#"Components""Of""DBMS")
 - [ER Diagrams](#"ER""Diagrams")
-	- [SQL Commands](#"SQL""Commands")
-  - [Database Operations](#"Database""Operations")
-  - [Table Operations](#"Table""Operations")
-    - [Example Creating A Table](#"Example""Creating""A""Table")
-    - [Example Inserting Data](#"Example""Inserting""Data")
-    - [Example Creating Foreign Key](#"Example""Creating""Foreign""Key")
-  - [Select Operations In Table](#"Select""Operations""In""Table")
-    - [Example For Select](#"Example""For""Select")
-    - [Example Underscore For Select](#"Example""Underscore""For""Select")
-  - [Delete Truncate And Drop](#"Delete""Truncate""And""Drop")
-  - [Update And Alter](#"Update""And""Alter")
-  - [Alter](#"Alter")
+- [SQL Commands](#"SQL""Commands")
+    - [Database Operations](#"Database""Operations")
+    - [Table Operations](#"Table""Operations")
+        - [Example Creating A Table](#"Example""Creating""A""Table")
+        - [Example Inserting Data](#"Example""Inserting""Data")
+        - [Example Creating Foreign Key](#"Example""Creating""Foreign""Key")
+    - [Select Operations In Table](#"Select""Operations""In""Table")
+        - [Example For Select](#"Example""For""Select")
+        - [Example Underscore For Select](#"Example""Underscore""For""Select")
+- [Delete Truncate And Drop](#"Delete""Truncate""And""Drop")
+- [Update And Alter](#"Update""And""Alter")
+- [Alter](#"Alter")
     - [Add](#"Add")
     - [Modify](#"Modify")
     - [Drop](#"Drop")
     - [Rename](#"Rename")
-  - [Aggregation](#"Aggregation")
-  - [Operators](#"Operators")
+- [Aggregation](#"Aggregation")
+- [Operators](#"Operators")
     - [Boolean Operators](#"Boolean""Operators")
     - [Between Operator](#"Between""Operator")
     - [In Operator](#"In""Operator")
     - [Is Operator](#"Is""Operator")
-  - [Clause](#"Clause")
+- [Clause](#"Clause")
     - [From](#"From")
     - [Where](#"Where")
     - [Order By](#"Order""By")
@@ -31,7 +32,11 @@
     - [Top](#"Top")
     - [Group By](#"Group""By")
     - [Having](#"Having")
-  - [Joins](#"Joins")
+- [Joins](#"Joins")
+- [Normalization](#"Normalization")
+- [Keys](#"Keys")
+- [Subquery](#"Subquery")
+- [Store Procedure](#"Store""Procedure")
 
 ## Database Management Systems
 > [!summary] Core Concepts
@@ -55,7 +60,7 @@
 > - **`CHAR`**: Fixed-length string. If the data is shorter than the defined length, it pads the rest with spaces.
 > - **`VARCHAR`**: Variable-length string. The length adapts based on the specific requirement of the data entered, saving storage space.
 
-## Components of dbms
+## Components Of DBMS
 query processor 
 database engine 
 user interface
@@ -85,7 +90,7 @@ CREATE DATABASE db_name; -- Creates a new database
 USE db_name;             -- Selects the specific database to use
 ```
 
-r### Table Operations
+### Table Operations
 ```sql
 SHOW TABLES;               -- Shows all tables in the current database
 DESC table_name;           -- Gives the description (schema) of the table
@@ -190,7 +195,7 @@ WHERE name LIKE '_an___';
 
 
 
-### Delete Truncate And Drop
+## Delete Truncate And Drop
 
 1. Delete only remove records and not the whole structure of a particular database 
 	u can remove specific rows
@@ -212,7 +217,7 @@ truncate table student;
 drop table student;
 ```
 
-### Update And Alter
+## Update And Alter
 
 used to modify the existing data ;
 
@@ -222,13 +227,13 @@ update employee set emp_name = 'jhaduwala' where emp_ID = 'e106';
 ```
 ![[Pasted image 20260605163710.png]]
 
-### Alter
+## Alter
 
 used to **modify the structure of an existing table** without deleting it or losing its data.
 
 It allows you to make changes to the table’s schema as requirements evolve 
 
-#### Add
+### Add
 ```sql
 alter table employee add email varchar(50) not null;
 ```
@@ -242,7 +247,7 @@ alter table employee_details add constraint primary key (emp_ID);
 
 ![[Pasted image 20260605165729.png]]
 
-#### Modify
+### Modify
 ```sql 
 alter table employee modify email varchar(60) not null;
 ```
@@ -317,7 +322,7 @@ select min(quantity) from orderdetails;
 
 
 ### Operators
-#### Boolean Operators
+### Boolean Operators
 
 and ⇒  if both condition are true then the condition is valid
 ```sQL
@@ -331,7 +336,7 @@ select * from orderdetails where quantity=10 or Order_status='pending';
 ```
 ![[Pasted image 20260608170100.png]]
 
-#### Between Operator
+### Between Operator
 to filter the data within a specific range 
 
 .value must be from minimum to maximum
@@ -347,7 +352,7 @@ select * from orderdetails where Order_date not between '2026-07-29' and '2026-0
 ```
 ![[Pasted image 20260608171524.png]]
 
-#### In Operator
+### In Operator
 
  is used to specify the specific value , based on it we have to retrieve the data 
 ```sQL
@@ -362,7 +367,7 @@ select * from orderdetails where quantity not in (20,5);
 ```
 ![[Pasted image 20260608172656.png]]
 
-#### Is Operator
+### Is Operator
 to check the null value is present in the database
 ```sql 
 select * from orderdetails where quantity is null;
@@ -440,7 +445,7 @@ select dept,sum(salary) as total from employee group by dept having sum(salary) 
 ![[Pasted image 20260609170701.png]]
 
 ---
-### Joins
+## Joins
 combine the rows from two or more tables  based on the related table 
 
 inner joins , left joins ,  right outer join , full join , self join , cross join
@@ -509,6 +514,7 @@ Boyce Codd Normal form (BCNF)
 first normal form (1NF)
 	cant report multiple values in one cell
 	![[Pasted image 20260612162928.png]]
+
 second nf(2nf)
 	must be in 1NF and all non-key attributes must depend on the entire primary key,
 	split the table based on the primary key 
@@ -528,6 +534,7 @@ Boyce Codd Normal form (BCNF)
 
 ![[Pasted image 20260612164154.png]]
 
+---
 ## Keys
 - **Primary Key:** Uniquely identifies a record in a table. Every entity must have one primary key.
 - **Attributes:** The specific properties or traits that describe an entity (e.g., a "Product" entity has attributes like *price*, *name*, and *stock*). 
@@ -537,9 +544,23 @@ Boyce Codd Normal form (BCNF)
 	candidate key can contain the multiple primary key 
 
  - **Unique key** all the values in the column is unique , only one null value is allowed
+
+--- 
+## subquery
+subquery when in one query u add another query that is called subquery 
  
+ Q. find the employee who earn more then one average salary 
+ ```sQL
+ select name, salary from employee where salary > (select avg(salary) from employee );
+ ```
+ ![[Pasted image 20260612170241.png]]
 
+--- 
+## store procedure 
 
+store procedure is a pre compiled stored procedure , store procedure is faster 
+![[Pasted image 20260612171245.png]]
+![[Pasted image 20260612171117.png]]
 
-
+function is not precompiled
 

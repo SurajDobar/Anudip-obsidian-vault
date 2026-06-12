@@ -1203,6 +1203,7 @@ connecting
 cant
 cell
 composite
+compiled
 is
 instead
 immediately
@@ -1841,6 +1842,7 @@ foreign
 funciton
 format
 fvW
+faster
 value
 values
 variable
@@ -4317,6 +4319,7 @@ except
 embeds
 elevation
 ejxX
+earn
 success
 synchronous
 supply
@@ -4757,6 +4760,8 @@ schema
 sfd
 sVWI
 split
+subquery
+stored
 or
 of
 one
@@ -6959,6 +6964,7 @@ PrC
 Puc
 Prepension
 Practice
+Procedure
 Each
 Example
 Everything
@@ -9076,6 +9082,8 @@ Standards
 STRICTLY
 SWOT
 Sfi
+Subquery
+Store
 JavaScript
 JS
 JJJ
@@ -11131,6 +11139,8 @@ CONSUMPTION
 Concatenation
 Cyi
 Codd
+Composite
+Candidate
 Modules
 MDN
 Ms
@@ -13168,6 +13178,7 @@ UgL
 Update
 Underscore
 UTf
+Unique
 OL
 Od
 Op
