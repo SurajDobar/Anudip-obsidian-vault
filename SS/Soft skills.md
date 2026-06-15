@@ -30,6 +30,7 @@ T - Time-bound: Set a strict deadline or timeframe to create a sense of urgency.
 
 
 ## Self introduction 
+### introduction should be of 30 seconds 
 → good morning (12am-11:59am) , afternoon (12 - 4:59) , evening (5 - night )
 ![[Pasted image 20260608113225.png]]
 ⇒ enhusiasm to be more active and smile when introduction
@@ -37,13 +38,17 @@ T - Time-bound: Set a strict deadline or timeframe to create a sense of urgency.
 ![[Pasted image 20260608113654.png]]
 
 ```example 
-Good morning, and thank you for having me. My name is Suraj Dobar, and I am from Mumbai. I recently graduated with an IT degree from Chandrabhan Sharma College.
+Good morning, and thank you for having me.
 
-I really enjoy frontend web development, especially using React to make websites look clean and run smoothly. To practice my skills, I have built a few real projects, like a secure certificate platform called AuthMint and a fun web-based party game called flwo.
+My name is Suraj Dobar, and I am from Mumbai. I recently graduated with an IT degree from Chandrabhan Sharma College.
 
-I am a choosy problem solver, and I care a lot about building solid, unbreakable websites. For example, when making flwo, I spent a lot of time testing and tightening the logic just to make sure users couldn't break the game no matter what they clicked . 
+My main skill is frontend web development, specifically using React. I have put this into practice by building real projects, like a secure certificate platform called AuthMint and a fun web game called flwo.
 
-Right now, I am looking for an internship or a junior developer role where I can work with a great team, learn how things are done in the real world, and contribute to actual projects. Thank you for your time.
+My biggest strength is that I care about building solid, unbreakable websites that users cannot easily break or mess up.
+
+My goal right now is to join a great team as a junior developer or intern, where I can learn how things are done in the industry and contribute to real-world projects.
+
+Thank you for your time.
 ```
 
 ---
@@ -95,7 +100,32 @@ q. threats
 
 ![[Pasted image 20260611113656.png]]
 
+
+## Group discussion
+-not to use notes when presenting
+-not to repeat points 
+-silent your phone (koi bhadwa barabar time pe phone karta hai bhosadika )
+
++be confident and audible
++make eye contact all crowd 
++introduce everyone in the team 
++have coordination with each other splitting the points in order to have everyone say something 
++everyone in the gd should keep the flow of gd , removing the pause and silence 
++glide the topic to someone if your are getting anxious/blank during speaking, then let him glide it back at you so u can speak your topics again 
+
+
 ## Goals 
 
 ![[Pasted image 20260612112614.png]]
 ![[Pasted image 20260612115847.png]]
+
+![[Pasted image 20260615125809.png]]
+![[Pasted image 20260615125821.png]]
+![[Pasted image 20260615125825.png]]
+![[Pasted image 20260615125830.png]]
+![[Pasted image 20260615125836.png]]
+![[Pasted image 20260615125841.png]]
+1. Tell me about yourself. 
+2. What are your strengths and weaknesses? 
+3. Describe a challenge you faced and how you overcame it.
+
