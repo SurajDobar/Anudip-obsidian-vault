@@ -129,3 +129,14 @@ q. threats
 2. What are your strengths and weaknesses? 
 3. Describe a challenge you faced and how you overcame it.
 
+
+## interview dos and donts 
+![[Pasted image 20260616111811.png]]
+![[Pasted image 20260616111927.png]]
+![[Pasted image 20260616112747.png]]
+- never initiate a handshake in a interview 
+- hold the hand light 
+![[Pasted image 20260616113519.png]]
+![[Pasted image 20260616114639.png]]
+![[Pasted image 20260616113913.png]]
+

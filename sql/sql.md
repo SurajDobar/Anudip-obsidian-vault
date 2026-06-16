@@ -564,3 +564,108 @@ store procedure is a pre compiled stored procedure , store procedure is faster
 
 function is not precompiled
 
+delimiter is used to initiate making of store procedure 
+
+simple example of store procedure 
+```sql 
+/* making the delimiter */
+delimiter //
+create procedure show_all_values()
+begin 
+select * from employee;
+end //
+
+/* using the delimiter  */ 
+delimiter ;
+call show_all_values()
+```
+
+
+
+
+
+```sQL
+-- Change delimiter
+DELIMITER //
+
+-- Create procedure
+CREATE PROCEDURE get_all_data()
+BEGIN
+    SELECT * FROM employees;
+END //
+
+-- Reset delimiter
+DELIMITER ;
+
+-- Execute procedure
+CALL get_all_data();
+```
+![[Pasted image 20260615164057.png]]
+
+In input in delimiter 
+```sQL
+ delimiter //
+ create procedure get_emp_by_dept_name_1(in deptvar varchar(30))
+    -> begin
+    -> select * from employee where dept = deptvar;
+    -> end //
+    --creating the store procedure
+    
+delimiter ;
+call get_emp_by_dept_name_1('tester');
+--using the store procedure
+```
+![[Pasted image 20260615164630.png]]
+
+out output in delimiter 
+. using @ to use the output variable 
+
+```sQL
+delimiter //
+create procedure get_emp_count(out total int)
+    -> begin
+    -> select count(*) into total from employee;
+    -> end //
+
+
+delimiter ;
+call get_emp_count(@total);
+
+
+select @total;
+
+```
+![[Pasted image 20260615165222.png]]
+
+inserting values in table
+```sQL
+delimiter //
+ create procedure add_employee(in id int, in name varchar(30), in dept varchar(20) , in salary int )
+    -> begin
+    -> insert into employee values(id,name,dept,salary);
+    -> end//
+    
+delimiter ;
+call add_employee(6,'afjal','java devloper',2000);
+```
+![[Pasted image 20260615170340.png]]
+
+
+## trigger 
+
+trigger occurs when particular event occurs ,it triggers automatically
+
+	3 types 
+- before Trigger (use before =>insert , update , delete )
+- after trigger ,( execute after execution )
+- instead of trigger , (kya malum)
+
+
+## index 
+one data structure used to increase the speed of data retrieval 
+
+first index 
+
+primary key is a type of index type
+unique does not add duplicate values , also a type of index 
+
