@@ -228,7 +228,8 @@
     "alpha": {
       "replaced": "alpha",
       "value": "α",
-      "group": "Greek Letters"
+      "group": "Greek Letters",
+      "count": 1
     },
     "beta": {
       "replaced": "beta",

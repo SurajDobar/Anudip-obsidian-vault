@@ -137,6 +137,12 @@ CREATE TABLE orderdetails (
         REFERENCES product(product_id)
 );
 ```
+
+### Between 
+```sql 
+select first_name,last_name from patients where weight between 100 and 120;
+```
+used to get values between a range 
 ### Select Operations In Table
 #### Example For Select
 for pattern matching
@@ -193,7 +199,11 @@ WHERE name LIKE '_an___';
 
 ```
 
-
+### concat 
+used to concatenate 2 values together 
+```sql 
+SELECT CONCAT(first_name, ' ', last_name) AS full_name FROM patients;
+```
 
 ## Delete Truncate And Drop
 
