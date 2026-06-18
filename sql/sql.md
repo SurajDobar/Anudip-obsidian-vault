@@ -1,4 +1,5 @@
 - [Database Management Systems](#"Database""Management""Systems")
+- [Diff SQL Vs MySQL](#"Diff""SQL""Vs""MySQL")
 - [MySQL Benefits](#"MySQL""Benefits")
 - [Components Of DBMS](#"Components""Of""DBMS")
 - [ER Diagrams](#"ER""Diagrams")
@@ -8,9 +9,11 @@
         - [Example Creating A Table](#"Example""Creating""A""Table")
         - [Example Inserting Data](#"Example""Inserting""Data")
         - [Example Creating Foreign Key](#"Example""Creating""Foreign""Key")
+    - [Between](#"Between")
     - [Select Operations In Table](#"Select""Operations""In""Table")
         - [Example For Select](#"Example""For""Select")
         - [Example Underscore For Select](#"Example""Underscore""For""Select")
+    - [Concat](#"Concat")
 - [Delete Truncate And Drop](#"Delete""Truncate""And""Drop")
 - [Update And Alter](#"Update""And""Alter")
 - [Alter](#"Alter")
@@ -37,6 +40,9 @@
 - [Keys](#"Keys")
 - [Subquery](#"Subquery")
 - [Store Procedure](#"Store""Procedure")
+- [Trigger](#"Trigger")
+- [Index](#"Index")
+- [Small Notes](#"Small""Notes")
 
 ## Database Management Systems
 > [!summary] Core Concepts
@@ -48,9 +54,14 @@
 > 
 > **Types of Databases:**
 > 1. Relational (SQL)
-> 2. Non-relational (NoSQL)
+> 2. Non-relational (NoSQL) ex: mongodb 
 > 
 > **SQL:** Structured Query Language
+
+## Diff SQL Vs MySQL
+sql is language where we use to manage 
+
+, mysql is a software specific database management system , use of it we can interact with the sql system , 
 
 ## MySQL Benefits
 - **Cross-platform:** Runs on multiple operating systems.
@@ -199,7 +210,7 @@ WHERE name LIKE '_an___';
 
 ```
 
-### concat 
+### Concat 
 used to concatenate 2 values together 
 ```sql 
 SELECT CONCAT(first_name, ' ', last_name) AS full_name FROM patients;
@@ -210,7 +221,7 @@ SELECT CONCAT(first_name, ' ', last_name) AS full_name FROM patients;
 1. Delete only remove records and not the whole structure of a particular database 
 	u can remove specific rows
 
-2. Truncate use to remove all the rows , does not remove the structure 
+2. Truncate use to remove all the rows , does not remove the structure  ,truncate is faster then delete 
 
 3. Drop used to remove the ENTIRE table  with structure 
 
@@ -264,7 +275,7 @@ alter table employee modify email varchar(60) not null;
 
 ![[Pasted image 20260605164241.png]]
 
-#### Drop
+### Drop
 ```sql 
 alter table employee drop column email;
 ```
@@ -278,7 +289,7 @@ alter table employee_details drop primary key;
 ![[Pasted image 20260605165519.png]]
 
 
-#### Rename
+### Rename
 ```sql 
  alter table employee rename column email to emp_email, rename column phone to emp_phone;
 ```
@@ -293,7 +304,7 @@ alter table employee rename to employee_details;
 
 ---
 
-### Aggregation
+## Aggregation
 
 **aggregation** means **combining multiple rows of data into a single summarized value**.
 
@@ -331,7 +342,7 @@ select min(quantity) from orderdetails;
 ```
 
 
-### Operators
+## Operators
 ### Boolean Operators
 
 and ⇒  if both condition are true then the condition is valid
@@ -392,20 +403,20 @@ select * from orderdetails where quantity is not null;
 
 ---
 
-### Clause
+## Clause
 
-#### From
+### From
 Used to retrieve (fetch) data from one or more tables in a database.
 ```sQL
 SELECT * FROM employee;
 ```
-#### Where
+### Where
  based on condition Used to filter  the rows  , before the grouping ,not in aggregation function 
 ```sQL
 SELECT * FROM employee
 WHERE salary > 20000;
 ```
-#### Order By
+### Order By
 organise the data by ascending or descending order 
 ```sql 
 select * from orderdetails order by quantity;
@@ -419,17 +430,17 @@ select * from orderdetails order by quantity desc;
 ```
 ![[Pasted image 20260608173949.png]]
 
-#### Limit
+### Limit
 (doesnt work in sql server database )
 ```sql 
 select * from orderdetails limit 2 ;
 ```
 ![[Pasted image 20260608174439.png]]
 
-#### Top
+### Top
 not included in mysql 
 
-#### Group By
+### Group By
 arrange the data in the group format , for grouping purpose always use the Aggregation function  , grouping the rows , 
 ```sql
 select dept,count(*) as total_employee from employee group by dept;
@@ -441,7 +452,7 @@ select dept,sum(salary) as total_salary from employee group by dept;
 ```
 ![[Pasted image 20260609164940.png]]
 
-#### Having
+### Having
 used to filter the group, after grouping ,always comes with group by , can be used in aggregation function 
 ```sQL
 select dept,count(*) as total from employee group by dept having count(*) > 1;
@@ -473,7 +484,8 @@ inner joins , left joins ,  right outer join , full join , self join , cross joi
 4. full join 
 	return all the rows from both table 
 
-5. cross join represents the cartesian product 
+5. cross join,
+	represents the cartesian product 
 	 every record is connected to the other table record 
 
 6. self join 
@@ -513,7 +525,12 @@ select emp_name, dept_name from employee cross join dept ;
 
 
 ---
+
+> [!WARNING] # Use the anudip pdfs for more precise answers 
 ## Normalization
+### Normalization PDF
+<a href="obsidian://open?vault=Anudip-obsidian-vault&file=sql%2FAnudip-pdfs%2FNormalization.pdf" > Normalisation pdf </a> 
+
 is the process of organizing data in database to reduce redundancy
 
 first normal form (1NF)
@@ -523,6 +540,7 @@ Boyce Codd Normal form (BCNF)
 
 first normal form (1NF)
 	cant report multiple values in one cell
+	in first nf there is no second values something like taht 
 	![[Pasted image 20260612162928.png]]
 
 second nf(2nf)
@@ -546,17 +564,16 @@ Boyce Codd Normal form (BCNF)
 
 ---
 ## Keys
-- **Primary Key:** Uniquely identifies a record in a table. Every entity must have one primary key.
+- **Primary Key:** Uniquely identifies a record in a table. Every entity must have one primary key , primary key cannot be null .
 - **Attributes:** The specific properties or traits that describe an entity (e.g., a "Product" entity has attributes like *price*, *name*, and *stock*). 
 - **Foreign Key:** A field used to establish and maintain a relationship between two or more tables.
 - **Composite key** is a key where multiple records together to uniquely identify the rows  .
 - **Candidate key** is a column which can uniquely identify the rows.
 	candidate key can contain the multiple primary key 
-
  - **Unique key** all the values in the column is unique , only one null value is allowed
 
 --- 
-## subquery
+## Subquery
 subquery when in one query u add another query that is called subquery 
  
  Q. find the employee who earn more then one average salary 
@@ -566,9 +583,12 @@ subquery when in one query u add another query that is called subquery
  ![[Pasted image 20260612170241.png]]
 
 --- 
-## store procedure 
+> [!WARNING] ## Use the anudip pdfs for more precise answers 
+## Store Procedure
+### Stored Procedure PDF
+<a href="obsidian://open?vault=Anudip-obsidian-vault&file=sql%2FAnudip-pdfs%2FStored%20Procedure%20%26%20Trigger.pdf"> Store procedure pdf </a>
 
-store procedure is a pre compiled stored procedure , store procedure is faster 
+A Stored Procedure is a precompiled collection of SQL statements stored in a database and executed as a single unit. It helps improve performance, reusability, security, and maintainability.
 ![[Pasted image 20260612171245.png]]
 ![[Pasted image 20260612171117.png]]
 
@@ -661,21 +681,39 @@ call add_employee(6,'afjal','java devloper',2000);
 ![[Pasted image 20260615170340.png]]
 
 
-## trigger 
+## Trigger 
 
 trigger occurs when particular event occurs ,it triggers automatically
 
 	3 types 
 - before Trigger (use before =>insert , update , delete )
 - after trigger ,( execute after execution )
-- instead of trigger , (kya malum)
+- instead of trigger , Executes instead of the original operation (commonly used with views).
 
 
-## index 
+## Index 
 one data structure used to increase the speed of data retrieval 
 
 first index 
 
 primary key is a type of index type
 unique does not add duplicate values , also a type of index 
+
+--- 
+## Small Notes 
+views= virtual table based on the specific sql statement 
+
+transaction =sequence of operation works like a single unit 
+
+union removes all duplicate values 
+but union all keeps all the values 
+ex 
+```sql 
+select name from employee union all select name from the employee 
+```
+
+acid =
+atomicity ,consistency ,isolation, durability
+
+full join is not there in sql 
 

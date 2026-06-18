@@ -140,3 +140,13 @@ q. threats
 ![[Pasted image 20260616114639.png]]
 ![[Pasted image 20260616113913.png]]
 
+
+## interview questions 
+in every question try to give ur own personal experience so the interviewer can feel u have encountered it 
+4. Why do you want to work in the IT industry? Where do you see yourself in 5 years?
+5. What motivates you? 
+6. Tell me about a time you worked in a team.
+7. How do you handle stress and pressure?
+8. Have you ever had a conflict with a team member? How did you resolve it? 
+9. What does success mean to you?
+10. Why should we hire you?
