@@ -150,3 +150,38 @@ in every question try to give ur own personal experience so the interviewer can 
 8. Have you ever had a conflict with a team member? How did you resolve it? 
 9. What does success mean to you?
 10. Why should we hire you?
+
+### extra extra interview questions 
+1. what role are you looking for ?
+2. what [role] things u know about it (libraries , stack etc )?
+3. what is unique about u that i can hire you?
+4. shall i get more about u apart from your cv? 
+5. what have you done in your education ?
+6. anything else u have done i can get knowledge of ?
+7. tell me u have gained something when u were punctual ?
+8. how will u manage ur time and make sure ur working as well your hobbies ?
+9. can u tell me something more about how will you manage a conflict in your team ?
+10. what is your expected salary (important)
+
+for salary expectations / inquiry 
+glassdoor ([Glassdoor | Job Search and Career Community](https://www.glassdoor.co.in/index.htm))
+
+## Do you have any questions from us (from the recruiter )
+1. what could be growth path in the company from a to b role in the company?
+2. what technologies does the company use ?
+3. 
+4. how was my interview and do you have any feedback (at last)?
+
+## not to discuss in interview 
+
+1. never discuss holidays 
+2. 
+
+
+>[!attention] # Always give right examples at the right place 
+>
+
+
+
+
+
