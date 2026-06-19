@@ -716,4 +716,9 @@ acid =
 atomicity ,consistency ,isolation, durability
 
 full join is not there in sql 
+https://youtu.be/3s0lFtUrhSQ?si=FbjF-x3B9oRfFVPR
+		
+![[Pasted image 20260619131826.png]]
 
+![[Pasted image 20260619132105.png]]
+![[Pasted image 20260619132142.png]]
