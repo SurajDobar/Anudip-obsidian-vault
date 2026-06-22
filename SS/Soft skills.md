@@ -182,6 +182,56 @@ glassdoor ([Glassdoor | Job Search and Career Community](https://www.glassdoor.c
 >
 
 
-
+## Top 50 questions 
+1. Tell me about yourself. 
+2. What are your strengths and weaknesses? 
+3. Describe a challenge you faced and how you overcame it?
+4. Why do you want to work in the IT industry? 
+5. Where do you see yourself in 5 years? 
+6. What motivates you? 
+7. Tell me about a time you worked in a team. 
+8. How do you handle stress and pressure? 
+9. Have you ever had a conflict with a team member? How did you resolve it? 
+10. What does success mean to you? 
+11. Why should we hire you? 
+12. What are your hobbies and interests? 
+13. How do you prioritize your work? 
+14. What is your greatest achievement so far? 
+15. How do you stay updated with technology trends? 
+16. Describe a time you failed and what you learned from it. 
+17. What are your salary expectations? 
+18. Are you willing to relocate? 
+19. What do you know about our company? 
+20. How do you handle criticism? 
+21. Tell me about a time you took initiative. 
+22. What is your leadership style?
+23. What type of work environment do you prefer? 
+24. How do you manage time when handling multiple projects? 
+25. What's the most difficult decision you've ever made?
+26. What values are important to you in a workplace? 
+27. How do you define professionalism? 
+28. Have you ever led a project? What was your approach? 
+29. How would you describe your communication skills? 
+30. Tell me about a time you made a mistake and how you corrected it. 
+31. What is your approach to continuous learning? 
+32. What are your expectations from your manager? 
+33. How do you prepare for deadlines?  
+34. Have you ever worked with a difficult team member? 
+35. How do you ensure quality in your work? 
+36. What steps do you take to stay organized? 
+37. Describe your ideal job role. 
+38. How would your friends describe you? 
+39. Have you handled confidential information before? 
+40. What is your approach to conflict resolution? 
+41. Tell me about your adaptability to change. 
+42. Do you prefer working independently or in a team? 
+43. How do you deal with ambiguity? 
+44. What soft skills do you think are most important for IT professionals? 
+45. Have you participated in any extracurricular activities? 
+46. What are you currently doing to improve yourself? 
+47. Tell me about a time you impressed your teacher or mentor. 
+48. Have you ever missed a deadline? What happened? 
+49. Describe a time when you had to learn something quickly. 
+50. What's more important: technical skills or communication? Why?
 
 
