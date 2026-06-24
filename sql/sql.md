@@ -611,9 +611,6 @@ call show_all_values()
 ```
 
 
-
-
-
 ```sQL
 -- Change delimiter
 DELIMITER //
