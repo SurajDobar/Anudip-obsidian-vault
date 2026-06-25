@@ -90,3 +90,74 @@ is used for binary manipulation directly
 ![[Pasted image 20260617171744.png]]
 ![[Pasted image 20260617171756.png]]
 ![[Pasted image 20260617172201.png]]
+
+## what are different statements in python 
+![[Pasted image 20260624165254.png]]
+1. assignment statement 
+ex 
+a=10 
+
+2. expression statement 
+this is theoratical  
+
+3. print statement used to print the statement on the console 
+
+4. input used to take input from the user to assign the particular value to the variable 
+
+5. conditional statement 
+```
+bore hogaya 🥀
+```
+  break and continue statement 
+
+6. looping statement 
+	python does not support ```do while loop ```
+![[Pasted image 20260624165844.png]]
+```python 
+#write a program to print number from 1 to n take the value of n from the user , using for loop
+n = int(input("Enter a number: "))
+for i in range(1, n + 1):
+    print(i)
+```
+
+7. return statement 
+![[Pasted image 20260624170048.png]]
+
+
+
+## Match case (switch case)
+
+```python 
+#write a program for match case (switch)
+#1-Monday 2-Tuesday 3-Wednesday 4-Thursday 5-Friday 6-Saturday 7-Sunday
+day=int(input("Enter a number between 1 to 7: "))
+match day:
+    case 1:
+        print("Monday")
+    case 2:
+        print("Tuesday")
+    case 3:
+        print("Wednesday")
+    case 4:
+        print("Thursday")
+    case 5:
+        print("Friday")
+    case 6:
+        print("Saturday")
+    case 7:
+        print("Sunday")
+    case _:
+        print("Invalid input")
+   #Enter a number between 1 to 7: 1
+```
+
+
+
+### Armstrong number 
+when a numbers digit s are cubed and added together the result is equal to the original number
+then its called armstrong number ex. 153 => 1^3 + 5^3 + 3^3 = 153
+
+### fibonacci series 
+fibonacci series is a series of numbers where each number is the sum of the two preceding ones, usually starting with 0 and 1.
+
+###

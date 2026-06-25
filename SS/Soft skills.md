@@ -235,3 +235,9 @@ glassdoor ([Glassdoor | Job Search and Career Community](https://www.glassdoor.c
 50. What's more important: technical skills or communication? Why?
 
 
+## Handling rejection 
+![[Pasted image 20260625111940.png]]
+
+jack ma (alibaba founder ) story summary: 
+	what we learned in this video is never to give up , follow ur dreams and 
+	most importantly we should belive our selves then on other 
