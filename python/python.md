@@ -157,7 +157,58 @@ match day:
 when a numbers digit s are cubed and added together the result is equal to the original number
 then its called armstrong number ex. 153 => 1^3 + 5^3 + 3^3 = 153
 
-### fibonacci series 
-fibonacci series is a series of numbers where each number is the sum of the two preceding ones, usually starting with 0 and 1.
+```python 
+n=int(input("Enter your number "))
+sum=0
+temp=n
+while temp>0:
+    digit=temp%10
+    sum+=digit**3
+    temp//=10
 
-###
+if n == sum:
+    print(n, "is an Armstrong number")
+else:
+    print(n, "is not an Armstrong number")
+   
+'''
+output of 153
+153, is an Armstrong number
+ '''
+```
+
+### Fibonacci series 
+Fibonacci series is a series of numbers where each number is the sum of the two preceding ones, usually starting with 0 and 1.
+
+```python 
+n=int(input("Enter number for fibonacci"))
+a=1
+b=1
+for i in range (1,n+1):
+    print(a)
+    c=a+b
+    a=b
+    b=c
+'''output of 8
+1 1 2 3 5 8'''
+```
+
+### Perfect number 
+  A number is perfect when the sum of its proper divisors is equal to the number itself. For example, 6 is a perfect number because its divisors are 1, 2, and 3, and their sum is 6.
+  ```python 
+  n = int(input("Enter a number: "))
+sum = 0
+for i in range(1, n):
+    if n % i == 0:
+        sum += i
+        
+if sum == n:
+    print("The number is a perfect number.")
+else:
+    print("The number is not a perfect number.")
+'''
+output of 6
+The number is a perfect number.
+ ''' 
+    
+  ```
