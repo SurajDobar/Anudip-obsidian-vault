@@ -11,5 +11,6 @@
   "obsidian-excalidraw-plugin",
   "enhanced-symbols-prettifier",
   "obsidian-completr",
-  "calendar"
+  "calendar",
+  "jupyter-viewer"
 ]

@@ -240,4 +240,40 @@ glassdoor ([Glassdoor | Job Search and Career Community](https://www.glassdoor.c
 
 jack ma (alibaba founder ) story summary: 
 	what we learned in this video is never to give up , follow ur dreams and 
-	most importantly we should belive our selves then on other 
+	most importantly we should believe our selves then on other 
+
+
+![[Pasted image 20260626114527.png]]
+
+## Stress management
+![[Pasted image 20260629181726.png]]
+
+==when in stress u cant think positively== 
+
+- listen music (songs with no words "instrumental" ) ex: lofi songs
+-  concentrate on your breath
+
+### short stress
+where it is not of your need but u still think of it
+```example
+stress of upcoming results when u have given exams 2 month ago
+```
+- is it real right now
+- is it really true
+
+
+5 why's 
+why did it happened
+kya malum bc 🥀
+
+
+
+
+
+
+
+
+
+
+
+
