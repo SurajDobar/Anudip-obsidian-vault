@@ -266,14 +266,25 @@ stress of upcoming results when u have given exams 2 month ago
 why did it happened
 kya malum bc 🥀
 
+## Formal emails
+## DONT ADD EMOJIS IN FORMAL MAILS
+![[Pasted image 20260630181928.png]]
+CC : carbon copy 
+	when u know who to send 
+BCC :Blank Carbon copy
 
+![[Pasted image 20260630182455.png]]
+![[Pasted image 20260630182543.png]]
 
+Subject : 
+is for what task we want the others to do or something like it 
+![[Pasted image 20260630183257.png|697]]
 
+This email is wrong :
+![[Pasted image 20260630183538.png]]
 
-
-
-
-
+right email:
+![[Pasted image 20260630185147.png]]
 
 
 

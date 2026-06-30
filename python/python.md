@@ -10,7 +10,6 @@
     - [Global Local Variable](#"Global""Local""Variable")
   - [Comment](#"Comment")
   - [Constant Variable](#"Constant""Variable")
-
 - [Operators](#"Operators")
 - [What Are Different Statements In Python](#"What""Are""Different""Statements""In""Python")
 - [Match Case Switch Case](#"Match""Case""Switch""Case")
@@ -20,6 +19,16 @@
   - [Function](#"Function")
     - [Why Use Function](#"Why""Use""Function")
     - [Two Types Of Function](#"Two""Types""Of""Function")
+- [String](#"String")
+  - [String Operations](#"String""Operations")
+    - [Case Conversion Upper And Lower](#"Case""Conversion""Upper""And""Lower")
+    - [Replace Substring Replace](#"Replace""Substring""Replace")
+    - [Split And Join Split And Join](#"Split""And""Join""Split""And""Join")
+    - [Search And Count Find Len Count](#"Search""And""Count""Find""Len""Count")
+    - [Prefix And Suffix Check Startswith And Endswith](#"Prefix""And""Suffix""Check""Startswith""And""Endswith")
+    - [Remove Extra Spaces Strip Lstrip Rstrip](#"Remove""Extra""Spaces""Strip""Lstrip""Rstrip")
+    - [Validation Methods Isalpha Isdigit Isalnum](#"Validation""Methods""Isalpha""Isdigit""Isalnum")
+    - [Indexing And Slicing](#"Indexing""And""Slicing")
 
 https://share.google/0chz6vfQdUuM0Q1ob
 
@@ -268,17 +277,19 @@ return result # Return statement (optional)
 ![[Pasted image 20260629165327.png]]
 ![[Pasted image 20260629165410.png]]
 
-## What is a string <a href="obsidian://open?vault=Anudip-obsidian-vault&file=python%2Fpython%20ipynb%2Fday7.ipynb">string code </a>
+## String
+<a href="obsidian://open?vault=Anudip-obsidian-vault&file=python%2Fpython%20ipynb%2Fday7.ipynb">String Code </a>
 
+What is a String
 - string is a sequence of character enclosed in a single or double quote 
 declared in 2 ways ⇒ '' , ""
 - string is immutable 
 - string starts from the index 0
-- 
 
-#### String operations 
 
-##### Case conversion (`upper()` and `lower()`)
+### String Operations
+
+##### Case Conversion Upper And Lower
 Used to convert a string into uppercase or lowercase.
 
 ```python
@@ -293,7 +304,7 @@ Output:
 '''
 ```
 
-##### Replace substring (`replace()`)
+##### Replace Substring Replace
 Used to replace one part of a string with another value.
 
 ```python
@@ -308,7 +319,7 @@ Output:
 ```
 
 
-##### Split and join (`split()` and `join()`)
+##### Split And Join Split And Join
 `split()` breaks string into a list, and `join()` combines list items into one string.
 
 ```python
@@ -325,7 +336,7 @@ Output:
 '''
 ```
 
-##### Search and count (`find()`, `len()`, `count()`)
+##### Search And Count Find Len Count
 Used to find index, total length, and number of occurrences.
 
 ```python
@@ -342,7 +353,7 @@ Output:
 '''
 ```
 
-##### Prefix and suffix check (`startswith()` and `endswith()`)
+##### Prefix And Suffix Check Startswith And Endswith
 Checks if a string starts or ends with a specific pattern.
 
 ```python
@@ -357,7 +368,7 @@ Output:
 '''
 ```
 
-##### Remove extra spaces (`strip()`, `lstrip()`, `rstrip()`)
+##### Remove Extra Spaces Strip Lstrip Rstrip
 Used to remove whitespace from both sides, left side, or right side.
 
 ```python
@@ -374,7 +385,7 @@ Output:
 '''
 ```
 
-##### Validation methods (`isalpha()`, `isdigit()`, `isalnum()`)
+##### Validation Methods Isalpha Isdigit Isalnum
 Used to check character types inside the string.
 
 ```python
@@ -397,7 +408,7 @@ Output:
 '''
 ```
 
-##### Indexing and slicing
+##### Indexing And Slicing
 Used to access characters using index positions.
 
 ```python
