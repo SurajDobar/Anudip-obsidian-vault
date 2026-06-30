@@ -3,21 +3,21 @@
 - [Why Use Python](#"Why""Use""Python")
 - [What Is Editor](#"What""Is""Editor")
 - [Basic Concepts](#"Basic""Concepts")
-  - [Function](#"Function")
+  - [Functionn](#"Functionn")
   - [Variable](#"Variable")
     - [Rules For Variable](#"Rules""For""Variable")
     - [To Check The Inbuilt Keywords](#"To""Check""The""Inbuilt""Keywords")
     - [Global Local Variable](#"Global""Local""Variable")
   - [Comment](#"Comment")
   - [Constant Variable](#"Constant""Variable")
-- [Function](#"Function")
+
 - [Operators](#"Operators")
 - [What Are Different Statements In Python](#"What""Are""Different""Statements""In""Python")
 - [Match Case Switch Case](#"Match""Case""Switch""Case")
   - [Armstrong Number](#"Armstrong""Number")
   - [Fibonacci Series](#"Fibonacci""Series")
   - [Perfect Number](#"Perfect""Number")
-  - [Function Function Pdf](#"Function""Function""Pdf")
+  - [Function](#"Function")
     - [Why Use Function](#"Why""Use""Function")
     - [Two Types Of Function](#"Two""Types""Of""Function")
 
@@ -46,7 +46,7 @@ types of editor
 - vs code,  idle , jupyter , pycharm , spyder
 ---
 ## Basic Concepts
-### Function
+### Functionn
 function is a block of statement where u can perform a particular task 
 function=method 
 
@@ -90,15 +90,6 @@ PI=3.14
 
 
 ---
-
-## Function
-To create a function in python we use the def keyword 
-```python
-name='jethalal'
-def display():
-    print(name)
-display()
-```
 
 ## Operators
 ![[Pasted image 20260617170707.png]]
@@ -236,7 +227,8 @@ The number is a perfect number.
     
 ```
 
-### Function Function Pdf
+### Function
+<a href="obsidian://open?vault=Anudip-obsidian-vault&file=python%2Fpython%20pdf%2FFunctions.pdf">Function Pdf</a> <a href="obsidian://open?vault=Anudip-obsidian-vault&file=python%2Fpython%20ipynb%2Fday6.ipynb">Function code </a>
 
 - it is a collection of statement used for performing a particular task
 - is a reusable block (can be used n number of times)
@@ -276,3 +268,152 @@ return result # Return statement (optional)
 ![[Pasted image 20260629165327.png]]
 ![[Pasted image 20260629165410.png]]
 
+## What is a string <a href="obsidian://open?vault=Anudip-obsidian-vault&file=python%2Fpython%20ipynb%2Fday7.ipynb">string code </a>
+
+- string is a sequence of character enclosed in a single or double quote 
+declared in 2 ways ⇒ '' , ""
+- string is immutable 
+- string starts from the index 0
+- 
+
+#### String operations 
+
+##### Case conversion (`upper()` and `lower()`)
+Used to convert a string into uppercase or lowercase.
+
+```python
+str_val = "Suraj"
+print("Upper case:", str_val.upper())
+print("Lower case:", str_val.lower())
+
+'''
+Output:
+ Upper case: SURAJ
+ Lower case: suraj
+'''
+```
+
+##### Replace substring (`replace()`)
+Used to replace one part of a string with another value.
+
+```python
+str1 = "I am learning python programming"
+rep = str1.replace("python", "java")
+print("Replaced string:", rep)
+
+'''
+Output:
+ Replaced string: I am learning java programming
+'''
+```
+
+
+##### Split and join (`split()` and `join()`)
+`split()` breaks string into a list, and `join()` combines list items into one string.
+
+```python
+str2 = "I am learning python programming"
+print("Split string:", str2.split(" "))
+
+str3 = ["i", "am", "learning", "python", "programming"]
+print("Joined string:", "".join(str3))
+
+'''
+Output:
+ Split string: ['I', 'am', 'learning', 'python', 'programming']
+ Joined string: iamlearningpythonprogramming
+'''
+```
+
+##### Search and count (`find()`, `len()`, `count()`)
+Used to find index, total length, and number of occurrences.
+
+```python
+str4 = "I am learning python programming"
+print("Index of 'python':", str4.find("python"))
+print("Length of the string:", len(str4))
+print("Count of 'python':", str4.count("python"))
+
+'''
+Output:
+ Index of 'python': 14
+ Length of the string: 32
+ Count of 'python': 1
+'''
+```
+
+##### Prefix and suffix check (`startswith()` and `endswith()`)
+Checks if a string starts or ends with a specific pattern.
+
+```python
+str5 = "python"
+print("Starts with 'py':", str5.startswith("py"))
+print("Ends with 'on':", str5.endswith("on"))
+
+'''
+Output:
+ Starts with 'py': True
+ Ends with 'on': True
+'''
+```
+
+##### Remove extra spaces (`strip()`, `lstrip()`, `rstrip()`)
+Used to remove whitespace from both sides, left side, or right side.
+
+```python
+str6 = "        I am learning python programming     "
+print("String after stripping whitespace:", str6.strip())
+print("String after left stripping:", str6.lstrip())
+print("String after right stripping:", str6.rstrip())
+
+'''
+Output:
+ String after stripping whitespace: I am learning python programming
+ String after left stripping: I am learning python programming     
+ String after right stripping:         I am learning python programming
+'''
+```
+
+##### Validation methods (`isalpha()`, `isdigit()`, `isalnum()`)
+Used to check character types inside the string.
+
+```python
+str7 = "python class"
+print("String contains only alphabetic characters:", str7.isalpha())
+
+str8 = "1234"
+print("String contains only digits:", str8.isdigit())
+
+str9 = "python class1234"
+print("String contains only alphanumeric characters:", str9.isalnum())
+print("String after removing whitespace:", str9.replace(" ", "").isalnum())
+
+'''
+Output:
+ String contains only alphabetic characters: False
+ String contains only digits: True
+ String contains only alphanumeric characters: False
+ String after removing whitespace: True
+'''
+```
+
+##### Indexing and slicing
+Used to access characters using index positions.
+
+```python
+str10 = "python"
+print("Second last character:", str10[-2])
+print("First two characters:", str10[:2])
+print("Characters from index 0 to 2:", str10[0:2])
+print("Characters from index 2 to end:", str10[2:])
+print("Characters from index 2 to 6:", str10[2:6])
+
+'''
+Output:
+ Second last character: o
+ First two characters: py
+ Characters from index 0 to 2: py
+ Characters from index 2 to end: thon
+ Characters from index 2 to 6: thon
+'''
+```
