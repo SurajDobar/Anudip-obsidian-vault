@@ -1,7 +1,4 @@
 - [Python](#"Python")
-- [What Is Python](#"What""Is""Python")
-- [Why Use Python](#"Why""Use""Python")
-- [What Is Editor](#"What""Is""Editor")
 - [Basic Concepts](#"Basic""Concepts")
   - [Functionn](#"Functionn")
   - [Variable](#"Variable")
@@ -11,23 +8,23 @@
   - [Comment](#"Comment")
   - [Constant Variable](#"Constant""Variable")
 - [Operators](#"Operators")
-- [What Are Different Statements In Python](#"What""Are""Different""Statements""In""Python")
+- [Statements](#"Statements")
 - [Match Case Switch Case](#"Match""Case""Switch""Case")
-  - [Armstrong Number](#"Armstrong""Number")
-  - [Fibonacci Series](#"Fibonacci""Series")
-  - [Perfect Number](#"Perfect""Number")
-  - [Function](#"Function")
-    - [Why Use Function](#"Why""Use""Function")
+- [Armstrong Number](#"Armstrong""Number")
+- [Fibonacci Series](#"Fibonacci""Series")
+- [Perfect Number](#"Perfect""Number")
+- [Function](#"Function")
+	- [Why Use Function](#"Why""Use""Function")
     - [Two Types Of Function](#"Two""Types""Of""Function")
 - [String](#"String")
   - [String Operations](#"String""Operations")
-    - [Case Conversion Upper And Lower](#"Case""Conversion""Upper""And""Lower")
-    - [Replace Substring Replace](#"Replace""Substring""Replace")
-    - [Split And Join Split And Join](#"Split""And""Join""Split""And""Join")
-    - [Search And Count Find Len Count](#"Search""And""Count""Find""Len""Count")
-    - [Prefix And Suffix Check Startswith And Endswith](#"Prefix""And""Suffix""Check""Startswith""And""Endswith")
-    - [Remove Extra Spaces Strip Lstrip Rstrip](#"Remove""Extra""Spaces""Strip""Lstrip""Rstrip")
-    - [Validation Methods Isalpha Isdigit Isalnum](#"Validation""Methods""Isalpha""Isdigit""Isalnum")
+    - [Upper And Lower](#"Upper""And""Lower")
+    - [Replace](#"Replace")
+    - [Split And Join](#"Split""And""Join")
+    - [Find Len Count](#"Find""Len""Count")
+    - [Startswith And Endswith](#"Startswith""And""Endswith")
+    - [Strip,Lstrip,Rstrip](#"Strip,Lstrip,Rstrip")
+    - [Isalpha,Isdigit,Isalnum](#"Isalpha,Isdigit,Isalnum")
     - [Indexing And Slicing](#"Indexing""And""Slicing")
 
 https://share.google/0chz6vfQdUuM0Q1ob
@@ -114,7 +111,8 @@ is used for binary manipulation directly
 ![[Pasted image 20260617171756.png]]
 ![[Pasted image 20260617172201.png]]
 
-## What Are Different Statements In Python
+## statements
+What Are Different Statements In Python
 ![[Pasted image 20260624165254.png]]
 1. assignment statement 
 ex 
@@ -289,7 +287,7 @@ declared in 2 ways ⇒ '' , ""
 
 ### String Operations
 
-##### Case Conversion Upper And Lower
+##### Upper And Lower
 Used to convert a string into uppercase or lowercase.
 
 ```python
@@ -304,7 +302,7 @@ Output:
 '''
 ```
 
-##### Replace Substring Replace
+##### Replace
 Used to replace one part of a string with another value.
 
 ```python
@@ -319,7 +317,7 @@ Output:
 ```
 
 
-##### Split And Join Split And Join
+##### Split And Join
 `split()` breaks string into a list, and `join()` combines list items into one string.
 
 ```python
@@ -336,7 +334,7 @@ Output:
 '''
 ```
 
-##### Search And Count Find Len Count
+##### Find Len Count
 Used to find index, total length, and number of occurrences.
 
 ```python
@@ -353,7 +351,7 @@ Output:
 '''
 ```
 
-##### Prefix And Suffix Check Startswith And Endswith
+##### Startswith And Endswith
 Checks if a string starts or ends with a specific pattern.
 
 ```python
@@ -368,7 +366,7 @@ Output:
 '''
 ```
 
-##### Remove Extra Spaces Strip Lstrip Rstrip
+##### Strip, Lstrip,Rstrip
 Used to remove whitespace from both sides, left side, or right side.
 
 ```python
@@ -385,7 +383,7 @@ Output:
 '''
 ```
 
-##### Validation Methods Isalpha Isdigit Isalnum
+##### Isalpha,Isdigit,Isalnum
 Used to check character types inside the string.
 
 ```python
