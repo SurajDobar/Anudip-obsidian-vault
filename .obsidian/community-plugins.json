@@ -12,5 +12,6 @@
   "enhanced-symbols-prettifier",
   "obsidian-completr",
   "calendar",
-  "code-emitter"
+  "code-emitter",
+  "jupyter-viewer"
 ]

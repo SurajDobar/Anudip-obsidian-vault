@@ -1,4 +1,7 @@
 - [Python](#"Python")
+- [What Is Python](#"What""Is""Python")
+- [Why Use Python](#"Why""Use""Python")
+- [What Is Editor](#"What""Is""Editor")
 - [Basic Concepts](#"Basic""Concepts")
   - [Functionn](#"Functionn")
   - [Variable](#"Variable")
@@ -26,6 +29,20 @@
     - [Strip,Lstrip,Rstrip](#"Strip,Lstrip,Rstrip")
     - [Isalpha,Isdigit,Isalnum](#"Isalpha,Isdigit,Isalnum")
     - [Indexing And Slicing](#"Indexing""And""Slicing")
+- [List](#"List")
+  - [Update List Element](#"Update""List""Element")
+  - [Functions In List](#"Functions""In""List")
+    - [Append And Length](#"Append""And""Length")
+    - [Insert](#"Insert")
+    - [Remove](#"Remove")
+    - [Pop](#"Pop")
+    - [Index](#"Index")
+    - [Count](#"Count")
+    - [Sort And Reverse](#"Sort""And""Reverse")
+    - [Copy](#"Copy")
+    - [Descending Sort](#"Descending""Sort")
+    - [Looping In List](#"Looping""In""List")
+  - [Assignments In List](#"Assignments""In""List")
 
 https://share.google/0chz6vfQdUuM0Q1ob
 
@@ -424,5 +441,286 @@ Output:
  Characters from index 0 to 2: py
  Characters from index 2 to end: thon
  Characters from index 2 to 6: thon
+'''
+```
+
+## List
+is a one data structure where we can store various datatypes values 
+
+- list is mutable (changeable),and stores heterogenous values
+- not fixed size ,dynamic size, (shrink and grow ),
+- heterogenous data =different types of data ,
+- we can maintain the order , elements are stored and in the same sequence 
+
+```python
+#creating the list 
+list1=["apple", 2,4.4,True]
+print(list1) #accessing the list
+print("Float value:",list1[2]) #accessing the float value
+print("Boolean element:",list1[3]) #accessing the boolean element
+print("Slice of list:",list1[1:3]) #accessing the slice of list
+
+'''
+Output:
+ ['apple', 2, 4.4, True]
+ Float value: 4.4
+ Boolean element: True
+ Slice of list: [2, 4.4]
+'''
+```
+
+##### Update list element
+Used to update value at a specific index.
+
+```python
+list1=["apple", 2,4.4,True]
+list1[2]=10 
+print("Updated list:",list1)
+
+'''
+Output:
+ Updated list: ['apple', 2, 10, True]
+'''
+```
+
+### Functions in list 
+##### Append and length
+`append()` adds element at the end and `len()` returns list size.
+
+```python
+list2=["banana",1,3.5]
+list2.append("mango")
+print("List with new element:",list2)
+print("Length of the list:",len(list2))
+
+'''
+Output:
+ List with new element: ['banana', 1, 3.5, 'mango']
+ Length of the list: 4
+'''
+```
+
+##### Insert
+`insert()` adds an element at a specific index.
+
+```python
+list3=["grapes",5,2.5]
+list3.insert(1,"kiwi")
+print("List with inserted element:",list3)
+
+'''
+Output:
+ List with inserted element: ['grapes', 'kiwi', 5, 2.5]
+'''
+```
+
+##### Remove
+`remove()` deletes the first occurrence of a value.
+
+```python
+list4=["orange",3,1.5]
+list4.remove(3)
+print("List after removing 3 element:",list4)
+
+'''
+Output:
+ List after removing 3 element: ['orange', 1.5]
+'''
+```
+
+##### Pop
+`pop()` removes and returns element from given index.
+
+```python
+list5=["watermelon",4,2.0]
+popped_element=list5.pop(1)
+print("Popped element:",popped_element)
+print("List after popping an element:",list5)
+
+'''
+Output:
+ Popped element: 4
+ List after popping an element: ['watermelon', 2.0]
+'''
+```
+
+##### Index
+`index()` returns the index of first occurrence.
+
+```python
+list6=["peach",6,3.0]
+index_of_peach=list6.index("peach")
+print("Index of 'peach':",index_of_peach)
+
+'''
+Output:
+ Index of 'peach': 0
+'''
+```
+
+##### Count
+`count()` returns how many times a value appears.
+
+```python
+list7=["pear",7,3.5,"pear"]
+count_of_pear=list7.count("pear")
+print("Count of 'pear':",count_of_pear)
+
+'''
+Output:
+ Count of 'pear': 2
+'''
+```
+
+##### Sort and reverse
+`sort()` arranges ascending and `reverse()` reverses the list.
+
+```python
+list8=[5,2,9,1,5,6]
+list8.sort()
+print("Sorted list:",list8)
+
+list8.reverse()
+print("Reversed list:",list8)
+
+'''
+Output:
+ Sorted list: [1, 2, 5, 5, 6, 9]
+ Reversed list: [9, 6, 5, 5, 2, 1]
+'''
+```
+
+##### Copy
+`copy()` creates a shallow copy of list.
+
+```python
+list9=["cherry",8,4.0]
+list10=list9.copy()
+print("Copied list:",list10)
+
+'''
+Output:
+ Copied list: ['cherry', 8, 4.0]
+'''
+```
+
+##### Descending sort 
+using slicing and sorted
+Two ways to get descending order list.
+
+```python
+list11=[1,2,34,53,6,7,8,9]
+list11.sort()
+print("Reversed sorted list:",list11[::-1])
+
+list12=[1,2,32,44,5]
+desc=sorted(list12,reverse=True)
+print("Sorted list in descending order:",desc)
+
+'''
+Output:
+ Reversed sorted list: [53, 34, 9, 8, 7, 6, 2, 1]
+ Sorted list in descending order: [44, 32, 5, 2, 1]
+'''
+```
+
+##### Looping in list 
+(for, while, enumerate)
+Used to iterate list elements in different ways.
+
+```python
+list13=[1,2,3,4,5,8]
+print("for loop")
+for i in list13:
+    print("Element:",i)
+print()
+
+print("while loop")
+i=0
+while i<len(list13):
+    print("Element:",list13[i])
+    i+=1
+print()
+
+print("enumerate function")
+list14=[1,22,26,41,5]
+for index,value in enumerate(list14):
+    print("Index:",index,"Value:",value)
+
+'''
+Output:
+ for loop
+ Element: 1
+ Element: 2
+ Element: 3
+ Element: 4
+ Element: 5
+ Element: 8
+ 
+ while loop
+ Element: 1
+ Element: 2
+ Element: 3
+ Element: 4
+ Element: 5
+ Element: 8
+ 
+ enumerate function
+ Index: 0 Value: 1
+ Index: 1 Value: 22
+ Index: 2 Value: 26
+ Index: 3 Value: 41
+ Index: 4 Value: 5
+'''
+```
+
+### assignments in list 
+1.  Even and odd numbers from list
+Separates list values into even and odd lists.
+
+```python
+list15=[1,2,3,4,5,6,7,8,9,10]
+even_numbers=[]
+odd_numbers=[]
+for i in list15:
+    if i%2==0:
+        even_numbers.append(i)
+    else:
+        odd_numbers.append(i)
+print("Even numbers:",even_numbers)
+print("Odd numbers:",odd_numbers)
+
+'''
+Output:
+ Even numbers: [2, 4, 6, 8, 10]
+ Odd numbers: [1, 3, 5, 7, 9]
+'''
+```
+
+2. Maximum number in list
+`max()` gives the largest value in the list.
+
+```python
+list16=[1,2,3,4,5,6,7,8,9,10]
+max_number=max(list16)
+print("Maximum number:",max_number)
+
+'''
+Output:
+ Maximum number: 10
+'''
+```
+
+3. Second largest number in list
+Sort in reverse and pick index `1`.
+
+```python
+list17=[20,25,45,22,68]
+list17.sort(reverse=True)
+print("Second largest number:",list17[1])
+
+'''
+Output:
+ Second largest number: 45
 '''
 ```
