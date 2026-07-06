@@ -43,6 +43,22 @@
     - [Descending Sort](#"Descending""Sort")
     - [Looping In List](#"Looping""In""List")
   - [Assignments In List](#"Assignments""In""List")
+- [Dictionary](#"Dictionary")
+  - [Dictionary Functions](#"Dictionary""Functions")
+    - [Create And Copy Dictionary](#"Create""And""Copy""Dictionary")
+    - [Clear Dictionary](#"Clear""Dictionary")
+    - [Items, Get, Keys, Values](#"Items,""Get,""Keys,""Values")
+    - [Pop](#"Pop")
+    - [Popitem](#"Popitem")
+  - [Looping Through Dictionary](#"Looping""Through""Dictionary")
+    - [Looping Through Dictionary Keys](#"Looping""Through""Dictionary""Keys")
+    - [Looping Through Dictionary Values](#"Looping""Through""Dictionary""Values")
+    - [Looping Through Key–Value Pairs](#"Looping""Through""Key–Value""Pairs")
+   - [Update Dictionary Value](#"Update""Dictionary""Value")
+   - [Duplicate Keys Overwrite](#"Duplicate""Keys""Overwrite")
+   - [Multiple Keys In Dictionary](#"Multiple""Keys""In""Dictionary")
+   - [Nested Dictionary](#"Nested""Dictionary")
+   - [Check If Key Exists](#"Check""If""Key""Exists")
 
 https://share.google/0chz6vfQdUuM0Q1ob
 
@@ -722,5 +738,233 @@ print("Second largest number:",list17[1])
 '''
 Output:
  Second largest number: 45
+'''
+```
+
+
+## Dictionary
+A **dictionary in Python** is a built‑in data structure that stores **key–value pairs**
+where each key is **unique and immutable**, 
+and values can be of any type.
+Dictionaries are **mutable** and allow **fast access** to values using their keys.
+
+- mutable 
+- access the value with the help of the ==key== 
+- duplicate key are not allowed 
+- duplicate key added overwrites the previous key 
+- value can be duplicates 
+
+	dictionary is used with =>{key: value }
+
+### Dictionary Functions
+
+##### Create and copy dictionary
+Create an empty or populated dictionary, and copy it using `copy()`.
+
+```python
+dict1={'Name':'Zara','course':'Python','id':123}
+print(dict1)
+print(dict1['Name'])
+
+copy_student=dict1.copy()
+print('copy function:',copy_student)
+
+'''
+Output:
+ {'Name': 'Zara', 'course': 'Python', 'id': 123}
+ Zara
+ copy function: {'Name': 'Zara', 'course': 'Python', 'id': 123}
+'''
+```
+
+##### Clear dictionary
+`clear()` removes all key–value pairs from the dictionary.
+
+```python
+copy_student={'Name':'Zara','course':'Python','id':123}
+copy_student.clear()
+print('clear function:',copy_student)
+
+'''
+Output:
+ clear function: {}
+'''
+```
+
+##### Items, get, keys, values
+Returns tuple list, value by key, all keys, and all values respectively.
+
+```python
+student1={'Name':'Zara','course':'Python','id':123}
+student_items=student1.items()
+print('.items() =>',student_items)
+print('.get() =>',student1.get('Name'))
+print('.keys() =>',student1.keys())
+print('.values() =>',student1.values())
+
+'''
+Output:
+ .items() => dict_items([('Name', 'Zara'), ('course', 'Python'), ('id', 123)])
+ .get() => Zara
+ .keys() => dict_keys(['Name', 'course', 'id'])
+ .values() => dict_values(['Zara', 'Python', 123])
+'''
+```
+
+##### Pop
+`pop()` removes a key–value pair by key and returns the value.
+
+```python
+student1={'Name':'Zara','course':'Python','id':123}
+value=student1.pop('course')
+print('.pop() =>',value)
+print(student1)
+
+'''
+Output:
+ .pop() => Python
+ {'Name': 'Zara', 'id': 123}
+'''
+```
+
+##### Popitem
+`popitem()` removes and returns the last inserted key–value pair as a tuple.
+
+```python
+dict1={"emp_id":101,"salary":10000,"dept":"IT"}
+item=dict1.popitem()
+print('.popitem() =>',item)
+
+'''
+Output:
+ .popitem() => ('dept', 'IT')
+'''
+```
+
+### Looping through dictionary 
+
+1. Looping dictionary keys
+Iterate over dictionary keys using a for loop.
+
+```python
+dict2={'Name':'Zara','course':'Python','id':123}
+print('keys of the dictionary:')
+for key in dict2:
+    print(key)
+
+'''
+Output:
+ keys of the dictionary:
+ Name
+ course
+ id
+'''
+```
+
+2. Looping dictionary values
+Iterate over dictionary values using `dict.values()`.
+
+```python
+dict2={'Name':'Zara','course':'Python','id':123}
+print("values for dictionary:")
+for values in dict2.values():
+    print(values)
+
+'''
+Output:
+ values for dictionary:
+ Zara
+ Python
+ 123
+'''
+```
+
+3. Looping through key–value pairs
+Iterate over key–value pairs using `dict.items()`.
+
+```python
+dict2={'Name':'Zara','course':'Python','id':123}
+print("key and values for dictionary:")
+for key,values in dict2.items():
+    print(key,values)
+
+'''
+Output:
+ key and values for dictionary:
+ Name Zara
+ course Python
+ id 123
+'''
+```
+
+##### Update dictionary value
+Access and update value by key name.
+
+```python
+dict3={"Name":"suraj"}
+dict3["Name"]="suraj dobar"
+print("updated dictionary:",dict3)
+
+'''
+Output:
+ updated dictionary: {'Name': 'suraj dobar'}
+'''
+```
+
+##### Duplicate keys overwrite
+If same key added twice, last value overwrites the first.
+
+```python
+dict4={"Name":"suraj","course":"Python","Name":"suraj dobar"}
+print("updated dictionary with duplicate key:",dict4)
+
+'''
+Output:
+ updated dictionary with duplicate key: {'Name': 'suraj dobar', 'course': 'Python'}
+'''
+```
+
+##### Multiple keys in dictionary
+Store multiple key–value pairs with any data type.
+
+```python
+dict5={"suraj":99,"vikas":-99,"sachin":100}
+print("dictionary with multiple keys:",dict5)
+
+'''
+Output:
+ dictionary with multiple keys: {'suraj': 99, 'vikas': -99, 'sachin': 100}
+'''
+```
+
+##### Nested dictionary
+Dictionary inside a dictionary for hierarchical data.
+
+```python
+students={
+    "101":{"Name":"suraj","course":"Python"},
+    "102":{"Name":"vikas","course":"Java"},
+}
+print(students["101"]["Name"])
+
+'''
+Output:
+ suraj
+'''
+```
+
+##### Check if key exists
+Use `in` operator to check key presence.
+
+```python
+dict6={"suraj":99,"vikas":-99,"sachin":100}
+if "Aarish" in dict6:
+    print("Aarish is present in the dictionary")
+else :
+    print("key not exist")
+
+'''
+Output:
+ key not exist
 '''
 ```

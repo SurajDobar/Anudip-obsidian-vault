@@ -1,3 +1,7 @@
+```cmd
+Use Tabl_of_contents.md. Read and update file <file>, update from topic latest today 
+```
+
 > [!WARNING] # ⚠️ STRICTLY FOR GEMINI ⚠️
 > ## THIS FILE IS FOR AI CONSUMPTION AND MODIFICATION ONLY.
 > **DO NOT MANUALLY EDIT THIS DOCUMENT.**

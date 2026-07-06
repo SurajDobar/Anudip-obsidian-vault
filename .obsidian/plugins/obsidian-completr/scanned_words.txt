@@ -493,6 +493,9 @@ pER
 ppp
 pmm
 pick
+pairs
+populated
+presence
 and
 allows
 associate
@@ -963,6 +966,8 @@ att
 aYy
 appears
 arranges
+assignments
+allow
 changing
 created
 completed
@@ -1910,6 +1915,7 @@ ihh
 imm
 iDD
 iterate
+inserted
 for
 failure
 final
@@ -3221,6 +3227,7 @@ kBPB
 kti
 kzA
 kta
+keys
 when
 with
 was
@@ -3966,6 +3973,8 @@ tjL
 tEv
 tWu
 tkk
+tuple
+twice
 It
 Invokes
 Inside
@@ -4357,6 +4366,7 @@ Ifffkk
 Ivww
 Izyyeff
 IrB
+Iterate
 you
 yYE
 yUv
@@ -6357,6 +6367,8 @@ oRQT
 omR
 oww
 odd
+overwrites
+overwrite
 reason
 return
 returning
@@ -6818,6 +6830,7 @@ rqI
 rbM
 rCC
 reverses
+respectively
 This
 The
 There
@@ -8857,6 +8870,8 @@ Pdddtt
 PQQ
 PVem
 Pop
+Popitem
+Pairs
 Each
 Example
 Everything
@@ -9231,6 +9246,7 @@ Extra
 ElPIII
 EMOJIS
 Even
+Exists
 js
 just
 javascript
@@ -12308,6 +12324,7 @@ Rte
 Rstrip
 RRRlll
 RUU
+Reverse
 Async
 Allows
 Await
@@ -12670,6 +12687,8 @@ ANN
 ACC
 Asl
 ADD
+Assignments
+Access
 queue
 qGG
 qv
@@ -14314,6 +14333,7 @@ Cif
 CSw
 Carbon
 Cll
+Clear
 Modules
 MDN
 Ms
@@ -15041,6 +15061,9 @@ Dbgg
 DEEYZZ
 DONT
 Descending
+Dictionary
+Duplicate
+Dictionaries
 Node
 NJ
 NE
@@ -15358,6 +15381,7 @@ NHHX
 Nttt
 Neddhii
 NJJ
+Nested
 Xn
 XE
 XR
@@ -16002,6 +16026,7 @@ LMMM
 LMMkjj
 LPds
 Looping
+List
 xDN
 xM
 xaWRRR
@@ -17349,6 +17374,7 @@ Ouk
 OGW
 ONNNMM
 OOoaa
+Overwrite
 KQ
 KU
 KLL
@@ -18230,6 +18256,7 @@ VBE
 VDhP
 VWWQ
 VWWG
+Values
 zzi
 zz
 zyy

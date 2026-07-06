@@ -68,9 +68,9 @@ Thank you for your time.
 ATS checker by mam
 	use only one so u can be consistent 
 [https://1millionresume.com/resume-checker](https://1millionresume.com/resume-checker) 
-[https://resume.naukri.com/resume-quality-score]
-[https://www.mployee.me/resumescan]
-[https://www.weekday.works/resume-checker-and-scoring-tool]
+https://resume.naukri.com/resume-quality-score
+https://www.mployee.me/resumescan
+https://www.weekday.works/resume-checker-and-scoring-tool
 
 ## SWOT analysis
 strength ,weaknesses , opportunity , threats analysis 
