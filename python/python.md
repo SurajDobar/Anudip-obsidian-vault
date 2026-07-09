@@ -59,7 +59,17 @@
    - [Multiple Keys In Dictionary](#"Multiple""Keys""In""Dictionary")
    - [Nested Dictionary](#"Nested""Dictionary")
    - [Check If Key Exists](#"Check""If""Key""Exists")
-
+- [Tuple](#"Tuple")
+  - [Tuple Functions](#"Tuple""Functions")
+    - [Create Tuple And Access Elements](#"Create""Tuple""And""Access""Elements")
+    - [Tuple Concatenation](#"Tuple""Concatenation")
+    - [Tuple Membership](#"Tuple""Membership")
+    - [Tuple Repetition, Length, Count](#"Tuple""Repetition,""Length,""Count")
+    - [Min And Max In Tuple](#"Min""And""Max""In""Tuple")
+    - [Sort Tuple](#"Sort""Tuple")
+    - [Tuple Unpacking](#"Tuple""Unpacking")
+    - [Sum Of Tuple Elements](#"Sum""Of""Tuple""Elements")
+    - [Looping Tuple](#"Looping""Tuple")
 https://share.google/0chz6vfQdUuM0Q1ob
 
 # Python
@@ -966,5 +976,170 @@ else :
 '''
 Output:
  key not exist
+'''
+```
+
+## Tuple
+what is tuple :
+A tuple is a collection which is ordered and **unchangeable**.
+- tuple is immutable
+- tuple maintains order 
+- any type of data can be added 
+- use the index to get the element 
+- created using ()
+
+### Tuple Functions
+##### Create Tuple And Access Elements
+Create empty, singleton, and multiple-element tuples, then access elements using index and slice.
+
+```python
+tuple1=()#empty tuple
+tuple1=(10,)#singleton tuple
+tuple2=(1,2,3,4,5)#multiple element tuple
+print(tuple2)
+
+tuple3=(1,2,3,4,5,6,7,8,9,10)
+print("tuple3[1]:",tuple3[1])
+print("tuple3[2:4]:",tuple3[2:4])
+print("tuple3[-1]:",tuple3[-1])
+
+'''
+Output:
+ (1, 2, 3, 4, 5)
+ tuple3[1]: 2
+ tuple3[2:4]: (3, 4)
+ tuple3[-1]: 10
+'''
+```
+
+##### Tuple Concatenation
+Use `+` operator to combine two tuples.
+
+```python
+tuple4=(3,4,5,6,7)
+tuple5=(1,2,3)
+concat=tuple4+tuple5
+print("tuple4+tuple5:",concat)
+
+'''
+Output:
+ tuple4+tuple5: (3, 4, 5, 6, 7, 1, 2, 3)
+'''
+```
+
+##### Tuple Membership
+Use `in` and `not in` to check value presence.
+
+```python
+tuple6=(1,2,3,4,5)
+print("5 in tuple6:",5 in tuple6)
+print("5 Not in tuple6:",5 not in tuple6)
+
+'''
+Output:
+ 5 in tuple6: True
+ 5 Not in tuple6: False
+'''
+```
+
+##### Tuple Repetition, Length, Count
+Repeat tuples, get size, and count occurrences.
+
+```python
+tuple7=(1,2,3)
+print("tuple7*3:",tuple7*3)
+size=len(tuple7)
+print("Size of tuple7:",size)
+print("Count of 3 in tuple7:",tuple7.count(3))
+
+'''
+Output:
+ tuple7*3: (1, 2, 3, 1, 2, 3, 1, 2, 3)
+ Size of tuple7: 3
+ Count of 3 in tuple7: 1
+'''
+```
+
+##### Min And Max In Tuple
+Use `min()` and `max()` to get smallest and largest values.
+
+```python
+tuple8=(3,0,2,7)
+print("min(tuple8):",min(tuple8))
+print("max(tuple8):",max(tuple8))
+
+'''
+Output:
+ min(tuple8): 0
+ max(tuple8): 7
+'''
+```
+
+##### Sort Tuple
+`sorted()` returns sorted values as a list.
+
+```python
+tuple9=(20,45,3,6)
+result=sorted(tuple9)
+print("sorted(tuple9):",result)
+
+'''
+Output:
+ sorted(tuple9): [3, 6, 20, 45]
+'''
+```
+
+##### Tuple Unpacking
+Assign tuple values to multiple variables directly.
+
+```python
+tuple9=(20,45,3,6)
+p,q,r,s=tuple9
+print("unpacking of tuple9:",p,q,r,s)
+print("p=",p)
+print("q=",q)
+print("r=",r)
+print("s=",s)
+
+'''
+Output:
+ unpacking of tuple9: 20 45 3 6
+ p= 20
+ q= 45
+ r= 3
+ s= 6
+'''
+```
+
+##### Sum Of Tuple Elements
+Use `sum()` to get total of numeric tuple values.
+
+```python
+tuple10=(5,34,21,6)
+total=sum(tuple10)
+print("sum(tuple10):",total)
+
+'''
+Output:
+ sum(tuple10): 66
+'''
+```
+
+##### Looping Tuple
+Iterate tuple elements using a `for` loop.
+
+```python
+tuple10=(5,34,21,6)
+print("for loop tuple10:")
+for i in tuple10:
+    print(i)
+
+'''
+Output:
+ for loop tuple10:
+ 5
+ 34
+ 21
+ 6
 '''
 ```

@@ -2919,6 +2919,7 @@ nUP
 nKXF
 nlltrr
 ncKy
+numeric
 known
 keywords
 know
@@ -3975,6 +3976,7 @@ tWu
 tkk
 tuple
 twice
+tuples
 It
 Invokes
 Inside
@@ -6030,6 +6032,9 @@ shrink
 shallow
 sort
 sorted
+singleton
+slice
+smallest
 or
 of
 one
@@ -6369,6 +6374,7 @@ oww
 odd
 overwrites
 overwrite
+ordered
 reason
 return
 returning
@@ -7215,6 +7221,7 @@ TVVzyyA
 Tjrr
 TzA
 TMM
+Tuple
 lets
 like
 looks
@@ -8027,6 +8034,7 @@ mPUA
 mii
 moo
 mjlnk
+maintains
 diagram
 doesnt
 does
@@ -10248,6 +10256,7 @@ uIZ
 uhh
 ugQ
 utt
+unchangeable
 Hello
 HKM
 Haa
@@ -11659,6 +11668,7 @@ Svvv
 SVp
 Sort
 Separates
+Sum
 JavaScript
 JS
 JJJ
@@ -12325,6 +12335,7 @@ Rstrip
 RRRlll
 RUU
 Reverse
+Repetition
 Async
 Allows
 Await
@@ -12689,6 +12700,7 @@ Asl
 ADD
 Assignments
 Access
+Assign
 queue
 qGG
 qv
@@ -14683,6 +14695,9 @@ MKK
 MPQTL
 MAILS
 Maximum
+Membership
+Min
+Max
 Docs
 DEE
 Dq
@@ -17073,6 +17088,7 @@ Upper
 USK
 UUUH
 UJdd
+Unpacking
 OL
 Od
 Op
