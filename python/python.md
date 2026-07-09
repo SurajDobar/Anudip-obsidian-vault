@@ -70,6 +70,15 @@
     - [Tuple Unpacking](#"Tuple""Unpacking")
     - [Sum Of Tuple Elements](#"Sum""Of""Tuple""Elements")
     - [Looping Tuple](#"Looping""Tuple")
+- [Set](#"Set")
+  - [Set Functions](#"Set""Functions")
+    - [Creating Set And Empty Set](#"Creating""And""Empty""Set")
+    - [Add, Remove, Discard, Clear](#"Add,""Remove,""Discard,""Clear")
+    - [Union](#"Union")
+    - [Intersection](#"Intersection")
+    - [Difference](#"Difference")
+    - [Symmetric Difference](#"Symmetric""Difference")
+    - [Issubset](#"Issubset")
 https://share.google/0chz6vfQdUuM0Q1ob
 
 # Python
@@ -1141,5 +1150,140 @@ Output:
  34
  21
  6
+'''
+```
+
+
+## Set
+
+- set is a unique item made by using {}
+- can be made by two ways => set constructor or {}
+- set is mutable in nature
+- no duplicate value allowed
+- contain unordered values (output order may vary)
+
+##### Creating and empty set
+Create sets using `{}` and `set()`, and create empty set using `set()`.
+
+```python
+#creating set using curly braces 
+newset={20,30,40,50,60}
+print(newset)
+
+#creating set using set() constructor
+newset=set([20,30,40,50,60])
+print(newset)
+
+#for creating empty set we have to use set() constructor only 
+emptyset=set()
+print(emptyset)
+
+'''
+Output:
+ {50, 20, 40, 60, 30}
+ {40, 50, 20, 60, 30}
+ set()
+'''
+```
+
+### Set Functions
+##### Add, remove, discard, clear
+Basic modification methods for adding/removing values in sets.
+
+```python
+newset={10,20,30,40,50,60}
+newset.add(70)
+print(".add(70):",newset)
+
+newset.remove(20)
+print(".remove(20):",newset)
+
+newset.discard(20)
+print(".discard(20):",newset)
+
+newset.clear()
+print(".clear():",newset)
+
+'''
+Output:
+ .add(70): {50, 20, 70, 40, 10, 60, 30}
+ .remove(20): {50, 70, 40, 10, 60, 30}
+ .discard(20): {50, 70, 40, 10, 60, 30}
+ .clear(): set()
+'''
+```
+
+#### Union
+`union()` returns all unique elements from both sets.
+
+```python
+newset1={10,20,30,40,50,60}
+newset2={40,50,60,70,80,90}
+result=newset1.union(newset2)
+print("newset1.union(newset2):",result)
+
+'''
+Output:
+ newset1.union(newset2): {70, 40, 10, 80, 50, 20, 90, 60, 30}
+'''
+```
+
+##### Intersection
+`intersection()` returns common elements from both sets.
+
+```python
+newset3={10,20,30,40,50,60}
+newset4={40,50,60,70,80,90}
+result=newset3.intersection(newset4)
+print("newset3.intersection(newset4):",result)
+
+'''
+Output:
+ newset3.intersection(newset4): {40, 50, 60}
+'''
+```
+
+##### Difference
+`difference()` returns elements in first set but not in second set.
+
+```python
+newset5={10,20,30,40,50,60}
+newset6={40,50,60,70,80,90}
+result=newset5.difference(newset6)
+print("newset5.difference(newset6):",result)
+
+'''
+Output:
+ newset5.difference(newset6): {10, 20, 30}
+'''
+```
+
+##### Symmetric difference
+`symmetric_difference()` returns elements not common in both sets.
+
+```python
+newset7={10,20,30,40,50,60}
+newset8={40,50,60,70,80,90}
+result=newset7.symmetric_difference(newset8)
+print("newset7.symmetric_difference(newset8):",result)
+
+'''
+Output:
+ newset7.symmetric_difference(newset8): {70, 10, 80, 20, 90, 30}
+'''
+```
+
+##### Issubset
+`issubset()` checks whether all elements of one set are present in another.
+
+```python
+newset9={10,20,30}
+newset10={10,20,30,40,50,60} 
+result=newset9.issubset(newset10)
+print("newset9.issubset(newset10):",result)
+
+'''
+Output:
+ newset9.issubset(newset10): True
 '''
 ```
