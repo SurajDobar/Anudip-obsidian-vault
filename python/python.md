@@ -79,6 +79,11 @@
     - [Difference](#"Difference")
     - [Symmetric Difference](#"Symmetric""Difference")
     - [Issubset](#"Issubset")
+- [Object Oriented Programming Oops](#"Object""Oriented""Programming""Oops")
+  - [Inheritance](#"Inheritance")
+  - [Encapsulation](#"Encapsulation")
+- [Exception Handling](#"Exception""Handling")
+  - [Exception Interview Asked](#"Exception""Interview""Asked")
 https://share.google/0chz6vfQdUuM0Q1ob
 
 # Python
@@ -1287,3 +1292,144 @@ Output:
  newset9.issubset(newset10): True
 '''
 ```
+
+
+## Object Oriented Programming OOPS 
+[Classes and objects pdf](obsidian://open?vault=Anudip-obsidian-vault&file=python%2Fpython%20pdf%2FClasses%20and%20Objects.pdf)
+
+- object is a instance of a class . variable of the class , real world entity 
+- class is a blueprint where we create multiple objects , we define various data member and member functions 
+- constructor is a special method used to initialize the object 
+
+# kuch bhi nahi samja 🥀
+
+class Student{
+int a;
+string name;
+}
+
+
+student() //constructor
+{}
+student(int a , string str) {} //parameterized constructor 
+
+student()
+{
+a=20
+name='aarish'
+}
+// default constructor 
+
+//member function 
+
+```python 
+class Dog:
+    #construcotr method
+    def __init__(self, name, age):  
+        self.name = name #attributes
+        self.age = age
+#method
+    def bark(self):
+        print(f"{self.name} barks!")
+#creating objects (instances) of the Dog class
+dog1 = Dog("Buddy", 3)
+dog2 = Dog("Max", 5)
+  
+#Accessing attributes and calling methods
+
+print(f"{dog1.name} is {dog1.age} years old.") #Output:Buddyis3yearsold
+dog1.bark()
+dog2.bark()
+```
+
+#### encapsulation :
+capsule 
+abe kya hai bhai kuch bhi nahi samaj ra 
+
+binding your data and data function 
+	
+ <center><h1>pdf se padlo bc 🥀🥀 </h1></center>
+ 
+ 
+ 
+
+## Inheritance 
+<a href ="obsidian://open?vault=Anudip-obsidian-vault&file=python%2Fpython%20pdf%2FInheritance%20MethodOverriding.pdf"> inheritance pdf </a>
+
+- to inherit the properties of another class 
+
+## Encapsulation 
+- binding the data and function together that operates as a single unit called class 
+- to achieve the encapsultaion we use the access modifier called : public,  private, protected
+
+example : capsule 
+
+1. public 
+	accessible anywhere 
+2. private 
+	accessible in the only class and is indicated by double underscore __
+3. protected 
+	protected data member access by subclass indicated by single underscore _
+
+```python 
+class Student:
+    def __init__(self,name):
+        self.__name=name
+    def display(self):
+        print(self.__name)
+
+obj=Student("John")
+obj.display()
+```
+
+## exception handling 
+exception is the error that occur during the exectuion of the program and which stop your execution of the program and display the error message.
+
+example
+
+- zero division error (when we divide a number by zero)
+
+- index error (when index out of range )
+
+- type error (when we perform operation on different data type)
+
+- value error (when we perform operation on invalid value)
+
+- file not found error (when we try to open a file which is not present in the directory)
+
+```python 
+try :
+    answer=10/0
+except ZeroDivisionError:
+    print("you cannot divide a number by zero")
+```
+
+
+try: the code which is going to throw erorr 
+except : what error output should be 
+finally always run no matter exception raise or not
+
+when making custom exception 
+we use raise 
+``` python 
+	age=int(input("enter your age"))
+if age<18:
+    raise ValueError("age should be greater than 18")
+print("your age is",age)
+```
+
+
+### exception interview asked 
+
+try : contain the code that raise the exception 
+else : block executes only if no exception occurs 
+finally : block executes always whether exception occurs or not 
+except: that contain code that handle the exception 
+raise : u can make custom exception using raise keyword 
+
+	if try block raise the exception then except and finally block execute 
+
+	if try block not raise exception then else and finally block will execute 
+
+
+
