@@ -988,6 +988,7 @@ aarish
 abe
 aQaX
 abC
+accessible
 changing
 created
 completed
@@ -1515,6 +1516,7 @@ cSLu
 capsule
 cYa
 cUu
+comphrension
 is
 instead
 immediately
@@ -1963,6 +1965,8 @@ izyy
 ivee
 iia
 inherit
+indicated
+invalid
 for
 failure
 final
@@ -2353,6 +2357,8 @@ fRa
 fId
 foK
 feR
+found
+finally
 value
 values
 variable
@@ -4107,6 +4113,7 @@ tUd
 tzB
 topG
 tbJrJ
+throw
 It
 Invokes
 Inside
@@ -5667,6 +5674,10 @@ eMA
 eMK
 emC
 eLo
+encapsultaion
+exception
+exectuion
+erorr
 success
 synchronous
 supply
@@ -6229,6 +6240,7 @@ sEY
 sabjv
 snK
 sfL
+subclass
 or
 of
 one
@@ -6580,6 +6592,7 @@ oKz
 oFBn
 olYH
 oNDL
+operates
 reason
 return
 returning
@@ -7049,6 +7062,7 @@ rnwhzg
 rsB
 rDY
 rbJ
+raise
 This
 The
 There
@@ -8283,6 +8297,8 @@ mFC
 mTs
 mpH
 mGB
+modifier
+matter
 diagram
 doesnt
 does
@@ -8718,6 +8734,8 @@ diV
 dPhi
 dkseC
 dzV
+division
+divide
 Protoypal
 Purpose
 Promise
@@ -9536,6 +9554,7 @@ ENw
 EXSDZ
 EXS
 Encapsulation
+Exception
 js
 just
 javascript
@@ -13090,6 +13109,7 @@ AcvA
 AJF
 AQQ
 AUT
+Asked
 queue
 qGG
 qv
@@ -17932,6 +17952,7 @@ OOPS
 ORZ
 Oswy
 OrN
+Oops
 KQ
 KU
 KLL

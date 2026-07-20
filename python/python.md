@@ -1433,3 +1433,8 @@ raise : u can make custom exception using raise keyword
 
 
 
+## file handling 
+file is used to store the data 
+
+
+

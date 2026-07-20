@@ -9,4 +9,7 @@ day 2:
 ![[Pasted image 20260708175943.png]]
 
 [Create CRUD Application with Django | Easy Tutorial](https://www.codewithfaraz.com/python/67/create-crud-application-with-django-easy-tutorial)
+--- 
 
+## day 3
+https://youtu.be/cZT1CNMcEjg
