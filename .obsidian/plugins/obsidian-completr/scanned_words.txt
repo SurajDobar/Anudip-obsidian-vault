@@ -509,6 +509,8 @@ pdm
 public
 private
 protected
+prefix
+pauses
 and
 allows
 associate
@@ -989,6 +991,7 @@ abe
 aQaX
 abC
 accessible
+age
 changing
 created
 completed
@@ -1517,6 +1520,7 @@ capsule
 cYa
 cUu
 comphrension
+comprehension
 is
 instead
 immediately
@@ -1967,6 +1971,10 @@ iia
 inherit
 indicated
 invalid
+inherits
+implementation
+iterated
+iter
 for
 failure
 final
@@ -2359,6 +2367,8 @@ foK
 feR
 found
 finally
+formatted
+fetches
 value
 values
 variable
@@ -4798,6 +4808,9 @@ ybQdQ
 yfm
 yYn
 yyL
+yield
+yielded
+yields
 handlers
 hr
 have
@@ -5678,6 +5691,7 @@ encapsultaion
 exception
 exectuion
 erorr
+errors
 success
 synchronous
 supply
@@ -6241,6 +6255,9 @@ sabjv
 snK
 sfL
 subclass
+super
+squares
+students
 or
 of
 one
@@ -6593,6 +6610,7 @@ oFBn
 olYH
 oNDL
 operates
+overriding
 reason
 return
 returning
@@ -7063,6 +7081,9 @@ rsB
 rDY
 rbJ
 raise
+regardless
+returned
+resumes
 This
 The
 There
@@ -7462,6 +7483,7 @@ TxEtJr
 TVv
 TSU
 TlV
+Try
 lets
 like
 looks
@@ -7866,6 +7888,7 @@ lJz
 leIV
 lJY
 lpBk
+lazily
 methods
 method
 meaning
@@ -8736,6 +8759,8 @@ dkseC
 dzV
 division
 divide
+description
+dynamically
 Protoypal
 Purpose
 Promise
@@ -9169,6 +9194,7 @@ PZZ
 PQi
 PBGB
 Pkk
+Private
 Each
 Example
 Everything
@@ -9555,6 +9581,7 @@ EXSDZ
 EXS
 Encapsulation
 Exception
+Except
 js
 just
 javascript
@@ -10270,6 +10297,7 @@ bhg
 boW
 bFy
 bQN
+bark
 upon
 underneath
 use
@@ -10602,6 +10630,7 @@ uEf
 uuWWE
 uwQwQ
 uwjQf
+unlike
 Hello
 HKM
 Haa
@@ -10952,6 +10981,7 @@ HUV
 HWb
 HrK
 Hfz
+Hierarchical
 Which
 While
 Web
@@ -11263,6 +11293,7 @@ WSot
 WZr
 WJt
 WIb
+With
 But
 BG
 BaE
@@ -11598,6 +11629,7 @@ BUU
 BfS
 Boe
 BLt
+Bark
 Syntax
 SS
 SvIB
@@ -12042,6 +12074,8 @@ SJTiz
 Student
 Sscy
 SsF
+Same
+Squaring
 JavaScript
 JS
 JJJ
@@ -12730,6 +12764,8 @@ RobotoMono
 Regular
 RHzz
 RYoM
+Reserves
+Raise
 Async
 Allows
 Await
@@ -13110,6 +13146,7 @@ AJF
 AQQ
 AUT
 Asked
+Accessible
 queue
 qGG
 qv
@@ -13779,6 +13816,8 @@ gJG
 gkp
 gbt
 gPv
+grandparent
+generated
 You
 YmTv
 YY
@@ -14811,6 +14850,11 @@ Cyk
 CJl
 Cvb
 CRJVe
+Class
+Chain
+Child
+Custom
+Converting
 Modules
 MDN
 Ms
@@ -15169,6 +15213,7 @@ MethodOverriding
 MGhJV
 Mch
 MFo
+Multilevel
 Docs
 DEE
 Dq
@@ -15564,6 +15609,7 @@ DQL
 Dcjk
 Dbg
 Deo
+Dog
 Node
 NJ
 NE
@@ -17278,6 +17324,8 @@ FZp
 FAxE
 FsF
 FInheritance
+Filtering
+Finally
 Uk
 UL
 Ui
@@ -17953,6 +18001,8 @@ ORZ
 Oswy
 OrN
 Oops
+OOP
+Overriding
 KQ
 KU
 KLL

@@ -59,6 +59,21 @@
    - [Multiple Keys In Dictionary](#"Multiple""Keys""In""Dictionary")
    - [Nested Dictionary](#"Nested""Dictionary")
    - [Check If Key Exists](#"Check""If""Key""Exists")
+- [File Handling](#"File""Handling")
+- [OOP Class And Object Code](#"OOP""Class""And""Object""Code")
+  - [Basic Dog Class With Description](#"Basic""Dog""Class""With""Description")
+  - [Dog Class With Bark Method](#"Dog""Class""With""Bark""Method")
+- [Inheritance Code](#"Inheritance""Code")
+  - [Multilevel Inheritance](#"Multilevel""Inheritance")
+  - [Hierarchical Inheritance](#"Hierarchical""Inheritance")
+  - [Single Inheritance With Super](#"Single""Inheritance""With""Super")
+  - [Method Overriding](#"Method""Overriding")
+  - [Multiple Inheritance](#"Multiple""Inheritance")
+- [Encapsulation Code](#"Encapsulation""Code")
+  - [Private Variable With Double Underscore](#"Private""Variable""With""Double""Underscore")
+- [Exception Handling Code](#"Exception""Handling""Code")
+  - [Try Except Finally](#"Try""Except""Finally")
+  - [Custom Exception With Raise](#"Custom""Exception""With""Raise")
 - [Tuple](#"Tuple")
   - [Tuple Functions](#"Tuple""Functions")
     - [Create Tuple And Access Elements](#"Create""Tuple""And""Access""Elements")
@@ -84,6 +99,7 @@
   - [Encapsulation](#"Encapsulation")
 - [Exception Handling](#"Exception""Handling")
   - [Exception Interview Asked](#"Exception""Interview""Asked")
+
 https://share.google/0chz6vfQdUuM0Q1ob
 
 # Python
@@ -1433,8 +1449,277 @@ raise : u can make custom exception using raise keyword
 
 
 
-## file handling 
-file is used to store the data 
+## file handling
+file is used to store the data
 
 
+## OOP - Class and Object Code
+
+##### Basic Dog class with description
+Creating a class with `__init__` constructor and a method that returns a formatted string.
+
+```python
+class Dog:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def description(self):
+        return f"{self.name} is {self.age} years old."
+
+my_dog = Dog("Buddy", 5)
+print(my_dog.name)
+print(my_dog.age)
+print(my_dog.description())
+'''
+Output:
+Buddy
+5
+Buddy is 5 years old.
+'''
+```
+
+##### Dog class with bark method
+Creating two objects of the same class and calling methods on each.
+
+```python
+class Dog:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def bark(self):
+        print(f"{self.name} barks!")
+
+dog1 = Dog("Buddy", 3)
+dog2 = Dog("Max", 5)
+
+print(f"{dog1.name} is {dog1.age} years old.")
+dog1.bark()
+dog2.bark()
+'''
+Output:
+Buddy is 3 years old.
+Buddy barks!
+Max barks!
+'''
+```
+
+## Inheritance Code
+
+##### Multilevel inheritance
+Chain of inheritance: grandparent -> parent -> child. Each level adds its own method.
+
+```python
+class Anudip:
+    def display(self):
+        print("Anudip Foundation Thane")
+
+class Rajshree(Anudip):
+    def academy(self):
+        print("Technical Professor: Rajshree maam")
+
+class Student(Rajshree):
+    def lerning(self):
+        print("Stduent of anudip foundation")
+
+std=Student()
+std.display()
+std.academy()
+std.lerning()
+'''
+Output:
+Anudip Foundation Thane
+Technical Professor: Rajshree maam
+Stduent of anudip foundation
+'''
+```
+
+##### Hierarchical inheritance
+One parent class with multiple child classes, each child inherits parent's methods.
+
+```python
+class Parent:
+    def display(self):
+        print("This is parent Class")
+
+class Child1(Parent):
+    def child_display(self):
+        print("This is fist child Class")
+
+class Child2(Parent):
+    def child2(self):
+        print("This is second child class method")
+
+obj1=Child1()
+obj2=Child2()
+
+print("parent and Child 1 Class methods msg")
+obj1.child_display()
+obj1.display()
+
+print("parent and Child 2 Class methods msg")
+obj2.child2()
+obj2.display()
+'''
+Output:
+parent and Child 1 Class methods msg
+This is fist child Class
+This is parent Class
+parent and Child 2 Class methods msg
+This is second child class method
+This is parent Class
+'''
+```
+
+##### Single inheritance with super()
+One parent, one child. `super()` is used to call parent constructor and methods.
+
+```python
+class Parent1:
+    def __init__(self,name):
+        self.name=name
+
+    def parent_method(self):
+        print("This is a parent class method")
+        print(self.name)
+
+class Child1(Parent1):
+    def __init__(self,name,age):
+        super().__init__(name)
+        self.age=age
+
+    def child_method(self):
+        print("This is a child 1 class method")
+        print(self.age)
+
+obj=Child1("Shyam",20)
+obj.parent_method()
+obj.child_method()
+'''
+Output:
+This is a parent class method
+Shyam
+This is a child 1 class method
+20
+'''
+```
+
+##### Method overriding
+Child class provides its own implementation of a method already defined in parent class. Same name, same parameters.
+
+```python
+class Parent:
+    def __init__(self):
+        print("Parent Class Constructor")
+
+    def display(self):
+        print("parent method")
+
+class Child(Parent):
+    def __init__(self):
+        print("Child Class Constructor")
+
+    def display(self):
+        super().__init__()
+        print("Child Method")
+        super().display()
+
+obj=Child()
+obj.display()
+'''
+Output:
+Child Class Constructor
+Parent Class Constructor
+Child Method
+parent method
+'''
+```
+
+##### Multiple inheritance
+One child inherits from more than one parent class.
+
+```python
+class Dog:
+    def display(self):
+        print("Dog Class")
+
+class Cat:
+    def cat_print(self):
+        print("Cat Class")
+
+class Animal(Dog,Cat):
+    def animal_display(self):
+        print("Child Class of both classes")
+
+obj=Animal()
+obj.display()
+obj.cat_print()
+obj.animal_display()
+'''
+Output:
+Dog Class
+Cat Class
+Child Class of both classes
+'''
+```
+
+## Encapsulation Code
+
+##### Private variable with double underscore
+Using `__` prefix to make a variable private. Accessible only within the class.
+
+```python
+class Student:
+    def __init__(self,name):
+        self.__name=name
+    def display(self):
+        print(self.__name)
+
+obj=Student("John")
+obj.display()
+'''
+Output:
+John
+'''
+```
+
+## Exception Handling Code
+
+##### Try except finally
+Handling errors using try, except, and finally blocks. `finally` always runs regardless of exception.
+
+```python
+try :
+    answer=10/0
+except ZeroDivisionError:
+    print("you cannot divide a number by zero")
+
+try :
+    int(input("enter a number"))
+except :
+    print("invalid input")
+finally:
+    print("will run no matter exception occurs or not")
+'''
+Output:
+you cannot divide a number by zero
+invalid input
+will run no matter exception occurs or not
+'''
+```
+
+##### Custom exception with raise
+Using `raise` to create a custom exception when a condition is not met.
+
+```python
+age=int(input("enter your age"))
+if age<18:
+    raise ValueError("age should be greater than 18")
+print("your age is",age)
+'''
+Output:
+ValueError: age should be greater than 18
+'''
+```
 
