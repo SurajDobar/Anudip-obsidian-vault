@@ -1482,6 +1482,7 @@ Buddy is 5 years old.
 ##### Dog class with bark method
 Creating two objects of the same class and calling methods on each.
 
+
 ```python
 class Dog:
     def __init__(self, name, age):

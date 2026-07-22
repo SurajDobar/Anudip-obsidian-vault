@@ -8,12 +8,21 @@
   - [Dictionary Comprehension With User Input Products](#"Dictionary""Comprehension""With""User""Input""Products")
 - [Generator](#"Generator")
   - [Generator Concept](#"Generator""Concept")
+  - [Benefits Of Generators](#"Benefits""Of""Generators")
   - [Basic Generator With Yield](#"Basic""Generator""With""Yield")
   - [Generator With While Loop](#"Generator""With""While""Loop")
   - [Using Next On Generator](#"Using""Next""On""Generator")
   - [Using Iter And Next On List](#"Using""Iter""And""Next""On""List")
   - [Generator Expression](#"Generator""Expression")
   - [List Comprehension Vs Generator For Even Numbers](#"List""Comprehension""Vs""Generator""For""Even""Numbers")
+- [Class And Oops Revise](#"Class""And""Oops""Revise")
+  - [Class Method Vs Instance Method](#"Class""Method""Vs""Instance""Method")
+  - [Class Variable](#"Class""Variable")
+  - [Instance Variable With Constructor](#"Instance""Variable""With""Constructor")
+  - [Instance Method](#"Instance""Method")
+  - [Class Method](#"Class""Method")
+  - [Static Method](#"Static""Method")
+  - [Method Overriding](#"Method""Overriding")
 
 ## List Comprehension
 
@@ -99,7 +108,15 @@ Output:
 - Reserves state between iterations unlike normal functions.
 - Multiple values can be returned using yield.
 
-#### Basic Generator With Yield
+### Benefits Of Generators
+
+1. **Memory efficient** – Generators produce one value at a time instead of storing all values in memory.
+2. **Lazy evaluation** – Values are generated only when needed, making them efficient for large datasets.
+3. **Executes line by line** – The function pauses at each `yield` statement and resumes from there when the next value is requested.
+4. **Faster for large data** – Since values are generated on demand, they can process large amounts of data more efficiently.
+5. **Easy to work with streams** – Useful for reading large files, processing data streams, or handling infinite sequences.
+
+### Basic Generator With Yield
 Generator function pauses and resumes execution using `yield`. Each `yield` returns a value.
 
 ```python
@@ -242,3 +259,158 @@ Output:
 8
 '''
 ```
+
+## Class And Oops Revise 
+class variable is decalred inside the class , class variable is shared by all the objects in the class , 
+
+![[Pasted image 20260722170831.png]]
+
+
+### Class Method Vs Instance Method
+
+| ** Class Method**                           | ** Instance Method **                            |
+| ------------------------------------------- | ------------------------------------------------ |
+| Defined using `@classmethod` decorator.     | Defined normally without any decorator.          |
+| Takes `cls` as the first parameter.         | Takes `self` as the first parameter.             |
+| Works with **class variables**.             | Works with **instance variables**.               |
+| Can be called using the class or an object. | Usually called using an object (instance).       |
+| Used to modify or access class-level data.  | Used to perform operations on a specific object. |
+
+class variable 
+all object copy the same variable 
+object name is use to access the class 
+
+instance variable is used to make each object , so that it doesnt effect each other 
+instance method use self key to acces the varialbe
+
+class method to access the class u use @classmethod
+
+we use @staticmethod there is no **cls** and **self**  method  
+
+##### Class Variable
+Class variable is shared by all objects. Every object accesses the same variable value.
+```python
+class student:
+    name="suraj" #class variable
+    age=20
+obj1=student()
+obj2=student()
+print(obj1.name)
+print(obj2.age)
+'''
+Output:
+suraj
+20
+'''
+```
+
+##### Instance Variable With Constructor
+Instance variable is unique to each object. `__init__` constructor assigns values using `self`.
+```python
+class Student:
+    def __init__(self,name,age): #constructor
+        self.name=name
+        self.age=age
+
+obj1=Student("suraj",20)
+obj2=Student("sachin",21)
+print(obj1.name, obj1.age)
+'''
+Output:
+suraj 20
+'''
+```
+
+##### Instance Method
+Instance method uses `self` to access and display instance variables for each object.
+```python
+class Student:
+    def __init__(self,name,age): #constructor
+        self.name=name
+        self.age=age
+    def display(self):
+        print("Name:",self.name)
+        print("Age:",self.age,'\n')
+obj1=Student("suraj",20)
+obj2=Student("sachin",21)
+obj1.display()
+obj2.display()
+'''
+Output:
+Name: suraj
+Age: 20 
+
+Name: sachin
+Age: 21 
+
+'''
+```
+
+##### Class Method
+Class method uses `@classmethod` decorator and `cls` parameter to access class variables directly.
+```python
+class student:
+    name="suraj"
+    @classmethod
+    def display(cls):
+        print("Name:",cls.name)
+obj1=student()
+obj1.display()
+'''
+Output:
+Name: suraj
+'''
+```
+
+##### Static Method
+Static method uses `@staticmethod` decorator. No `self` or `cls` needed. Can be called using class name directly.
+```python
+class student:
+    name="suraj"
+    @staticmethod
+    def display():
+        print("Name:",student.name)
+obj1=student()
+obj1.display()
+'''
+Output:
+Name: suraj
+'''
+```
+
+##### Method Overloading
+Python does not support true method overloading. Use default parameters to handle variable arguments.
+```python
+class Student:
+    def add(self,a,b,c=0):
+        return a+b+c
+
+obj1=Student()
+print(obj1.add(10,20))
+print(obj1.add(10,20,30))
+'''
+Output:
+30
+60
+'''
+```
+
+##### Method Overriding
+Child class provides its own implementation of a method that exists in the parent class.
+```python
+class Animal:
+    def sound(self):
+        print("Animal makes a sound")
+
+class Dog(Animal):
+    def sound(self):      # Overriding parent method
+        print("Dog barks")
+
+d = Dog()
+d.sound()
+'''
+Output:
+Dog barks
+'''
+```
+

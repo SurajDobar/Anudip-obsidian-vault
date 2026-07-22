@@ -24,11 +24,18 @@
     <td>Soft Skills</td>
     <td><a href="obsidian://open?vault=Anudip-obsidian-vault&file=SS%2FSoft%20skills"> Soft skills </a></td>
   </tr>
+  <tr>
   <td>3</td>
     <td>Python</td>
     <td><a href="obsidian://open?vault=Anudip-obsidian-vault&file=python%2Fpython"> Python </a></td>
   </tr>
+  <tr>
+  <td>4</td>
+    <td>Advanced Python</td>
+    <td><a href="obsidian://open?vault=Anudip-obsidian-vault&file=python%2FAdvanced%20Python">Advaned Python </a></td>
+  </tr>
 </table>
+
 
 
 ```github

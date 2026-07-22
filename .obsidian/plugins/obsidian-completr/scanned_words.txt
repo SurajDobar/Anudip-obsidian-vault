@@ -511,6 +511,8 @@ private
 protected
 prefix
 pauses
+processing
+parameter
 and
 allows
 associate
@@ -992,6 +994,10 @@ aQaX
 abC
 accessible
 age
+amounts
+acces
+accesses
+assigns
 changing
 created
 completed
@@ -1521,6 +1527,8 @@ cYa
 cUu
 comphrension
 comprehension
+classmethod
+cls
 is
 instead
 immediately
@@ -2712,6 +2720,7 @@ vXmI
 vfJ
 vOQ
 vdq
+varialbe
 not
 necessarily
 neither
@@ -3031,6 +3040,7 @@ ncj
 nGL
 nGVdzz
 nzhvS
+normally
 known
 keywords
 know
@@ -4527,6 +4537,9 @@ Ikk
 Inheritance
 IMINJt
 IuP
+Input
+Iter
+Instance
 you
 yYE
 yUv
@@ -6258,6 +6271,9 @@ subclass
 super
 squares
 students
+streams
+sequences
+staticmethod
 or
 of
 one
@@ -6611,6 +6627,7 @@ olYH
 oNDL
 operates
 overriding
+overloading
 reason
 return
 returning
@@ -7484,6 +7501,7 @@ TVv
 TSU
 TlV
 Try
+Takes
 lets
 like
 looks
@@ -8761,6 +8779,9 @@ division
 divide
 description
 dynamically
+datasets
+decalred
+decorator
 Protoypal
 Purpose
 Promise
@@ -9582,6 +9603,7 @@ EXS
 Encapsulation
 Exception
 Except
+Expression
 js
 just
 javascript
@@ -11294,6 +11316,7 @@ WZr
 WJt
 WIb
 With
+Works
 But
 BG
 BaE
@@ -12076,6 +12099,9 @@ Sscy
 SsF
 Same
 Squaring
+Students
+Since
+Static
 JavaScript
 JS
 JJJ
@@ -13147,6 +13173,7 @@ AQQ
 AUT
 Asked
 Accessible
+Advaned
 queue
 qGG
 qv
@@ -14117,6 +14144,7 @@ YKn
 Ykm
 YGB
 YrE
+Yield
 Generator
 Gcc
 Gz
@@ -14440,6 +14468,7 @@ GKD
 GDE
 GfDQ
 GRx
+Generators
 Common
 CIr
 CBB
@@ -14855,6 +14884,9 @@ Chain
 Child
 Custom
 Converting
+Comprehension
+Condition
+Constructor
 Modules
 MDN
 Ms
@@ -15937,6 +15969,7 @@ Nxz
 Napnk
 NMWkc
 NeU
+Numbers
 Xn
 XE
 XR
@@ -16603,6 +16636,8 @@ Lhbdf
 LNiR
 LuMO
 LrQ
+Loop
+Lazy
 xDN
 xM
 xaWRRR
@@ -17326,6 +17361,7 @@ FsF
 FInheritance
 Filtering
 Finally
+FAdvanced
 Uk
 UL
 Ui
@@ -17689,6 +17725,8 @@ UzC
 UkgUS
 UAG
 UOU
+Useful
+Usually
 OL
 Od
 Op
@@ -18003,6 +18041,7 @@ OrN
 Oops
 OOP
 Overriding
+Overloading
 KQ
 KU
 KLL
