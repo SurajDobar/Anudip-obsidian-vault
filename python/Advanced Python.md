@@ -23,6 +23,10 @@
   - [Class Method](#"Class""Method")
   - [Static Method](#"Static""Method")
   - [Method Overriding](#"Method""Overriding")
+- [Magic Method](#"Magic""Method")
+  - [Str Method](#"Str""Method")
+  - [Len Method](#"Len""Method")
+  - [Add Method](#"Add""Method")
 
 ## List Comprehension
 
@@ -411,6 +415,71 @@ d.sound()
 '''
 Output:
 Dog barks
+'''
+```
+
+
+## Magic Method
+Magic method are special method called automatically .
+we use __ __ (double underscore between the majic method )
+ex: __ init __ (no spaces)
+
+![[WhatsApp Image 2026-07-23 at 4.39.38 PM.jpeg]]
+
+##### Str Method
+`__str__` defines what `print()` outputs for an object. Returns a human-readable string.
+
+```python
+class Student:
+    def __init__(self,name):
+        self.name=name
+    def __str__(self):
+        return f"student ID {self.name}"
+
+std=Student("suraj")
+print(std)
+'''
+Output:
+student ID suraj
+'''
+```
+
+##### Len Method
+`__len__` defines what `len()` returns for an object. Returns the length of the object.
+
+```python
+class Student:
+    def __init__(self,names):
+        self.names=names
+    def __len__(self):
+        return len(self.names)
+
+list1=Student(["suraj","lucky","ram"])
+print(len(list1))
+'''
+Output:
+3
+'''
+```
+
+##### Add Method
+`__add__` defines the `+` operator for objects. Allows adding two objects together.
+
+```python
+class Student:
+    def __init__(self,num):
+        self.num=num
+    def __add__(self,var):
+        return Student(self.num+var.num)
+    def __str__(self):
+        return f" {self.num}"
+
+std=Student(10)
+obj=Student(20)
+print(std+obj)
+'''
+Output:
+ 30
 '''
 ```
 

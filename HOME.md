@@ -3,7 +3,6 @@
 ---
 ## Easy access notes homepage
 
-
 <center>
 <table border="3"  >
   <!-- Row 1 -->
@@ -11,7 +10,7 @@
   <th style="background-color:white ; color:black">Name</th>
   <th style="background-color:white; color:black">Link</th>
   <tr>
-<td>1</td>
+	<td>1</td>
 	<td>sql</td>
     <td><a  href="obsidian://open?vault=Anudip-obsidian-vault&file=sql%2Fsql" > sql</a></td>
     
@@ -29,12 +28,15 @@
     <td>Python</td>
     <td><a href="obsidian://open?vault=Anudip-obsidian-vault&file=python%2Fpython"> Python </a></td>
   </tr>
-  <tr>
+<tr>
   <td>4</td>
     <td>Advanced Python</td>
     <td><a href="obsidian://open?vault=Anudip-obsidian-vault&file=python%2FAdvanced%20Python">Advaned Python </a></td>
   </tr>
 </table>
+</center>
+
+
 
 
 
