@@ -13,3 +13,7 @@ day 2:
 
 ## day 3
 https://youtu.be/cZT1CNMcEjg
+
+
+## day 4
+https://youtu.be/CqlWbGXTfRg

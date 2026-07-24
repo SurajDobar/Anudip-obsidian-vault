@@ -33,10 +33,11 @@
     <td>Advanced Python</td>
     <td><a href="obsidian://open?vault=Anudip-obsidian-vault&file=python%2FAdvanced%20Python">Advaned Python </a></td>
   </tr>
+<td>5</td>
+    <td>Python Extracourse</td>
+    <td><a href="obsidian://open?vault=Anudip-obsidian-vault&file=python%2Fpython%20experts%20lectures%20(special)">Python Extracourse </a></td>
+  </tr>
 </table>
-</center>
-
-
 
 
 

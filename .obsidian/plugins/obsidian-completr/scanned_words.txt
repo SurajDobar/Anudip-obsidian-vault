@@ -5711,6 +5711,7 @@ exectuion
 erorr
 errors
 eSP
+experts
 success
 synchronous
 supply
@@ -7914,6 +7915,7 @@ leIV
 lJY
 lpBk
 lazily
+lectures
 methods
 method
 meaning
@@ -9616,6 +9618,7 @@ Encapsulation
 Exception
 Except
 Expression
+Extracourse
 js
 just
 javascript
@@ -12120,6 +12123,7 @@ Static
 Spd
 StW
 Sxx
+Str
 JavaScript
 JS
 JJJ
@@ -15273,6 +15277,7 @@ MGhJV
 Mch
 MFo
 Multilevel
+Magic
 Docs
 DEE
 Dq
