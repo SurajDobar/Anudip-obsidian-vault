@@ -286,5 +286,20 @@ This email is wrong :
 right email:
 ![[Pasted image 20260630185147.png]]
 
+--- 
+New ss session 
+
+Mantra:
+``` soft skill
+with love in my heart. 
+ and smile on my face  
+i can handle anything anytime and at any place 🥀🥀🥀🥀
+```
+
+cv=ciriculum vitae (used for those who are in teaching)
+![[ss.jpeg]]
 
 
+hobbies 
+location
+goals 
