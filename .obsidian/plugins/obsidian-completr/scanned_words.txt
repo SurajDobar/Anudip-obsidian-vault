@@ -999,6 +999,7 @@ acces
 accesses
 assigns
 aß
+argument
 changing
 created
 completed
@@ -3717,6 +3718,9 @@ wKx
 wqU
 wxb
 wwu
+wrapper
+wraps
+wrap
 the
 to
 these
@@ -5235,6 +5239,7 @@ hUe
 hIekB
 hjPM
 hvq
+handles
 eventual
 each
 event
@@ -6284,6 +6289,7 @@ students
 streams
 sequences
 staticmethod
+signature
 or
 of
 one
@@ -9233,6 +9239,8 @@ PBGB
 Pkk
 Private
 Pzl
+Passing
+Parameter
 Each
 Example
 Everything
@@ -13203,6 +13211,7 @@ Asked
 Accessible
 Advaned
 AALR
+Arguments
 queue
 qGG
 qv
@@ -15679,6 +15688,7 @@ Dbg
 Deo
 Dog
 DZX
+Decorator
 Node
 NJ
 NE

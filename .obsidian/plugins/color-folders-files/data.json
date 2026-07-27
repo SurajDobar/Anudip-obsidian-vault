@@ -1,0 +1,115 @@
+{
+  "styles": {
+    "src": {
+      "backgroundColor": "#620ae6",
+      "applyToSubfolders": true,
+      "textColor": "#bdadad",
+      "isBold": true,
+      "isItalic": true
+    },
+    "SS": {
+      "backgroundColor": "#620ae6",
+      "applyToSubfolders": true,
+      "textColor": "#bdadad",
+      "isBold": true,
+      "isItalic": true
+    },
+    "sql": {
+      "backgroundColor": "#620ae6",
+      "applyToSubfolders": true,
+      "textColor": "#bdadad",
+      "isBold": true,
+      "isItalic": true
+    },
+    "python": {
+      "backgroundColor": "#620ae6",
+      "applyToSubfolders": true,
+      "textColor": "#bdadad",
+      "isBold": true,
+      "isItalic": true
+    },
+    "Prompt files": {
+      "backgroundColor": "#620ae6",
+      "applyToSubfolders": true,
+      "textColor": "#bdadad",
+      "isBold": true,
+      "isItalic": true
+    },
+    "Anudip": {
+      "backgroundColor": "#620ae6",
+      "applyToSubfolders": true,
+      "textColor": "#bdadad",
+      "isBold": true,
+      "isItalic": true
+    },
+    "sql/Anudip-pdfs": {
+      "backgroundColor": "#b10eb4",
+      "applyToSubfolders": true,
+      "textColor": "#ffffff",
+      "isBold": true,
+      "isItalic": true
+    },
+    "sql/sql-src": {
+      "backgroundColor": "#b10eb4",
+      "applyToSubfolders": true,
+      "textColor": "#ffffff",
+      "isBold": true,
+      "isItalic": true
+    },
+    "python/python ipynb": {
+      "backgroundColor": "#b10eb4",
+      "applyToSubfolders": true,
+      "textColor": "#ffffff",
+      "isBold": true,
+      "isItalic": true
+    },
+    "python/python pdf": {
+      "backgroundColor": "#b10eb4",
+      "applyToSubfolders": true,
+      "textColor": "#ffffff",
+      "isBold": true,
+      "isItalic": true
+    },
+    "python/src": {
+      "backgroundColor": "#b10eb4",
+      "applyToSubfolders": true,
+      "textColor": "#ffffff",
+      "isBold": true,
+      "isItalic": true
+    },
+    "SS/src": {
+      "backgroundColor": "#b10eb4",
+      "applyToSubfolders": true,
+      "textColor": "#ffffff",
+      "isBold": true,
+      "isItalic": true
+    }
+  },
+  "presets": {
+    "folder": {
+      "backgroundColor": "#ff9500",
+      "isBold": true,
+      "isItalic": false,
+      "applyToSubfolders": true
+    },
+    "folder 1": {
+      "backgroundColor": "#620ae6",
+      "applyToSubfolders": true,
+      "textColor": "#bdadad",
+      "isBold": true,
+      "isItalic": true
+    },
+    "folder 2": {
+      "backgroundColor": "#b10eb4",
+      "applyToSubfolders": true,
+      "textColor": "#ffffff",
+      "isBold": true,
+      "isItalic": true
+    }
+  },
+  "presetOrder": [
+    "folder",
+    "folder 1",
+    "folder 2"
+  ]
+}

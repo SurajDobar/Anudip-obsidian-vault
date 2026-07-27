@@ -1,0 +1,114 @@
+{
+  "settings": {
+    "migrated": 6,
+    "iconPacksPath": ".obsidian/icons",
+    "fontSize": 16,
+    "emojiStyle": "native",
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "SiJupyter",
+      "LiCode",
+      "FarFilePdf",
+      "RiSpeakLine",
+      "FasImages"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "iconInTabsEnabled": false,
+    "iconInTitleEnabled": false,
+    "iconInTitlePosition": "above",
+    "iconInFrontmatterEnabled": false,
+    "iconInFrontmatterFieldName": "icon",
+    "iconColorInFrontmatterFieldName": "iconColor",
+    "iconsBackgroundCheckEnabled": true,
+    "iconsInNotesEnabled": true,
+    "iconsInLinksEnabled": true,
+    "iconIdentifier": ":",
+    "lucideIconPackType": "native",
+    "debugMode": false,
+    "useInternalPlugins": false
+  },
+  "Prompt files": "LiCommand",
+  "python": "FabPython",
+  "python/python ipynb": {
+    "iconName": "SiJupyter",
+    "iconColor": "#f37726"
+  },
+  "python/python pdf": {
+    "iconName": "FarFilePdf",
+    "iconColor": "#ff0000"
+  },
+  "python/src": {
+    "iconName": "FasPhotoFilm",
+    "iconColor": "#00e1ff"
+  },
+  "python/Advanced Python.md": {
+    "iconName": "FabMarkdown",
+    "iconColor": "#ff00ff"
+  },
+  "python/python.md": {
+    "iconName": "FabMarkdown",
+    "iconColor": "#ff00ff"
+  },
+  "python/python experts lectures (special).md": {
+    "iconName": "FabMarkdown",
+    "iconColor": "#ff00ff"
+  },
+  "Prompt files/CODE_TO_NOTES.md": {
+    "iconName": "FabMarkdown",
+    "iconColor": "#ff00ff"
+  },
+  "Prompt files/Table_of_contents.md": {
+    "iconName": "FabMarkdown",
+    "iconColor": "#ff00ff"
+  },
+  "src": {
+    "iconName": "FasImages",
+    "iconColor": "#bdadad"
+  },
+  "sql/sql-src": {
+    "iconName": "FasImages",
+    "iconColor": "#00ffff"
+  },
+  "sql/sql.md": {
+    "iconName": "FabMarkdown",
+    "iconColor": "#ff00ff"
+  },
+  "SS/Soft skills.md": {
+    "iconName": "FabMarkdown",
+    "iconColor": "#ff00ff"
+  },
+  "README.md": {
+    "iconName": "FabMarkdown",
+    "iconColor": "#ff00ff"
+  },
+  "HOME.md": {
+    "iconName": "FabMarkdown",
+    "iconColor": "#ff00ff"
+  },
+  "SS/src": {
+    "iconName": "FasImages",
+    "iconColor": "#00ffff"
+  },
+  "SS": "RiSpeakLine",
+  "python/python pdf/Classes and Objects.pdf": "FarFilePdf",
+  "python/python pdf/Functions.pdf": "FarFilePdf",
+  "python/python pdf/Inheritance MethodOverriding.pdf": "FarFilePdf",
+  "sql/Anudip-pdfs/Stored Procedure & Trigger.pdf": "FarFilePdf",
+  "sql/Anudip-pdfs/Normalization.pdf": "FarFilePdf",
+  "sql": "SiMysql",
+  "sql/Anudip-pdfs": {
+    "iconName": "FarFilePdf",
+    "iconColor": "#ff0000"
+  },
+  "python/python ipynb/Advanced python ipynb": {
+    "iconName": "SiJupyter",
+    "iconColor": "#f37726"
+  }
+}

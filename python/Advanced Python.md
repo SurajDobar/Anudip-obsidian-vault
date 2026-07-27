@@ -2,10 +2,12 @@
   - [Basic List Comprehension](#"Basic""List""Comprehension")
   - [List Comprehension With Condition](#"List""Comprehension""With""Condition")
   - [String Operation In List Comprehension](#"String""Operation""In""List""Comprehension")
+
 - [Dictionary Comprehension](#"Dictionary""Comprehension")
   - [Basic Dictionary Comprehension](#"Basic""Dictionary""Comprehension")
   - [Dictionary Comprehension With User Input Students](#"Dictionary""Comprehension""With""User""Input""Students")
   - [Dictionary Comprehension With User Input Products](#"Dictionary""Comprehension""With""User""Input""Products")
+
 - [Generator](#"Generator")
   - [Generator Concept](#"Generator""Concept")
   - [Benefits Of Generators](#"Benefits""Of""Generators")
@@ -15,6 +17,7 @@
   - [Using Iter And Next On List](#"Using""Iter""And""Next""On""List")
   - [Generator Expression](#"Generator""Expression")
   - [List Comprehension Vs Generator For Even Numbers](#"List""Comprehension""Vs""Generator""For""Even""Numbers")
+
 - [Class And Oops Revise](#"Class""And""Oops""Revise")
   - [Class Method Vs Instance Method](#"Class""Method""Vs""Instance""Method")
   - [Class Variable](#"Class""Variable")
@@ -23,10 +26,16 @@
   - [Class Method](#"Class""Method")
   - [Static Method](#"Static""Method")
   - [Method Overriding](#"Method""Overriding")
+
 - [Magic Method](#"Magic""Method")
   - [Str Method](#"Str""Method")
   - [Len Method](#"Len""Method")
   - [Add Method](#"Add""Method")
+
+- [Decorator](#"Decorator")
+  - [Function As Parameter](#"Function""As""Parameter")
+  - [Basic Decorator With Before And After](#"Basic""Decorator""With""Before""And""After")
+  - [Syntax Decorator With Arguments](#"Syntax""Decorator""With""Arguments")
 
 ## List Comprehension
 
@@ -483,3 +492,80 @@ Output:
 '''
 ```
 
+
+## Decorator
+Decorator is a function that take another function as input , add some functionality and return the code without changing the original code
+
+##### Function As Parameter
+Passing a function as an argument to another function. The function can be called inside the wrapper.
+
+```python
+def hello():
+    print("hello")
+
+def display(func):
+    func()
+
+display(hello)
+'''
+Output:
+hello
+'''
+```
+
+##### Basic Decorator With Before And After
+A decorator wraps a function and adds extra behavior before and after the original function runs.
+
+```python
+def decorator(func):
+    def inner():
+        print("Before function")
+        func()
+        print("After function")
+    return inner
+
+def welcome():
+    print("welcome to decorators")
+
+welcome = decorator(welcome)
+welcome()
+'''
+Output:
+Before function
+welcome to decorators
+After function
+'''
+```
+
+##### Syntax Decorator With Arguments
+Using `@decorator` syntax to wrap functions. Decorator handles `*args` and `**kwargs` to support any function signature.
+
+```python
+def decorator(func):
+    def display(s,*args,**kwargs):
+        print("Before")
+        func(s,*args,**kwargs)
+        print("After")
+    return display
+
+@decorator
+def add(s,a,b):
+    print(s,a+b,'\n')
+
+def sub(s,a,b):
+    print(s,a-b,'\n')
+
+add("addition:",2,4)
+sub("subtraction:",10,5)
+'''
+Output:
+Before
+addition: 6
+
+After
+Before
+subtraction: 5
+
+After
+'''
+```
