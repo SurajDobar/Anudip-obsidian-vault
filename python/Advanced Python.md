@@ -37,6 +37,7 @@
   - [Basic Decorator With Before And After](#"Basic""Decorator""With""Before""And""After")
   - [Syntax Decorator With Arguments](#"Syntax""Decorator""With""Arguments")
 
+---
 ## List Comprehension
 
 ##### Basic List Comprehension
@@ -74,6 +75,7 @@ Output:
 '''
 ```
 
+---
 ## Dictionary Comprehension
 
 ##### Basic Dictionary Comprehension
@@ -112,6 +114,7 @@ Output:
 '''
 ```
 
+---
 ## Generator
 
 ##### Generator Concept
@@ -273,6 +276,7 @@ Output:
 '''
 ```
 
+---
 ## Class And Oops Revise 
 class variable is decalred inside the class , class variable is shared by all the objects in the class , 
 
@@ -427,7 +431,7 @@ Dog barks
 '''
 ```
 
-
+---
 ## Magic Method
 Magic method are special method called automatically .
 we use __ __ (double underscore between the majic method )
@@ -492,12 +496,28 @@ Output:
 '''
 ```
 
-
+--- 
 ## Decorator
-Decorator is a function that take another function as input , add some functionality and return the code without changing the original code
+
+A decorator is a function that takes another function, adds behavior, and returns it—without changing the original code.
+
+##### Function As Variable
+A function can be stored in a variable and called through it.
+
+```python
+def hello():
+    print("hello")
+
+var = hello  # function stored in variable
+var()        # calls hello()
+'''
+Output:
+hello
+'''
+```
 
 ##### Function As Parameter
-Passing a function as an argument to another function. The function can be called inside the wrapper.
+Passing a function as an argument to another function.
 
 ```python
 def hello():
@@ -513,59 +533,62 @@ hello
 '''
 ```
 
-##### Basic Decorator With Before And After
-A decorator wraps a function and adds extra behavior before and after the original function runs.
+##### Basic Decorator Pattern
+Decorator wraps a function and adds extra behavior before and after.
 
 ```python
 def decorator(func):
     def inner():
-        print("Before function")
+        print("Before")
         func()
-        print("After function")
+        print("After")
     return inner
 
+@decorator
 def welcome():
-    print("welcome to decorators")
+    print("welcome")
 
-welcome = decorator(welcome)
 welcome()
 '''
 Output:
-Before function
-welcome to decorators
-After function
+Before
+welcome
+After
 '''
 ```
 
-##### Syntax Decorator With Arguments
-Using `@decorator` syntax to wrap functions. Decorator handles `*args` and `**kwargs` to support any function signature.
+`@decorator` is shorthand for `welcome = decorator(welcome)`
+
+##### Decorator With Arguments
+Decorator handles `*args` and `**kwargs` to support any function signature.
 
 ```python
 def decorator(func):
-    def display(s,*args,**kwargs):
+    def wrapper(s, *args, **kwargs):
         print("Before")
-        func(s,*args,**kwargs)
+        func(s, *args, **kwargs)
         print("After")
-    return display
+    return wrapper
 
 @decorator
-def add(s,a,b):
-    print(s,a+b,'\n')
+def add(s, a, b):
+    print(s, a + b)
 
-def sub(s,a,b):
-    print(s,a-b,'\n')
-
-add("addition:",2,4)
-sub("subtraction:",10,5)
+add("Result:", 2, 4)
 '''
 Output:
 Before
-addition: 6
-
-After
-Before
-subtraction: 5
-
+Result: 6
 After
 '''
 ```
+
+- `*args` → handles positional arguments
+- `**kwargs` → handles keyword arguments
+
+##### Remember
+
+> Decorators wrap a function to add behavior before and after, without changing the original code.
+
+---
+

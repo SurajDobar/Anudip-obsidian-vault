@@ -1,37 +1,37 @@
 {
   "styles": {
     "src": {
-      "backgroundColor": "#620ae6",
+      "backgroundColor": "#2a7fff",
       "applyToSubfolders": true,
-      "textColor": "#bdadad",
+      "textColor": "#000000",
       "isBold": true,
       "isItalic": true
     },
     "SS": {
-      "backgroundColor": "#620ae6",
+      "backgroundColor": "#615fff",
       "applyToSubfolders": true,
-      "textColor": "#bdadad",
+      "textColor": "#000000",
       "isBold": true,
       "isItalic": true
     },
     "sql": {
-      "backgroundColor": "#620ae6",
+      "backgroundColor": "#7dcf02",
       "applyToSubfolders": true,
-      "textColor": "#bdadad",
+      "textColor": "#000000",
       "isBold": true,
       "isItalic": true
     },
     "python": {
-      "backgroundColor": "#620ae6",
+      "backgroundColor": "#e12afb",
       "applyToSubfolders": true,
-      "textColor": "#bdadad",
+      "textColor": "#000000",
       "isBold": true,
       "isItalic": true
     },
     "Prompt files": {
-      "backgroundColor": "#620ae6",
+      "backgroundColor": "#ad46ff",
       "applyToSubfolders": true,
-      "textColor": "#bdadad",
+      "textColor": "#000000",
       "isBold": true,
       "isItalic": true
     },

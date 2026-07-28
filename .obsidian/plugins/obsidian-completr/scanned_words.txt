@@ -513,6 +513,11 @@ prefix
 pauses
 processing
 parameter
+paragraphs
+packages
+patterns
+probably
+preserving
 and
 allows
 associate
@@ -1000,6 +1005,9 @@ accesses
 assigns
 aß
 argument
+author
+activate
+avoid
 changing
 created
 completed
@@ -1532,6 +1540,10 @@ comprehension
 classmethod
 cls
 ciriculum
+compress
+classroom
+correct
+correctness
 is
 instead
 immediately
@@ -1987,6 +1999,10 @@ implementation
 iterated
 iter
 iXhH
+installing
+isolated
+inaccurate
+internal
 for
 failure
 final
@@ -2382,6 +2398,8 @@ finally
 formatted
 fetches
 fYv
+filler
+finishing
 value
 values
 variable
@@ -2727,6 +2745,8 @@ vOQ
 vdq
 varialbe
 vitae
+venv
+verify
 not
 necessarily
 neither
@@ -3047,6 +3067,8 @@ nGL
 nGVdzz
 nzhvS
 normally
+naturally
+necessary
 known
 keywords
 know
@@ -3721,6 +3743,8 @@ wwu
 wrapper
 wraps
 wrap
+whenever
+warnings
 the
 to
 these
@@ -4145,6 +4169,9 @@ tbJrJ
 throw
 taQ
 teaching
+teach
+textbook
+technically
 It
 Invokes
 Inside
@@ -4551,6 +4578,7 @@ IuP
 Input
 Iter
 Instance
+Indentation
 you
 yYE
 yUv
@@ -5240,6 +5268,7 @@ hIekB
 hjPM
 hvq
 handles
+history
 eventual
 each
 event
@@ -5720,6 +5749,9 @@ erorr
 errors
 eSP
 experts
+excellent
+explanations
+emojis
 success
 synchronous
 supply
@@ -6290,6 +6322,13 @@ streams
 sequences
 staticmethod
 signature
+simplifier
+solves
+symbols
+sacrifice
+simplicity
+spacing
+skim
 or
 of
 one
@@ -6644,6 +6683,8 @@ oNDL
 operates
 overriding
 overloading
+omit
+obvious
 reason
 return
 returning
@@ -7117,6 +7158,11 @@ raise
 regardless
 returned
 resumes
+rewrites
+remember
+repeating
+reused
+recognizing
 This
 The
 There
@@ -7519,6 +7565,8 @@ TlV
 Try
 Takes
 TpBn
+Teaching
+Topics
 lets
 like
 looks
@@ -7925,6 +7973,7 @@ lJY
 lpBk
 lazily
 lectures
+learner
 methods
 method
 meaning
@@ -8362,6 +8411,7 @@ mmc
 mAi
 mAB
 majic
+marketing
 diagram
 doesnt
 does
@@ -8804,6 +8854,9 @@ dynamically
 datasets
 decalred
 decorator
+detail
+decorative
+details
 Protoypal
 Purpose
 Promise
@@ -9241,6 +9294,7 @@ Private
 Pzl
 Passing
 Parameter
+Philosophy
 Each
 Example
 Everything
@@ -9630,6 +9684,7 @@ Exception
 Except
 Expression
 Extracourse
+Edit
 js
 just
 javascript
@@ -10347,6 +10402,10 @@ boW
 bFy
 bQN
 bark
+beginner
+bullet
+belongs
+bullets
 upon
 underneath
 use
@@ -10681,6 +10740,9 @@ uwQwQ
 uwjQf
 unlike
 uDw
+understandable
+useful
+understood
 Hello
 HKM
 Haa
@@ -11346,6 +11408,9 @@ WIb
 With
 Works
 Wqo
+Writing
+Whenever
+Would
 But
 BG
 BaE
@@ -11682,6 +11747,8 @@ BfS
 Boe
 BLt
 Bark
+Best
+Breakdown
 Syntax
 SS
 SvIB
@@ -12135,6 +12202,8 @@ Spd
 StW
 Sxx
 Str
+Simplifier
+Stores
 JavaScript
 JS
 JJJ
@@ -12828,6 +12897,9 @@ RYoM
 Reserves
 Raise
 Revise
+Reads
+Remember
+Rewrite
 Async
 Allows
 Await
@@ -13212,6 +13284,9 @@ Accessible
 Advaned
 AALR
 Arguments
+Avoid
+Aim
+Assume
 queue
 qGG
 qv
@@ -13884,6 +13959,7 @@ gPv
 grandparent
 generated
 gwp
+giant
 You
 YmTv
 YY
@@ -14511,6 +14587,8 @@ GRx
 Generators
 GpP
 GjJ
+Greater
+Golden
 Common
 CIr
 CBB
@@ -14930,6 +15008,9 @@ Comprehension
 Condition
 Constructor
 CdAJY
+Convert
+Compression
+Checklist
 Modules
 MDN
 Ms
@@ -15291,6 +15372,8 @@ MFo
 Multilevel
 Magic
 Mantra
+Mention
+Medium
 Docs
 DEE
 Dq
@@ -15689,6 +15772,10 @@ Deo
 Dog
 DZX
 Decorator
+Django
+DSA
+Definitions
+Did
 Node
 NJ
 NE
@@ -16687,6 +16774,7 @@ LuMO
 LrQ
 Loop
 Lazy
+Large
 xDN
 xM
 xaWRRR
@@ -17412,6 +17500,9 @@ FInheritance
 Filtering
 Finally
 FAdvanced
+Future
+Frameworks
+Final
 Uk
 UL
 Ui
@@ -18092,6 +18183,7 @@ Oops
 OOP
 Overriding
 Overloading
+Only
 KQ
 KU
 KLL
@@ -18721,6 +18813,7 @@ QQC
 QQRQ
 QVC
 QLeW
+Questions
 Vi
 VJ
 VN
@@ -19010,6 +19103,8 @@ Vef
 VbO
 VRR
 VVh
+Virtual
+Variables
 zzi
 zz
 zyy

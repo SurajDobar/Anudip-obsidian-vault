@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "SiMarkdown",
+      "LiALargeSmall",
       "SiJupyter",
       "LiCode",
-      "FarFilePdf",
-      "RiSpeakLine",
-      "FasImages"
+      "FarFilePdf"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -68,10 +68,7 @@
     "iconName": "FabMarkdown",
     "iconColor": "#ff00ff"
   },
-  "src": {
-    "iconName": "FasImages",
-    "iconColor": "#bdadad"
-  },
+  "src": "FasImages",
   "sql/sql-src": {
     "iconName": "FasImages",
     "iconColor": "#00ffff"
@@ -110,5 +107,9 @@
   "python/python ipynb/Advanced python ipynb": {
     "iconName": "SiJupyter",
     "iconColor": "#f37726"
+  },
+  "Prompt files/agent obsidian Notes Simplifier.md": {
+    "iconName": "SiMarkdown",
+    "iconColor": "#ff00ff"
   }
 }
