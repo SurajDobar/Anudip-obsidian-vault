@@ -34,7 +34,6 @@
     "debugMode": false,
     "useInternalPlugins": false
   },
-  "Prompt files": "LiCommand",
   "python": "FabPython",
   "python/python ipynb": {
     "iconName": "SiJupyter",
@@ -57,14 +56,6 @@
     "iconColor": "#ff00ff"
   },
   "python/python experts lectures (special).md": {
-    "iconName": "FabMarkdown",
-    "iconColor": "#ff00ff"
-  },
-  "Prompt files/CODE_TO_NOTES.md": {
-    "iconName": "FabMarkdown",
-    "iconColor": "#ff00ff"
-  },
-  "Prompt files/Table_of_contents.md": {
     "iconName": "FabMarkdown",
     "iconColor": "#ff00ff"
   },
@@ -107,9 +98,5 @@
   "python/python ipynb/Advanced python ipynb": {
     "iconName": "SiJupyter",
     "iconColor": "#f37726"
-  },
-  "Prompt files/agent obsidian Notes Simplifier.md": {
-    "iconName": "SiMarkdown",
-    "iconColor": "#ff00ff"
   }
 }

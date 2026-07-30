@@ -518,6 +518,7 @@ packages
 patterns
 probably
 preserving
+positional
 and
 allows
 associate
@@ -6329,6 +6330,7 @@ sacrifice
 simplicity
 spacing
 skim
+shorthand
 or
 of
 one
@@ -11749,6 +11751,7 @@ BLt
 Bark
 Best
 Breakdown
+Builtin
 Syntax
 SS
 SvIB
@@ -15776,6 +15779,7 @@ Django
 DSA
 Definitions
 Did
+Decorators
 Node
 NJ
 NE

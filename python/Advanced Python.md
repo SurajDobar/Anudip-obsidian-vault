@@ -36,6 +36,18 @@
   - [Function As Parameter](#"Function""As""Parameter")
   - [Basic Decorator With Before And After](#"Basic""Decorator""With""Before""And""After")
   - [Syntax Decorator With Arguments](#"Syntax""Decorator""With""Arguments")
+  - [Decorator With Arguments](#"Decorator""With""Arguments")
+  
+- [Builtin Modules](#"Builtin""Modules")
+  - [Import Vs From](#"Import""Vs""From")
+  - [Math Module](#"Math""Module")
+  - [Datetime Module](#"Datetime""Module")
+  - [Random Module](#"Random""Module")
+  - [Custom Modules](#"Custom""Modules")
+  - [Importing Classes From Modules](#"Importing""Classes""From""Modules")
+  - [Dir Function](#"Dir""Function")
+  - [Os Module](#"Os""Module")
+  - [Sys Module](#"Sys""Module")
 
 ---
 ## List Comprehension
@@ -592,3 +604,116 @@ After
 
 ---
 
+## Builtin Modules
+
+##### Import Vs From
+- **`import module`** → use `module.function()`
+- **`from module import function`** → use `function()` directly
+
+```python
+# import
+import math
+math.sqrt(16)  # need module name
+
+# from
+from math import sqrt
+sqrt(16)  # no module name needed
+```
+
+##### Math Module
+`math.sqrt()` → square root of a number.
+
+```python
+import math
+math.sqrt(16)  # 4.0
+```
+
+##### Datetime Module
+`datetime.datetime.now()` → current date and time.
+
+```python
+import datetime as dt
+dt.datetime.now()  # 2026-07-30 16:31:50.023204
+```
+
+##### Random Module
+`randint(a, b)` → random integer between a and b.
+
+```python
+from random import randint
+randint(1, 10)  # e.g. 7
+```
+
+##### Custom Modules
+**mymodule.py**
+```python
+def addition(a, b):
+    return a + b
+
+def subtraction(a, b):
+    return a - b
+```
+
+**main.py**
+```python
+import mymodule as mm
+
+mm.addition(5, 10)  # 15
+mm.subtraction(10, 5)  # 5
+```
+
+##### Importing Classes From Modules
+Use `from module import ClassName` to import a specific class.
+
+**display.py**
+```python
+class Myclass:
+    def display(self, name):
+        return f"Hello {name}!"
+```
+
+**main.py**
+```python
+from display import Myclass
+
+obj = Myclass()
+obj.display("Anudip")  # Hello Anudip!
+```
+
+##### Dir Function
+`dir(module)` → lists all attributes and methods of a module.
+
+```python
+import os
+dir(os)  # ['F_OK', 'mkdir', 'chdir', ...]
+```
+
+##### Os Module
+`os.mkdir()` → creates a directory.
+`os.chdir()` → changes current directory.
+`os.path.abspath()` → gets full path.
+
+```python
+import os
+os.mkdir("sample")
+os.chdir("sample")
+
+with open("sample.txt", "w") as f:
+    f.write("Hello!")
+
+os.path.abspath("sample.txt")  # full path
+```
+
+##### Sys Module
+- `sys.path` → Python search paths
+- `sys.platform` → OS name
+- `sys.version` → Python version
+
+```python
+import sys
+sys.path  # list of paths
+sys.platform  # 'win32'
+sys.version  # '3.12.10'
+```
+
+> **Remember:** Use `import` when you need the full module, use `from...import` when you need specific functions or classes.
