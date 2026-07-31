@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "FabHtml5",
       "SiMarkdown",
       "LiALargeSmall",
       "SiJupyter",
-      "LiCode",
-      "FarFilePdf"
+      "LiCode"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -98,5 +98,10 @@
   "python/python ipynb/Advanced python ipynb": {
     "iconName": "SiJupyter",
     "iconColor": "#f37726"
+  },
+  "html,css,js": "FabHtml5",
+  "html,css,js/html.md": {
+    "iconName": "SiMarkdown",
+    "iconColor": "#ff00ff"
   }
 }
