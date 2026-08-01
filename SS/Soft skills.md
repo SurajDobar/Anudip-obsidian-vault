@@ -2,6 +2,7 @@
 
 The STAR method (Situation, Task, Action, Result) is a storytelling framework used to prove soft skills in job interviews.
 It helps you provide clear, concise answers to behavioral questions 
+
 ```python
 Question: "Tell me about a project you worked on last year.
 
@@ -303,3 +304,20 @@ cv=ciriculum vitae (used for those who are in teaching)
 hobbies 
 location
 goals 
+
+---
+
+last lecture ISP
+(faq) frequently asked question 
+[ISP pdf](obsidian://open?vault=Anudip-obsidian-vault&file=SS%2Fpdf%2FMaster%20Class-%20Interview%20Prep.pdf)
+
+
+Repeat the question at the end 
+example 
+```
+what do you see yourself in 2 years 
+
+		-----------------
+	and so this what i see myself in 2 years thankyou 
+
+```

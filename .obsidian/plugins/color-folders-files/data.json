@@ -83,6 +83,20 @@
       "textColor": "#ffffff",
       "isBold": true,
       "isItalic": true
+    },
+    "html,css,js": {
+      "backgroundColor": "#e2e60a",
+      "applyToSubfolders": false,
+      "textColor": "#000000",
+      "isBold": true,
+      "isItalic": true
+    },
+    "SS/pdf": {
+      "backgroundColor": "#b10eb4",
+      "applyToSubfolders": false,
+      "textColor": "#ffffff",
+      "isBold": true,
+      "isItalic": true
     }
   },
   "presets": {

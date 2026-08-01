@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "FarFilePdf",
+      "LiAArrowUp",
       "FabHtml5",
       "SiMarkdown",
-      "LiALargeSmall",
-      "SiJupyter",
-      "LiCode"
+      "LiALargeSmall"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -103,5 +103,9 @@
   "html,css,js/html.md": {
     "iconName": "SiMarkdown",
     "iconColor": "#ff00ff"
+  },
+  "SS/pdf": {
+    "iconName": "FarFilePdf",
+    "iconColor": "#ff0000"
   }
 }
