@@ -4,13 +4,13 @@
   - [Head Tag](#"Head""Tag")
   - [Meta Tags](#"Meta""Tags")
   - [Title Tag](#"Title""Tag")
-  
+
 - [Body And Styling](#"Body""And""Styling")
   - [Body Tag](#"Body""Tag")
-  
+
 - [Headings](#"Headings")
   - [H1 To H6](#"H1""To""H6")
-  
+
 - [Text Tags](#"Text""Tags")
   - [P Tag](#"P""Tag")
   - [Br Tag](#"Br""Tag")
@@ -37,6 +37,31 @@
 - [Media Tags](#"Media""Tags")
   - [Audio Tag](#"Audio""Tag")
   - [Video Tag](#"Video""Tag")
+
+- [Tables](#"Tables")
+  - [Table Basics](#"Table""Basics")
+  - [Table Sections](#"Table""Sections")
+  - [Column Styling](#"Column""Styling")
+
+- [Forms](#"Forms")
+  - [Form Basics](#"Form""Basics")
+  - [Fieldset And Legend](#"Fieldset""And""Legend")
+  - [Label Tag](#"Label""Tag")
+  - [Input Types Text And Password](#"Input""Types""Text""And""Password")
+  - [Input Types Email Url Number](#"Input""Types""Email""Url""Number")
+  - [Input Types Date Time Month Week](#"Input""Types""Date""Time""Month""Week")
+  - [Input Types Radio And Checkbox](#"Input""Types""Radio""And""Checkbox")
+  - [Input Types Color And Range](#"Input""Types""Color""And""Range")
+  - [Input Types File Submit Reset](#"Input""Types""File""Submit""Reset")
+  - [Select And Option Dropdown](#"Select""And""Option""Dropdown")
+  - [Textarea Tag](#"Textarea""Tag")
+  - [Button Tag](#"Button""Tag")
+  - [Div And Center Tags](#"Div""And""Center""Tags")
+  - [Amazon Login Form Example](#"Amazon""Login""Form""Example")
+
+---
+
+# Day 1
 
 ## HTML Basics
 
@@ -266,4 +291,216 @@ Embeds video with playback controls. Same structure as audio.
 
 ---
 
-> **Remember:** HTML is about structure, not style. Use semantic tags (`header`, `nav`, `section`) for better readability and SEO.
+# Day 2
+
+## Tables
+
+##### Table Basics
+`<table>` creates a table. `<caption>` adds a title. `<tr>` defines rows, `<th>` header cells, `<td>` data cells.
+
+```html
+<table border="1">
+  <caption>Product Details</caption>
+  <tr>
+    <th>Product id</th>
+    <th>Product name</th>
+    <th>Product Price</th>
+  </tr>
+  <tr>
+    <td>101</td>
+    <td>Mobile</td>
+    <td>20000</td>
+  </tr>
+</table>
+```
+
+##### Table Sections
+`<thead>` groups header rows, `<tbody>` groups body rows, `<tfoot>` groups footer rows.
+
+```html
+<table border="1">
+  <thead>
+    <tr><th>Id</th><th>Name</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>101</td><td>Mobile</td></tr>
+  </tbody>
+  <tfoot>
+    <tr><td>107</td><td>washing machine</td></tr>
+  </tfoot>
+</table>
+```
+
+##### Column Styling
+`<colgroup>` wraps `<col>` elements to style entire columns at once.
+
+```html
+<colgroup>
+  <col style="background-color: antiquewhite;">
+  <col style="background-color: antiquewhite;">
+</colgroup>
+```
+
+---
+
+# Day 3
+
+## Forms
+
+##### Form Basics
+`<form>` wraps form elements. `method` sets HTTP method (get/post), `action` sets where data is sent.
+
+```html
+<form method="post" action="submit.php">
+  <label>First Name:</label>
+  <input type="text" name="fname" placeholder="Enter name" required>
+  <input type="submit" value="Submit">
+</form>
+```
+
+##### Fieldset And Legend
+`<fieldset>` groups form elements. `<legend>` adds a caption to the group.
+
+```html
+<fieldset>
+  <legend><h1>Registration Form</h1></legend>
+  <!-- form fields here -->
+</fieldset>
+```
+
+##### Label Tag
+`<label>` ties text to an input. `for` attribute links to input's `id`.
+
+```html
+<label for="email">Email:</label>
+<input type="email" id="email" name="email">
+```
+
+##### Input Types Text And Password
+- `type="text"` → single-line text
+- `type="password"` → hidden characters
+
+```html
+<input type="text" name="fname" placeholder="Enter first name" required>
+<input type="password" name="password" placeholder="Enter password" required>
+```
+
+##### Input Types Email Url Number
+- `type="email"` → validates email format
+- `type="url"` → validates URL format
+- `type="number"` → only numbers
+
+```html
+<input type="email" name="email" placeholder="Enter email" required>
+<input type="url" name="github" placeholder="Enter github link" required>
+<input type="number" name="age" placeholder="Enter age" required>
+```
+
+##### Input Types Date Time Month Week
+- `type="date"` → date picker
+- `type="time"` → time picker
+- `type="month"` → month picker
+- `type="week"` → week picker
+
+```html
+<input type="date" name="dob" required>
+<input type="time" name="time" required>
+<input type="month" name="joining_month" required>
+<input type="week" name="joining_week" required>
+```
+
+##### Input Types Radio And Checkbox
+- `type="radio"` → single selection (same `name` groups them)
+- `type="checkbox"` → multiple selections
+
+```html
+<input type="radio" name="gender" value="male" required> Male
+<input type="radio" name="gender" value="female" required> Female
+
+<input type="checkbox" name="hobbies" value="reading"> Reading
+<input type="checkbox" name="hobbies" value="sports"> Sports
+```
+
+##### Input Types Color And Range
+- `type="color"` → color picker
+- `type="range"` → slider with min/max
+
+```html
+<input type="color" name="color" required>
+<input type="range" name="skill" min="1" max="10" required>
+```
+
+##### Input Types File Submit Reset
+- `type="file"` → file upload
+- `type="submit"` → sends form data
+- `type="reset"` → clears all form fields
+
+```html
+<input type="file" name="file" required>
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+```
+
+##### Select And Option Dropdown
+`<select>` creates a dropdown. `<option>` defines each choice.
+
+```html
+<select name="country" required>
+    <option value="">Select your country</option>
+    <option value="india">India</option>
+    <option value="uk">UK</option>
+    <option value="canada">Canada</option>
+</select>
+```
+
+##### Textarea Tag
+`<textarea>` for multi-line text input (address, comments, etc).
+
+```html
+<textarea name="address" placeholder="Enter your address" required></textarea>
+```
+
+##### Button Tag
+`<button>` creates a clickable button. `type` can be submit, reset, or button.
+
+```html
+<button type="submit">Login</button>
+<button type="submit">Create your Amazon account</button>
+```
+
+##### Div And Center Tags
+- `<div>` → container for grouping content
+- `<center>` → centers content horizontally
+
+```html
+<div>
+  <center>
+    <img src="logo.png" alt="Logo" style="width: 100px;">
+  </center>
+</div>
+```
+
+##### Amazon Login Form Example
+A styled login form with image, inputs, button, and checkbox.
+
+```html
+<div>
+  <center>
+    <img src="Amazon-logo.png" alt="Amazon Logo" style="width: 100px;">
+  </center>
+  <form method="post" action="submit" style="background-color: #f3f3f3; padding: 20px; border-radius: 5px; width: 300px; margin: auto;">
+    <h1>Login</h1>
+    <label>Email or phone number</label><br>
+    <input type="text" name="email" placeholder="Enter your email" required><br><br>
+    <label>Password</label><br>
+    <input type="password" name="password" placeholder="Enter password" required><br><br>
+    <button style="width:100%; background-color: #f0c14b; border: none; padding: 10px;" type="submit">Login</button><br><br>
+    <input type="checkbox" name="remember" id="remember">
+    <label for="remember">Keep me signed in</label>
+  </form>
+</div>
+```
+
+---
+
+> **Remember:** HTML is about structure, not style. Forms need `name` attribute on inputs to send data. Always use `label` for accessibility. Use `required` to prevent empty submissions.

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="#1a1a1a" text="#ffffff">
+    <fieldset>
+    <legend><h1>Registration Form</h1></legend>
+    <form method="post" action="submit.php">
+    <label>First Name:</label>
+    <input type="text" name="fname" placeholder="Enter your first name" required><br><br>
+    
+    <label>Last Name:</label>
+    <input type="text" name="lname" placeholder="Enter your last name" required><br><br>
+
+    <label>Email:</label>
+    <input type="email" name="email" placeholder="Enter your email" required><br><br>
+
+    <label>Password:</label>
+    <input type="password" name="password" placeholder="Enter your password" required><br><br>
+
+    <label>Date of Birth:</label>
+    <input type="date" name="dob" required><br><br>
+
+    <label>Age:</label>
+    <input type="number" name="age" placeholder="Enter your age" required><br><br>
+
+    <label>Gender:</label>
+    <input type="radio" name="gender" value="male" required> Male
+    <input type="radio" name="gender" value="female" required> Female 
+    <input type="radio" name="gender" value="other" required> Other <br><br>
+
+    <label>Hobbies:</label>
+    <input type="checkbox" name="hobbies" value="reading"> Reading
+    <input type="checkbox" name="hobbies" value="traveling"> Traveling
+    <input type="checkbox" name="hobbies" value="sports"> Sports
+    <input type="checkbox" name="hobbies" value="music"> Music <br><br>
+
+    <label>Country:</label>
+    <select name="country" required>
+        <option value="">Select your country</option>
+        <option value="usa">India</option>
+        <option value="uk">UK</option>
+        <option value="canada">Canada</option>
+        <option value="australia">Australia</option>
+    </select><br><br>
+
+
+    <label>Subjects:</label>
+    <select name="subjects" required>
+        <option value="">Select subjects</option>
+        <option value="mysql">mysql</option>
+        <option value="python">python</option>
+        <option value="javascript">javascript</option>
+    </select><br><br>
+
+    <label>Address:</label>
+    <textarea name="address" placeholder="Enter your address" required></textarea><br><br>
+
+    <label>upload file: </label>
+    <input type="file" name="file" required><br><br>
+
+    <label> favorite color: </label>
+    <input type="color" name="color" required><br><br>
+
+    <label> skill level: </label>
+    <input type="range" name="skill" min="1" max="10" required><br><br>
+
+    <label> github link: </label>
+    <input type="url" name="github" placeholder="Enter your github link" required><br><br>
+
+    <label>joingin month: </label>
+    <input type="month" name="joining_month" required><br><br>
+
+    <label> joingin week: </label>
+    <input type="week" name="joining_week" required><br><br>
+
+    <label> time: </label>
+    <input type="time" name="time" required><br><br>
+
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+        
+
+    </fieldset>
+
+    
+
+</form>
+</body>
+</html>
