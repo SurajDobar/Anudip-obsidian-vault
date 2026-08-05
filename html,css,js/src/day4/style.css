@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: lightblue;
+}
+
+/*
+this is a comment 
+*/
+#myH3{
+    color: red;
+    text-align: center;
+}
+
+.bluecard{
+    
+    background-color: aqua;
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    height: 200px;
+}
+
+form{
+    display:flex;
+    flex-direction: row;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: baseline;
+    /* display:grid */
+}
+
+
+
+
+.hidden{
+    margin: 20px;
+    padding: 20px;
+    display:none;   
+}
+.dotted{  margin: 20px;
+    padding: 20px;
+    border: 2px dotted black;
+}
+.solid{  margin: 20px;
+    padding: 20px;
+    border: 2px solid black;
+}
+.double{  margin: 20px;
+    padding: 20px;
+    border: 2px double black;
+}
+.inset{  margin: 20px;
+    padding: 20px;
+    border: 2px inset black;
+}
+.outset{  margin: 20px;
+    padding: 20px;
+    border: 2px outset black;
+}
+.ridge{  margin: 20px;
+    padding: 20px;
+    border: 2px ridge black;
+}
+.groove{  margin: 20px;
+    padding: 20px;
+    border: 2px groove black;
+}
+
+
+/* padding page*/
+#p1{
+    margin:10rem;
+    border: 2px solid black;
+}
+#p2{
+    padding: 20px 0 0 0;
+    border: 2px solid black;
+}
+
+/* margin page*/
+.m1{
+    margin: 20px;
+    border: 2px solid black;
+}
+.m2{
+    padding: 20px 0 0 0;
+    border: 2px solid black;
+}
