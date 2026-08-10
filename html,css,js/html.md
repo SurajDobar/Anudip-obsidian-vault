@@ -69,6 +69,17 @@
 - [Grid Layout Assignment](#"Grid""Layout""Assignment")
   - [Real Layout With Grid And Flexbox](#"Real""Layout""With""Grid""And""Flexbox")
   - [Layout Breakdown](#"Layout""Breakdown")
+- [Text Styling](#"Text""Styling")
+  - [Text Decoration](#"Text""Decoration")
+  - [Text Align](#"Text""Align")
+  - [Text Transform](#"Text""Transform")
+  - [Letter Spacing](#"Letter""Spacing")
+  - [Float Property](#"Float""Property")
+- [CSS Pseudo Classes](#"CSS""Pseudo""Classes")
+  - [Pseudo Classes Overview](#"Pseudo""Classes""Overview")
+  - [Link Pseudo Classes](#"Link""Pseudo""Classes")
+  - [Button Pseudo Classes](#"Button""Pseudo""Classes")
+  - [Checkbox And Form State Pseudo Classes](#"Checkbox""And""Form""State""Pseudo""Classes")
 
 ---
 
@@ -1187,4 +1198,217 @@ The `.box` class uses Flexbox to center text inside each grid item — this demo
 ---
 
 > **Remember:** `<marquee>` is deprecated — use CSS `@keyframes` animations instead. CSS Grid is two-dimensional (rows + columns), Flexbox is one-dimensional (row OR column). Use `fr` unit for proportional column widths. `grid-column: 1 / 3` makes an item span the full width of a 2-column grid. Always combine Grid for layout and Flexbox for content alignment for clean, maintainable code.
+
+---
+
+# Day 6
+
+## Text Styling
+
+##### Text Decoration
+The `text-decoration` property adds or removes decorative lines on text. It has four main values:
+- `underline` — Adds a line below the text. Commonly used for links, but can be applied to any element. Useful for emphasizing keywords or indicating clickable text.
+- `none` — Removes the default underline from links. This is the most common use case — removing the underline from anchor tags while keeping them clickable.
+- `overline` — Adds a line above the text. Rarely used in practice, but occasionally seen in stylized headings or academic notation.
+- `line-through` — Adds a line through the middle of the text (strikethrough). Used to show deleted content, price discounts (old price crossed out), or completed tasks.
+
+```css
+.underline    { text-decoration: underline; }
+.no-decoration { text-decoration: none; }       /* removes link underline */
+.overline     { text-decoration: overline; }
+.strikethrough { text-decoration: line-through; }
+```
+
+```html
+<p style="text-decoration: underline;">Underlined text</p>
+<a href="#" style="text-decoration: none;">Link without underline</p>
+<p style="text-decoration: overline;">Text with overline</p>
+<p style="text-decoration: line-through;">$99 → $49 (discounted)</p>
+```
+
+**Interview point:** The most common use of `text-decoration: none` is removing underlines from navigation links to make them look cleaner. Never remove underlines from links without providing another visual indicator (like color or hover effect) — users need to know what's clickable.
+
+##### Text Align
+The `text-align` property controls horizontal alignment of text inside its container. It has four values:
+- `left` — Aligns text to the left edge (default for English/LTR languages). Most common for body text.
+- `right` — Aligns text to the right edge. Used for prices, dates, or RTL languages.
+- `center` — Centers text horizontally. Used for headings, titles, and call-to-action buttons.
+- `justify` — Stretches each line so both left and right edges are flush. Creates clean edges like newspapers and magazines. The last line stays left-aligned.
+
+```css
+.left    { text-align: left; }
+.right   { text-align: right; }
+.center  { text-align: center; }
+.justify { text-align: justify; }
+```
+
+```html
+<p style="text-align: left;">Left-aligned text (default)</p>
+<p style="text-align: right;">Right-aligned text</p>
+<p style="text-align: center;">Centered text</p>
+<p style="text-align: justify;">
+  Justified text stretches to fill the full width of the container.
+  Both left and right edges are flush, creating a clean block appearance
+  similar to newspapers and magazines.
+</p>
+```
+
+**Interview point:** `text-align: justify` can create uneven spacing between words (especially in narrow columns). It works best with long paragraphs in wide containers. For short text like headings or buttons, use `center` instead. Always use `text-align` instead of multiple `&nbsp;` or `<br>` tags for alignment.
+
+##### Text Transform
+The `text-transform` property changes the capitalization of text without changing the HTML content. This is useful for styling text case independently of the source code — you can keep your HTML in lowercase and transform it visually.
+- `uppercase` — Converts all characters to UPPER CASE. Used for headings, labels, and navigation items.
+- `lowercase` — Converts all characters to lower case. Used to normalize inconsistent input.
+- `capitalize` — Capitalizes the first letter of each word (Title Case). Used for headings and names.
+- `none` — No transformation (default). Keeps the original text as-is.
+
+```css
+.uppercase  { text-transform: uppercase; }
+.lowercase  { text-transform: lowercase; }
+.capitalize { text-transform: capitalize; }
+```
+
+```html
+<p style="text-transform: uppercase;">hello world → HELLO WORLD</p>
+<p style="text-transform: lowercase;">HELLO WORLD → hello world</p>
+<p style="text-transform: capitalize;">hello world → Hello World</p>
+<p style="text-transform: none;">No Change Applied</p>
+```
+
+**Interview point:** `text-transform` is purely visual — screen readers still read the original HTML text. For important content (like headings that should always be capitalized), use `text-transform` in CSS rather than hardcoding uppercase in HTML. This keeps your content accessible and allows easy changes.
+
+##### Letter Spacing
+The `letter-spacing` property controls the space between characters in text. Positive values spread letters apart, negative values bring them closer together. This is a subtle but powerful typography tool for adjusting readability and visual feel.
+- `2px` — Adds 2px of extra space between each character. Creates an open, airy feel. Common in headings and uppercase text.
+- `-1px` — Reduces space by 1px. Brings characters closer. Use carefully — too tight reduces readability.
+- `normal` — Default browser spacing. No adjustment.
+
+```css
+.spaced-out  { letter-spacing: 2px; }
+.tight       { letter-spacing: -1px; }
+.default     { letter-spacing: normal; }
+```
+
+```html
+<p style="letter-spacing: 2px;">Spaced Out Text</p>
+<p style="letter-spacing: -1px;">Tightly Spaced Text</p>
+<p style="letter-spacing: normal;">Normal Spacing (default)</p>
+```
+
+**Interview point:** Letter spacing is commonly used with `text-transform: uppercase` to improve readability of all-caps text (uppercase letters benefit from extra spacing). This is a common design pattern in headers, navigation items, and buttons. Also used in logos and brand typography for a premium feel.
+
+##### Float Property
+The `float` property positions an element to the left or right of its container, allowing text and inline elements to wrap around it. Originally designed for wrapping text around images (like in newspapers and magazines), float was historically used for page layouts before Flexbox and Grid existed. Today, float is primarily used for its original purpose — wrapping text around images — while Flexbox and Grid handle layout.
+- `float: right` — Moves the element to the right, text wraps on the left.
+- `float: left` — Moves the element to the left, text wraps on the right.
+- `clear: both` — Prevents elements from floating on both sides (used after floated elements).
+
+```css
+img {
+  float: right;
+  margin: 0 0 15px 15px;    /* space between image and text */
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;              /* clears the float */
+}
+```
+
+```html
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua.
+  <img src="photo.jpg" style="float: right; width: 150px; margin: 0 0 15px 15px;">
+  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+  ut aliquip ex ea commodo consequat. The text wraps around the floated image.
+</p>
+```
+
+**Interview point:** Float was the original CSS layout tool (before Flexbox and Grid). If you encounter "clearfix" hacks or "float-based layouts" in legacy code, that's why. Always use Flexbox or Grid for modern layouts. Float's only real use today is wrapping text around images — which it does very well. The `clear` property is used to stop floating behavior.
+
+---
+
+## CSS Pseudo Classes
+
+##### Pseudo Classes Overview
+Pseudo classes define special states of elements. They let you style elements based on user interaction, document structure, or element state — without adding extra HTML classes or JavaScript. The syntax is `selector:pseudo-class { }`. Pseudo classes are essential for interactive UI: they handle hover effects, focus states, visited links, and disabled elements. They're one of the most commonly used CSS features for creating responsive, interactive interfaces.
+
+##### Link Pseudo Classes
+These apply specifically to anchor `<a>` tags and control how links appear in different states. The order matters — they must follow the **LVHA** order (Link, Visited, Hover, Active) for correct cascading:
+- `:link` — Styles unvisited links. The link hasn't been clicked yet. Apply your base link color here.
+- `:visited` — Styles links the user has already visited. Browser tracks this via history. Use a different color to indicate "you've been here."
+- `:hover` — Styles links when the mouse cursor is over them. Provides visual feedback that the link is interactive.
+- `:active` — Styles the link at the exact moment it's being clicked. The "pressed" state. Brief visual feedback.
+
+```css
+a:link    { color: red; }      /* unvisited link */
+a:visited { color: green; }    /* visited link */
+a:hover   { color: yellow; }   /* mouse over */
+a:active  { color: blue; }     /* being clicked */
+```
+
+```html
+<a href="https://www.google.com" target="_blank">Visit Google</a>
+<a href="https://www.github.com" target="_blank">Visit GitHub</a>
+```
+
+**Interview point:** The LVHA order is critical. If you put `:hover` before `:link`, the hover effect won't work on unvisited links because `:link` overrides it. Mnemonic: **L**o**V**e **HA**te (Link, Visited, Hover, Active).
+
+##### Button Pseudo Classes
+These apply to any element (buttons, divs, inputs) and handle interaction states:
+- `:hover` — When the mouse is over the element. Changes background to blue and text to white for visual feedback.
+- `:active` — When the element is being clicked. Changes to green/pink for "pressed" feedback.
+- `:focus` — When the element receives keyboard focus (via Tab key or click). Essential for keyboard navigation accessibility — users must see which element is currently focused.
+- `:disabled` — When the element is disabled. Changes to gray to indicate non-interactivity.
+
+```css
+button:hover   { background-color: blue; color: white; }
+button:active  { background-color: green; color: pink; }
+button:focus   { background-color: red; color: lightblue; }
+button:disabled { background-color: gray; color: black; cursor: not-allowed; }
+```
+
+```html
+<button>Hover me</button>
+<button disabled>I'm disabled</button>
+```
+
+**Interview point:** `:focus` is critical for accessibility — always style focus states for keyboard users. Never remove focus outlines (`outline: none`) without providing an alternative visual indicator. `:disabled` styles should also include `cursor: not-allowed` to indicate the element can't be interacted with. These pseudo classes work on all elements, not just buttons.
+
+##### Checkbox and Form State Pseudo Classes
+- `:checked` — Styles checkboxes and radio buttons when selected. Used to create custom styled checkboxes/radio buttons.
+- `:required` — Styles form inputs that have the `required` attribute.
+- `:valid` / `:invalid` — Styles inputs based on validation state (email format, required fields, etc.).
+
+```css
+input:checked {
+  background-color: orange;
+  color: yellow;
+}
+
+input:required {
+  border-left: 3px solid red;    /* red left border indicates required */
+}
+
+input:valid {
+  border-color: green;
+}
+
+input:invalid {
+  border-color: red;
+}
+```
+
+```html
+<input type="checkbox" name="agree" checked> I agree
+<input type="email" name="email" required placeholder="Enter email">
+```
+
+**Interview point:** Pseudo classes like `:valid`, `:invalid`, `:required` let you create validation feedback with pure CSS — no JavaScript needed. This is great for form UX: show green borders on valid inputs and red on invalid ones. Combined with `:focus`, you get real-time validation feedback as users type.
+
+---
+
+> **Remember:** Text properties (`text-decoration`, `text-align`, `text-transform`, `letter-spacing`) control how text looks. Pseudo classes (`:link`, `:visited`, `:hover`, `:active`, `:focus`, `:disabled`) handle element states without JavaScript. Always follow LVHA order for link pseudo classes. `text-decoration: none` removes link underlines — always provide alternative visual indicators. Float is legacy for layout — use Flexbox/Grid instead. Float's only modern use is wrapping text around images.
 

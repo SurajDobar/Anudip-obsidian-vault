@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo elements</title>
+
+    <style>
+        
+    a:link{
+        color:red;
+    }    
+    a:visited{
+        color:green
+    }
+    a:active{
+        color:blue;
+    }
+    a:hover{
+        color:yellow;
+    }
+    button:hover{
+        background-color:blue;
+        color:white;
+    }
+    button:active{
+        background-color:green;
+        color:pink;
+    }
+    button:focus{
+        background-color:red;
+        color:lightblue;
+    }
+    button:disabled{
+        background-color:gray;
+        color:black;
+    }
+    button:checked{
+        background-color:orange;
+        color:yellow;
+    }
+  
+    </style>
+</head>
+<body>
+    <!--
+    element name:link 
+    element name:visited
+    element name:active
+    element name:hover
+    1:link :- it is used to change the color of link when it is not
+    visited
+    2:visited :- it is used to change the color of link when it is visited
+    3:active :- it is used to change the color of link when it is clicked
+    4:hover :- it is used to change the color of link when mouse is hovered
+    
+    -->
+    <a href="https://www.google.com" target="_blank">google</a>
+    <p>this is a paragraph</p>
+    <button>this is button</button>
+</body>
+</html>
