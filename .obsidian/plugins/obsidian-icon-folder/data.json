@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "LiCommand",
       "FarFilePdf",
       "LiAArrowUp",
       "FabHtml5",
-      "SiMarkdown",
-      "LiALargeSmall"
+      "SiMarkdown"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -107,5 +107,18 @@
   "SS/pdf": {
     "iconName": "FarFilePdf",
     "iconColor": "#ff0000"
-  }
+  },
+  "Prompt files/agent obsidian Notes Simplifier.md": {
+    "iconName": "SiMarkdown",
+    "iconColor": "#ff00ff"
+  },
+  "Prompt files/CODE_TO_NOTES.md": {
+    "iconName": "SiMarkdown",
+    "iconColor": "#ff00ff"
+  },
+  "Prompt files/Table_of_contents.md": {
+    "iconName": "SiMarkdown",
+    "iconColor": "#ff00ff"
+  },
+  "Prompt files": "LiCommand"
 }

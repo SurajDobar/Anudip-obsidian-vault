@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Layout</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: 70px 180px 80px 70px;
+            gap: 5px;
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        .header {
+            grid-column: 1 / 3;
+            background: skyblue;
+        }
+
+        .sidebar {
+            grid-row: 2 / 4;
+            background: yellowgreen;
+        }
+
+        .main {
+            background: gold;
+        }
+
+        .extra {
+            background: gray;
+        }
+
+        .footer {
+            grid-column: 1 / 3;
+            background: orange;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header box">Header</div>
+    <div class="sidebar box">Sidebar</div>
+    <div class="main box">Main Content</div>
+    <div class="extra box">Extra Content</div>
+    <div class="footer box">Footer</div>
+</div>
+
+</body>
+</html>

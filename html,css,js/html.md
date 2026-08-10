@@ -56,6 +56,19 @@
   - [Border Styles](#"Border""Styles")
   - [Margin](#"Margin")
   - [Padding](#"Padding")
+- [Marquee Tag](#"Marquee""Tag")
+  - [Marquee Tag Deprecated](#"Marquee""Tag""Deprecated")
+- [CSS Animations](#"CSS""Animations")
+  - [Keyframes Animation](#"Keyframes""Animation")
+  - [Animation Properties](#"Animation""Properties")
+- [CSS Grid Layout](#"CSS""Grid""Layout")
+  - [Grid Container](#"Grid""Container")
+  - [Grid Template Columns](#"Grid""Template""Columns")
+  - [Grid Template Rows](#"Grid""Template""Rows")
+  - [Grid Column Span](#"Grid""Column""Span")
+- [Grid Layout Assignment](#"Grid""Layout""Assignment")
+  - [Real Layout With Grid And Flexbox](#"Real""Layout""With""Grid""And""Flexbox")
+  - [Layout Breakdown](#"Layout""Breakdown")
 
 ---
 
@@ -932,3 +945,246 @@ Padding is the space **inside** an element's border, between the border and the 
 ---
 
 > **Remember:** Always start with CSS reset. Use external CSS for real projects. Flexbox is the modern way to layout elements — it handles 90% of layout needs. Margin collapses vertically; padding never collapses. `box-sizing: border-box` should be on every project. Classes (`.`) are reusable, IDs (`#`) are unique. Specificity determines which styles win when conflicts exist.
+
+---
+
+# Day 5
+
+## Marquee Tag
+
+##### Marquee Tag (Deprecated)
+The `<marquee>` tag creates scrolling or blinking text on the page. It's **deprecated** (removed from HTML5 spec) and should not be used in production websites, but it's still taught for understanding legacy code. The `behavior` attribute controls how text moves: `"scroll"` (continuous loop), `"slide"` (stops at edge), `"alternate"` (bounces back and forth). The `direction` attribute sets the direction: `"left"`, `"right"`, `"up"`, `"down"`. The `scrollamount` attribute controls speed (higher = faster). Modern alternatives: CSS `@keyframes` animations or JavaScript-based marquee libraries.
+
+```html
+<!-- Basic scrolling text -->
+<marquee behavior="scroll" direction="left" scrollamount="10" style="color: red; font-size: 30px;">
+  This text scrolls left
+</marquee>
+
+<!-- Scrolling down -->
+<marquee behavior="scroll" direction="down" scrollamount="5" style="color: blue;">
+  This text scrolls down
+</marquee>
+
+<!-- Bouncing text -->
+<marquee behavior="alternate" direction="left" style="color: green;">
+  This text bounces left and right
+</marquee>
+```
+
+**Interview point:** Never use `<marquee>` in production. It's deprecated, hurts accessibility (screen readers can't parse scrolling text properly), affects performance, and annoys users. If asked about it in an interview, mention CSS animations as the modern replacement.
+
+---
+
+## CSS Animations
+
+##### Keyframes Animation
+CSS `@keyframes` define reusable animation sequences. You create a named animation with keyframe stops (0% to 100%), then apply it to elements using the `animation` property. This replaces the deprecated `<marquee>` for creating motion effects. The `animation` shorthand includes: `animation-name`, `animation-duration`, `animation-timing-function`, `animation-delay`, `animation-iteration-count`, `animation-direction`. The example below creates a blink effect by toggling opacity between 1 (visible) and 0 (invisible).
+
+```html
+<style>
+  .blink {
+    animation: blink 1s infinite;
+  }
+
+  @keyframes blink {
+    0%   { opacity: 1; }    /* fully visible */
+    50%  { opacity: 0; }    /* fully invisible */
+    100% { opacity: 1; }    /* fully visible again */
+  }
+</style>
+
+<marquee class="blink"><h1>Blinking Text</h1></marquee>
+```
+
+##### Animation Properties
+The `animation` shorthand property combines multiple animation settings into one line:
+
+| Property | What It Does | Example |
+|----------|-------------|---------|
+| `animation-name` | Name of the @keyframes | `blink` |
+| `animation-duration` | How long one cycle takes | `1s`, `500ms` |
+| `animation-timing-function` | Speed curve | `ease`, `linear`, `ease-in` |
+| `animation-delay` | Wait before starting | `0.5s` |
+| `animation-iteration-count` | How many times to repeat | `1`, `3`, `infinite` |
+| `animation-direction` | Direction of playback | `normal`, `reverse`, `alternate` |
+
+```css
+.fade-in {
+  animation: fadeIn 2s ease-in-out infinite alternate;
+}
+
+@keyframes fadeIn {
+  0%   { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+```
+
+**Interview point:** CSS animations are more performant than JavaScript animations because they run on the browser's compositor thread (GPU-accelerated). Use `transform` and `opacity` for smooth animations — animating `width`, `height`, or `top` triggers layout reflows and causes jank.
+
+---
+
+## CSS Grid Layout
+
+##### Grid Container
+CSS Grid is a two-dimensional layout system that handles both rows and columns simultaneously. Set `display: grid` on a parent container to enable grid layout on its direct children (grid items). The `grid-template-columns` property defines how many columns and their widths. The `repeat()` function repeats column/row patterns. The `fr` unit (fraction) distributes available space proportionally — `1fr 1fr` creates two equal columns. The `gap` property adds space between grid items without affecting outer margins.
+
+```html
+<style>
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* 2 equal columns */
+    gap: 10px;                               /* space between items */
+  }
+
+  .g-col-4 {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+  }
+</style>
+
+<div class="grid-container">
+  <div class="g-col-4">Item 1</div>
+  <div class="g-col-4">Item 2</div>
+  <div class="g-col-4">Item 3</div>
+  <div class="g-col-4">Item 4</div>
+</div>
+```
+
+##### Grid Template Columns
+Define column structure with `grid-template-columns`. The `fr` unit distributes available space proportionally. You can mix units for different column sizes.
+
+```css
+/* 3 equal columns */
+grid-template-columns: repeat(3, 1fr);
+
+/* Fixed + flexible columns */
+grid-template-columns: 200px 1fr 1fr;   /* sidebar + 2 content areas */
+
+/* Mixed sizes */
+grid-template-columns: 1fr 2fr 1fr;     /* narrow-wide-narrow */
+
+/* Auto-fit for responsive */
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+```
+
+##### Grid Template Rows
+Define row heights with `grid-template-rows`. Works the same way as columns but for vertical sizing.
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 70px 180px 80px 70px;  /* header, main, extra, footer */
+  gap: 5px;
+}
+```
+
+##### Grid Column Span
+Use `grid-column` to make an item span multiple columns. `1 / 3` means "start at column line 1, end at column line 3" (spans 2 columns in a 2-column grid).
+
+```css
+.header {
+  grid-column: 1 / 3;    /* spans full width */
+}
+
+.footer {
+  grid-column: 1 / 3;    /* spans full width */
+}
+
+.sidebar {
+  grid-row: 2 / 4;       /* spans rows 2 and 3 */
+}
+```
+
+**Interview point:** Grid is two-dimensional (rows AND columns), Flexbox is one-dimensional (row OR column). Use Grid for page-level layouts (header/sidebar/content/footer), Flexbox for component-level alignment (nav items, card content, buttons). Grid + Flexbox together = complete layout solution.
+
+---
+
+## Grid Layout Assignment
+
+##### Real Layout with Grid and Flexbox
+A practical example combining CSS Grid for page structure and Flexbox for centering content inside grid items. The layout has a header spanning full width, a sidebar on the left, main content area, extra content area, and a footer spanning full width. This is the classic "holy grail layout" pattern used in dashboards, admin panels, and content websites.
+
+```html
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;           /* sidebar | main content */
+    grid-template-rows: 70px 180px 80px 70px; /* header, main, extra, footer */
+    gap: 5px;
+    width: 90%;
+    margin: 20px auto;                        /* center on page */
+  }
+
+  .header {
+    grid-column: 1 / 3;                       /* full width */
+    background: skyblue;
+  }
+
+  .sidebar {
+    grid-row: 2 / 4;                          /* spans main + extra rows */
+    background: yellowgreen;
+  }
+
+  .main {
+    background: gold;
+  }
+
+  .extra {
+    background: gray;
+  }
+
+  .footer {
+    grid-column: 1 / 3;                       /* full width */
+    background: orange;
+  }
+
+  .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+</style>
+
+<div class="container">
+  <div class="header box">Header</div>
+  <div class="sidebar box">Sidebar</div>
+  <div class="main box">Main Content</div>
+  <div class="extra box">Extra Content</div>
+  <div class="footer box">Footer</div>
+</div>
+```
+
+##### Layout Breakdown
+| Element | Grid Position | Spans |
+|---------|--------------|-------|
+| Header | `grid-column: 1 / 3` | Full width (2 columns) |
+| Sidebar | `grid-row: 2 / 4` | 2 rows tall |
+| Main | Default position | 1 column, 1 row |
+| Extra | Default position | 1 column, 1 row |
+| Footer | `grid-column: 1 / 3` | Full width (2 columns) |
+
+The `.box` class uses Flexbox to center text inside each grid item — this demonstrates Grid + Flexbox working together: Grid handles the page layout, Flexbox handles the content alignment within each cell.
+
+**Interview point:** This layout pattern is the foundation of most website designs. The header and footer span full width, sidebar stays fixed on the left, main content takes up the remaining space. In real projects, you'd replace fixed pixel heights with `minmax()` or `auto` for responsive behavior, and use `@media` queries to stack the sidebar on mobile.
+
+---
+
+> **Remember:** `<marquee>` is deprecated — use CSS `@keyframes` animations instead. CSS Grid is two-dimensional (rows + columns), Flexbox is one-dimensional (row OR column). Use `fr` unit for proportional column widths. `grid-column: 1 / 3` makes an item span the full width of a 2-column grid. Always combine Grid for layout and Flexbox for content alignment for clean, maintainable code.
+

@@ -21,7 +21,7 @@
   <tr>
   <td>2</td>
     <td>Soft Skills</td>
-    <td><a href="obsidian://open?vault=Anudip-obsidian-vault&file=SS%2FSoft%20skills"> Soft skills </a></td>
+    <td><a href="obsidian://open?vault=Anudip-obsidian-vault&file=SS%2FSoft%20skills"> Soft skills  </a></td>
   </tr>
   <tr>
   <td>3</td>
@@ -37,7 +37,11 @@
     <td>Python Extracourse</td>
     <td><a href="obsidian://open?vault=Anudip-obsidian-vault&file=python%2Fpython%20experts%20lectures%20(special)">Python Extracourse </a></td>
   </tr>
-</table>
+  <tr>
+  <td>6</td>
+    <td>Html</td>
+    <td><a href="obsidian://open?vault=Anudip-obsidian-vault&file=html%2Ccss%2Cjs%2Fhtml">Html </a></td>
+  </tr></table>
 
 
 
