@@ -877,6 +877,12 @@ pulls
 performant
 proportionally
 panels
+prices
+purely
+powerful
+premium
+pink
+pseudo
 and
 allows
 associate
@@ -1665,6 +1671,11 @@ animation
 accelerated
 animating
 admin
+applied
+academic
+adjusting
+airy
+adjustment
 changing
 created
 completed
@@ -2562,6 +2573,14 @@ curve
 compositor
 causes
 classic
+crossed
+cleaner
+capitalized
+caps
+clearfix
+cascading
+cursor
+checkboxes
 is
 instead
 immediately
@@ -3372,6 +3391,15 @@ inconsistencies
 intuitive
 inconsistent
 inset
+indicating
+indicator
+interaction
+interactive
+interfaces
+indicate
+interactivity
+interacted
+indicators
 for
 failure
 final
@@ -4077,6 +4105,9 @@ floats
 flex
 forth
 fraction
+flush
+floating
+floated
 value
 values
 variable
@@ -4714,6 +4745,8 @@ void
 volume
 vertically
 vertical
+visited
+via
 not
 necessarily
 neither
@@ -5389,6 +5422,10 @@ numerals
 nest
 native
 neighbors
+notation
+newspapers
+narrow
+normalize
 known
 keywords
 know
@@ -6783,6 +6820,7 @@ widths
 widget
 wins
 win
+wide
 the
 to
 these
@@ -7527,6 +7565,10 @@ touch
 toggling
 thread
 tall
+titles
+transformation
+typography
+tight
 It
 Invokes
 Inside
@@ -9627,6 +9669,9 @@ happens
 happen
 hurts
 holy
+hover
+hardcoding
+historically
 eventual
 each
 event
@@ -10426,6 +10471,9 @@ extremely
 entirely
 edge
 enable
+edges
+existed
+encounter
 success
 synchronous
 supply
@@ -11407,6 +11455,11 @@ spans
 solution
 spanning
 stays
+seen
+stylized
+strikethrough
+spread
+subtle
 or
 of
 one
@@ -12073,6 +12126,8 @@ overridden
 outline
 outset
 opacity
+occasionally
+outlines
 reason
 return
 returning
@@ -13658,6 +13713,8 @@ Textarea
 Term
 Tailwind
 Template
+Transform
+Tab
 lets
 like
 looks
@@ -14411,6 +14468,8 @@ limited
 larger
 layouts
 legacy
+languages
+logos
 methods
 method
 meaning
@@ -15233,6 +15292,10 @@ moves
 marquee
 mention
 motion
+middle
+magazines
+mouse
+moment
 diagram
 doesnt
 does
@@ -16013,6 +16076,9 @@ direction
 distributes
 dashboards
 demonstrates
+deleted
+discounts
+disabled
 Protoypal
 Purpose
 Promise
@@ -16728,6 +16794,9 @@ Prevents
 Primarily
 Professional
 Position
+Pseudo
+Positive
+Provides
 Each
 Example
 Everything
@@ -17441,6 +17510,7 @@ Explicabo
 English
 External
 Enables
+Essential
 js
 just
 javascript
@@ -18820,6 +18890,7 @@ breathing
 blinking
 bounces
 blink
+blue
 upon
 underneath
 use
@@ -19440,6 +19511,10 @@ uploading
 unexpected
 universal
 units
+underline
+underlines
+uneven
+unvisited
 Hello
 HKM
 Haa
@@ -20072,6 +20147,7 @@ Home
 Hindi
 HTTPS
 Higher
+Hover
 Which
 While
 Web
@@ -21353,6 +21429,8 @@ Browser
 Bootstrap
 Borders
 Bottom
+Brings
+Brief
 Syntax
 SS
 SvIB
@@ -22159,6 +22237,8 @@ Shortcut
 Speed
 Spans
 Sidebar
+Spacing
+Stretches
 JavaScript
 JS
 JJJ
@@ -23654,6 +23734,9 @@ Radio
 Range
 Restricts
 Right
+Rarely
+RTL
+Reduces
 Async
 Allows
 Await
@@ -24309,6 +24392,10 @@ Aligns
 Animations
 Animation
 Assignment
+Align
+Adds
+Also
+Active
 queue
 qGG
 qv
@@ -25648,6 +25735,8 @@ growing
 grooved
 groove
 grail
+green
+gray
 You
 YmTv
 YY
@@ -27672,6 +27761,11 @@ Continuous
 Columns
 Ccss
 Cjs
+Converts
+CASE
+Capitalizes
+Changes
+Combined
 Modules
 MDN
 Ms
@@ -28406,6 +28500,8 @@ Month
 Margin
 MIME
 Marquee
+Moves
+Mnemonic
 Docs
 DEE
 Dq
@@ -29064,6 +29160,7 @@ Dashes
 Direction
 Define
 Default
+Decoration
 Node
 NJ
 NE
@@ -30991,6 +31088,9 @@ Label
 Lorem
 Least
 Left
+Letter
+LTR
+LVHA
 xDN
 xM
 xaWRRR
@@ -32396,6 +32496,7 @@ Forms
 Fieldset
 Flexbox
 Fhtml
+Float
 Uk
 UL
 Ui
@@ -33067,6 +33168,7 @@ UlkO
 UgI
 UTF
 Universal
+UPPER
 OL
 Od
 Op
@@ -33729,6 +33831,7 @@ Ones
 Option
 OGG
 Overuse
+Overview
 KQ
 KU
 KLL
@@ -35683,6 +35786,7 @@ VrAm
 Variants
 Visible
 Validates
+Visited
 zzi
 zz
 zyy

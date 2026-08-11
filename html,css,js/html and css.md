@@ -47,6 +47,8 @@
   - [Button Tag](#"Button""Tag")
   - [Div And Center Tags](#"Div""And""Center""Tags")
   - [Amazon Login Form Example](#"Amazon""Login""Form""Example")
+---
+
 - [CSS Basics](#"CSS""Basics")
   - [Three Ways To Add CSS](#"Three""Ways""To""Add""CSS")
   - [CSS Selectors](#"CSS""Selectors")

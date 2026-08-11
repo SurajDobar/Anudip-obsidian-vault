@@ -1,0 +1,22 @@
+<!-- there are two types of var:
+ local and global variables -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // global variable
+      var a = 10;
+      function myFunction() {
+        // local variable
+        var b = 20;
+        alert(a + b);
+      }
+    </script>
+  </head>
+  <body>
+    <input type="button" value="Click me" onclick="myFunction()" />
+  </body>
+</html>

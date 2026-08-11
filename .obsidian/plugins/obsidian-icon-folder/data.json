@@ -100,10 +100,6 @@
     "iconColor": "#f37726"
   },
   "html,css,js": "FabHtml5",
-  "html,css,js/html.md": {
-    "iconName": "SiMarkdown",
-    "iconColor": "#ff00ff"
-  },
   "SS/pdf": {
     "iconName": "FarFilePdf",
     "iconColor": "#ff0000"
@@ -120,5 +116,13 @@
     "iconName": "SiMarkdown",
     "iconColor": "#ff00ff"
   },
-  "Prompt files": "LiCommand"
+  "Prompt files": "LiCommand",
+  "html,css,js/html and css.md": {
+    "iconName": "SiMarkdown",
+    "iconColor": "#ff00ff"
+  },
+  "html,css,js/javascript.md": {
+    "iconName": "SiMarkdown",
+    "iconColor": "#ff00ff"
+  }
 }
