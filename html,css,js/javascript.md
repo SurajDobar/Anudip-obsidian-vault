@@ -24,6 +24,16 @@
   - [Comparison Operators](#"Comparison""Operators")
   - [Logical Operators](#"Logical""Operators")
   - [Assignment Operators](#"Assignment""Operators")
+- [Conditionals](#"Conditionals")
+  - [If Else Statement](#"If""Else""Statement")
+  - [Switch Case Statement](#"Switch""Case""Statement")
+- [DOM Manipulation](#"DOM""Manipulation")
+  - [Click Counter Example](#"Click""Counter""Example")
+- [Loops](#"Loops")
+  - [For Loop](#"For""Loop")
+  - [While Loop](#"While""Loop")
+  - [Do While Loop](#"Do""While""Loop")
+  - [For Of Loop](#"For""Of""Loop")
 
 ---
 
@@ -405,3 +415,268 @@ x %= 4;   // x = 2
 ---
 
 > **Remember:** Always use `const` by default, `let` when reassignment is needed. Never use `var` in modern code. Always use `===` for comparison. JavaScript is interpreted (runs line by line in the browser), not compiled. HTML = structure, CSS = style, JavaScript = behavior. Place `<script>` at the bottom of `<body>` or use `defer` for better performance.
+
+---
+
+# Day 8
+
+## Conditionals
+
+##### If / Else Statement
+The `if/else` statement executes different code blocks based on a condition. If the condition is `true`, the `if` block runs; otherwise, the `else` block runs. You can chain multiple conditions with `else if`. The condition inside `if()` must evaluate to a boolean (`true` or `false`). JavaScript implicitly converts non-boolean values to booleans — truthy values (non-empty strings, non-zero numbers, objects) become `true`, falsy values (`0`, `""`, `null`, `undefined`, `NaN`, `false`) become `false`.
+
+```javascript
+let count = 0;
+let message;
+
+if (count < 18) {
+  message = "Good day";
+} else {
+  message = "Good evening";
+}
+
+console.log(message);  // "Good day"
+```
+
+```javascript
+// Multiple conditions with else if
+let score = 85;
+let grade;
+
+if (score >= 90) {
+  grade = "A";
+} else if (score >= 80) {
+  grade = "B";
+} else if (score >= 70) {
+  grade = "C";
+} else {
+  grade = "F";
+}
+
+console.log(grade);  // "B"
+```
+
+**Interview point:** JavaScript uses "truthy" and "falsy" values. Falsy: `0`, `""`, `null`, `undefined`, `NaN`, `false`. Everything else is truthy, including `"0"`, `[]`, `{}`, and `new Boolean(false)`. This is why `if("0")` runs the `if` block — the string `"0"` is truthy.
+
+##### Switch Case Statement
+The `switch` statement provides an alternative to multiple `else if` chains. It evaluates an expression and matches it against multiple `case` values. When a match is found, that case's code runs. The `break` statement exits the switch — without it, execution "falls through" to the next case. The `default` case handles unmatched values (like `else`). Switch is cleaner than long `if/else if` chains when comparing one value against many options.
+
+```javascript
+let count = 5;
+
+switch (true) {
+  case count < 10:
+    console.log("Morning");
+    break;
+  case count < 18:
+    console.log("Afternoon");
+    break;
+  case count < 24:
+    console.log("Evening");
+    break;
+  default:
+    console.log("Night");
+}
+// Output: "Morning"
+```
+
+```javascript
+// Classic switch with value matching
+let day = "Monday";
+
+switch (day) {
+  case "Monday":
+  case "Tuesday":
+  case "Wednesday":
+  case "Thursday":
+  case "Friday":
+    console.log("Weekday");
+    break;
+  case "Saturday":
+  case "Sunday":
+    console.log("Weekend");
+    break;
+  default:
+    console.log("Invalid day");
+}
+// Output: "Weekday"
+```
+
+**Interview point:** Switch uses strict comparison (`===`) internally. Don't forget `break` — missing breaks cause fall-through behavior (multiple cases execute). You can group cases by stacking them (no code between cases) for shared logic. Switch `true` allows matching against conditions, not just values.
+
+---
+
+## DOM Manipulation
+
+##### Click Counter Example
+A practical example combining variables, DOM manipulation, conditionals, and event handling. The counter increments on each button click, and the page displays different messages based on the count value. Key DOM methods: `document.getElementById()` selects an element by its ID, `.innerHTML` sets the HTML content of that element, and `onclick` attribute attaches a click event handler.
+
+```html
+<p id="demo">Good afternoon</p>
+<button onclick="clickcount()">Click me</button>
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+let count = 0;
+let message;
+
+function clickcount() {
+  count++;
+
+  // Update counter display
+  document.getElementById("demo1").innerHTML = count;
+
+  // if/else conditional
+  if (count < 18) {
+    message = "Good day";
+  } else {
+    message = "Good evening";
+  }
+
+  document.getElementById("demo").innerHTML = message;
+
+  // switch case conditional
+  switch (true) {
+    case count < 10:
+      document.getElementById("demo2").innerHTML = "Morning";
+      break;
+    case count < 18:
+      document.getElementById("demo2").innerHTML = "Afternoon";
+      break;
+    case count < 24:
+      document.getElementById("demo2").innerHTML = "Evening";
+      break;
+    default:
+      document.getElementById("demo2").innerHTML = "Night";
+  }
+}
+</script>
+```
+
+**Interview point:** `innerHTML` replaces all content inside an element (including HTML tags). For plain text, use `.textContent` (faster and safer — prevents XSS attacks). `document.getElementById()` is the most common way to select elements, but modern JavaScript also offers `document.querySelector()` for CSS-selector-based selection.
+
+---
+
+## Loops
+
+##### For Loop
+The `for` loop runs a block of code a specific number of times. It has three parts: `initialization` (runs once before the loop starts), `condition` (checked before each iteration — loop stops when `false`), and `iteration` (runs after each iteration, usually incrementing the counter). The `for` loop is the most common loop type — use it when you know exactly how many times to iterate.
+
+```javascript
+// Basic for loop: prints 0 to 9
+for (let i = 0; i < 10; i++) {
+  document.write(i + "<br>");
+}
+// Output: 0 1 2 3 4 5 6 7 8 9
+```
+
+```javascript
+// For loop with array
+let fruits = ["apple", "banana", "mango"];
+
+for (let i = 0; i < fruits.length; i++) {
+  console.log(fruits[i]);
+}
+// Output: apple banana mango
+```
+
+```javascript
+// Reverse for loop
+for (let i = 10; i >= 0; i--) {
+  console.log(i);
+}
+// Output: 10 9 8 7 6 5 4 3 2 1 0
+```
+
+**Interview point:** `let` in the for loop creates a new scope for each iteration (block scope). `var` in a for loop creates function scope — all iterations share the same variable, which causes bugs with closures and async code. Always use `let` in for loops.
+
+##### While Loop
+The `while` loop runs a block of code **as long as the condition is true**. The condition is checked **before** each iteration. If the condition is `false` from the start, the loop body never executes. Use `while` when you don't know how many times to loop — the loop runs until the condition changes. Always ensure the condition eventually becomes `false` to avoid infinite loops.
+
+```javascript
+let i = 0;
+
+while (i < 11) {
+  if (i % 2 == 0) {
+    document.write(i + "<br>");
+  }
+  i++;
+}
+// Output: 0 2 4 6 8 10
+```
+
+```javascript
+// Practical example: keep asking until valid input
+let password = "";
+while (password !== "secret") {
+  password = prompt("Enter password:");
+}
+console.log("Access granted!");
+```
+
+**Interview point:** The `while` loop checks the condition **before** running the body. If you need the body to run at least once, use `do...while`. Always include a way to exit the loop (incrementing a counter, user input, or breaking condition) to prevent infinite loops that freeze the browser.
+
+##### Do...While Loop
+The `do...while` loop is similar to `while`, but the condition is checked **after** the body runs. This guarantees the loop body executes **at least once**, even if the condition is `false` from the start. Use `do...while` when you need to execute code first and validate afterward — like displaying a menu, processing input, or showing a form before checking if data is valid.
+
+```javascript
+let i = 0;
+
+do {
+  if (i % 2 != 0) {
+    document.write(i + "<br>");
+  }
+  i++;
+} while (i < 10);
+// Output: 1 3 5 7 9
+```
+
+```javascript
+// Practical example: display menu at least once
+let choice;
+do {
+  choice = prompt("1. Play\n2. Settings\n3. Exit\nChoose:");
+  console.log("You chose:", choice);
+} while (choice !== "3");
+```
+
+**Interview point:** `while` = condition first (may not run at all), `do...while` = body first (runs at least once). The key difference: `while` can skip entirely, `do...while` always runs once. Use `do...while` for menus, prompts, and input validation where you need to show something before checking.
+
+##### For...Of Loop
+The `for...of` loop iterates over **iterable objects** — arrays, strings, Maps, Sets, and any object with a `[Symbol.iterator]` method. It gives you the **values** directly without needing an index. Cleaner and more readable than a traditional `for` loop when you just need the values. Unlike `for...in` (which iterates over object keys/properties), `for...of` iterates over values.
+
+```javascript
+let fruits = ["apple", "banana", "mango", "grapes"];
+
+for (let fruit of fruits) {
+  document.write(fruit + "<br>");
+}
+// Output: apple banana mango grapes
+```
+
+```javascript
+// Iterating over a string
+let word = "Hello";
+
+for (let char of word) {
+  console.log(char);
+}
+// Output: H e l l o
+```
+
+```javascript
+// Iterating over a Map
+let scores = new Map([["Alice", 95], ["Bob", 87]]);
+
+for (let [name, score] of scores) {
+  console.log(`${name}: ${score}`);
+}
+// Output: Alice: 95, Bob: 87
+```
+
+**Interview point:** `for...of` gives values, `for...in` gives keys/indices. Use `for...of` for arrays and strings (values). Use `for...in` for object properties (keys). The traditional `for` loop gives you both index and value — use it when you need the index position. `for...of` does NOT work on plain objects — use `for...in` or `Object.keys()/Object.values()/Object.entries()` for objects.
+
+---
+
+> **Remember:** `if/else` handles conditional logic. `switch` is cleaner for matching one value against many cases — always use `break`. `for` loop = known iterations, `while` = condition first (may skip), `do...while` = body first (runs once minimum), `for...of` = values of iterables (arrays, strings). Always use `let` in loops, never `var`. `innerHTML` sets content, `getElementById()` selects elements.

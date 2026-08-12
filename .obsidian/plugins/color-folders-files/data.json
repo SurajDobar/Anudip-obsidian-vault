@@ -56,13 +56,6 @@
       "isBold": true,
       "isItalic": true
     },
-    "python/python ipynb": {
-      "backgroundColor": "#b10eb4",
-      "applyToSubfolders": true,
-      "textColor": "#ffffff",
-      "isBold": true,
-      "isItalic": true
-    },
     "python/python pdf": {
       "backgroundColor": "#b10eb4",
       "applyToSubfolders": true,

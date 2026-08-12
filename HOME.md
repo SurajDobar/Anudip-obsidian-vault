@@ -39,9 +39,15 @@
   </tr>
   <tr>
   <td>6</td>
-    <td>Html</td>
-    <td><a href="obsidian://open?vault=Anudip-obsidian-vault&file=html%2Ccss%2Cjs%2Fhtml">Html </a></td>
-  </tr></table>
+    <td>Html and css</td>
+    <td><a href="obsidian://open?vault=Anudip-obsidian-vault&file=html%2Ccss%2Cjs%2Fhtml%20and%20css">Html and css </a></td>
+  </tr>
+  <tr>
+  <td>7</td>
+    <td>Javascript</td>
+    <td><a href="obsidian://open?vault=Anudip-obsidian-vault&file=html%2Ccss%2Cjs%2Fjavascript">Javascript</a></td>
+  </tr>
+  </table>
 
 
 

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<a href="forloop.html">for loop</a><br>
+<a href="while.html">while loop</a><br>
+<a href="dowhile.html">do while loop</a><br>
+<a href="forof.html">for of loop</a><br>
+<p id="demo">Good afternoon</p>
+
+<button onclick="clickcount()">click me</button>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+<script>
+
+let count = 0;
+let message;
+
+function clickcount() {
+    count++;
+
+    document.getElementById("demo1").innerHTML = count;
+
+    // if / else
+    if (count < 18) {
+        message = "Good day";
+    } else {
+        message = "Good evening";
+    }
+
+    document.getElementById("demo").innerHTML = message;
+
+
+    // switch case
+    switch (true) {
+
+        case count < 10:
+            document.getElementById("demo2").innerHTML = "Morning";
+            break;
+
+        case count < 18:
+            document.getElementById("demo2").innerHTML = "Afternoon";
+            break;
+
+        case count < 24:
+            document.getElementById("demo2").innerHTML = "Evening";
+            break;
+
+        default:
+            document.getElementById("demo2").innerHTML = "Night";
+    }
+}
+
+</script>
+
+</body>
+</html>
