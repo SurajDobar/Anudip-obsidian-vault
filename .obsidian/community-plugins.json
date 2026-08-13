@@ -1,13 +1,8 @@
 [
   "omnisearch",
-  "obsidian-trash-explorer",
   "homepage",
   "obsidian-text-format",
-  "tag-wrangler",
-  "settings-search",
-  "url-into-selection",
   "quick-snippets-and-navigation",
-  "obsidian-git",
   "obsidian-excalidraw-plugin",
   "enhanced-symbols-prettifier",
   "obsidian-completr",
@@ -15,7 +10,7 @@
   "code-emitter",
   "jupyter-viewer",
   "obsidian-icon-folder",
-  "color-folders-files",
   "obsidian-html-plugin",
-  "rainbow-colored-sidebar"
+  "obsidian-style-settings",
+  "obsidian-pandoc"
 ]

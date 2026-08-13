@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Event</title>
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <form onsubmit="alert('form submitted'); return false;">
+       <input type"text" placeholder="enter your name">
+         <button type="submit">submit </button>
+         <!--onsubmit event occur when form is submitted-->
+         
+ 
+        <!-- on focus event occur when input get focus -->
+
+        student name:<input type="text" name="name" id="name" onfocus="alert('focus event is triggered')">
+        <!-- onblur event occur when input lose focus -->
+         <br>
+        age:<input type="text" name="age" id="age" onblur="alert('blur event is triggered')">
+        <br>
+        <!-- oninput event occur whenever user enter or change the data in the input tag-->
+
+        PhoneNumber:<input type="text" oninput="alert('input event is triggered')">
+        <br>
+        <!-- onchange event occur when value of event changes-->
+        address:<input type="text" name="email" id="email" onchange="alert('change event is triggered')">
+        <br>
+        <!-- oninvalid event occur when input does not satisfy its validation rule-->
+         Email:<input type="email" oninvalid="alert('email is invalid')">
+          
+
+
+
+    </form>
+</body>
+
+</html>

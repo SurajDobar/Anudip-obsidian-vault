@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function welcome() {
+            alert("Onclick event is triggered");
+        }
+        function changecolor() {
+            document.getElementById("text").style.color = "red";
+        }
+
+
+
+    </script>
+</head>
+
+<body>
+    <input type="button" value="Click me" onclick="welcome()">
+    <h1 id="text">This is Button</h1>
+    <input type="button" value="doubleclick" ondblclick="changecolor()">
+    <button type="submit" onmousedown=" alert('mouse button pressed')">Submit</button>
+
+    <button type="reset" onmouseover="alert('mouse enter')">Reset</button>
+    <br>
+    <button type="button" value="onmouseup" onmouseup="alert('mouse entered')">onmouseup</button>
+
+  
+
+
+
+
+
+</body>
+
+</html>

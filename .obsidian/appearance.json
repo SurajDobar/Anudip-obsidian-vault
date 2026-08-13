@@ -5,5 +5,10 @@
   "textFontFamily": "Inter,Inter 28pt 28pt",
   "monospaceFontFamily": "JetBrains Mono",
   "baseFontSize": 20,
-  "baseFontSizeAction": false
+  "baseFontSizeAction": false,
+  "enabledCssSnippets": [
+    "Rainbow Folder Enhanced",
+    "Rainbow Glass Folders",
+    "calander animations"
+  ]
 }

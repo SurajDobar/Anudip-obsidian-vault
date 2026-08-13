@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "RiSpeakFill",
       "LiCommand",
       "FarFilePdf",
       "LiAArrowUp",
-      "FabHtml5",
-      "SiMarkdown"
+      "FabHtml5"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -34,7 +34,10 @@
     "debugMode": false,
     "useInternalPlugins": false
   },
-  "python": "FabPython",
+  "python": {
+    "iconName": "FabPython",
+    "iconColor": "#000000"
+  },
   "python/python ipynb": {
     "iconName": "SiJupyter",
     "iconColor": "#f37726"
@@ -59,7 +62,10 @@
     "iconName": "FabMarkdown",
     "iconColor": "#ff00ff"
   },
-  "src": "FasImages",
+  "src": {
+    "iconName": "FasImages",
+    "iconColor": "#000000"
+  },
   "sql/sql-src": {
     "iconName": "FasImages",
     "iconColor": "#00ffff"
@@ -84,13 +90,15 @@
     "iconName": "FasImages",
     "iconColor": "#00ffff"
   },
-  "SS": "RiSpeakLine",
   "python/python pdf/Classes and Objects.pdf": "FarFilePdf",
   "python/python pdf/Functions.pdf": "FarFilePdf",
   "python/python pdf/Inheritance MethodOverriding.pdf": "FarFilePdf",
   "sql/Anudip-pdfs/Stored Procedure & Trigger.pdf": "FarFilePdf",
   "sql/Anudip-pdfs/Normalization.pdf": "FarFilePdf",
-  "sql": "SiMysql",
+  "sql": {
+    "iconName": "SiMysql",
+    "iconColor": "#000000"
+  },
   "sql/Anudip-pdfs": {
     "iconName": "FarFilePdf",
     "iconColor": "#ff0000"
@@ -99,7 +107,10 @@
     "iconName": "SiJupyter",
     "iconColor": "#f37726"
   },
-  "html,css,js": "FabHtml5",
+  "html,css,js": {
+    "iconName": "FabHtml5",
+    "iconColor": "#000000"
+  },
   "SS/pdf": {
     "iconName": "FarFilePdf",
     "iconColor": "#ff0000"
@@ -116,7 +127,6 @@
     "iconName": "SiMarkdown",
     "iconColor": "#ff00ff"
   },
-  "Prompt files": "LiCommand",
   "html,css,js/html and css.md": {
     "iconName": "SiMarkdown",
     "iconColor": "#ff00ff"
@@ -124,5 +134,13 @@
   "html,css,js/javascript.md": {
     "iconName": "SiMarkdown",
     "iconColor": "#ff00ff"
+  },
+  "Prompt files": {
+    "iconName": "LiCommand",
+    "iconColor": "#000000"
+  },
+  "SS": {
+    "iconName": "RiSpeakFill",
+    "iconColor": "#000000"
   }
 }

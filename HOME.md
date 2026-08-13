@@ -1,6 +1,7 @@
 ---
 ~
 ---
+![[concept panel art.png]]
 ## Easy access notes homepage
 
 <center>
@@ -49,8 +50,7 @@
   </tr>
   </table>
 
-
-
 ```github
 https://github.com/SurajDobar/Anudip-obsidian-vault 
 ```
+ 

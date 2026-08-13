@@ -1,0 +1,14 @@
+{
+  "rainbow-folder-enhanced@@rainbow-folder-animation": false,
+  "rainbow-folder-enhanced@@rainbow-folder-hover": true,
+  "rainbow-folder-enhanced@@rainbow-folder-font-weight": 600,
+  "rainbow-folder-enhanced@@rainbow-folder-lift": 8,
+  "rainbow-folder-enhanced@@rainbow-folder-border-radius": 10,
+  "rainbow-folder-enhanced@@rainbow-folder-animation-speed": 12,
+  "rainbow-folder-enhanced@@rainbow-folder-vertical-spacing": 1,
+  "rainbow-folder-enhanced@@rainbow-folder-vertical-padding-inside": 2,
+  "rainbow-glass-folders@@rainbow-bg-enabled": false,
+  "rainbow-glass-folders@@full-opacity-enabled": false,
+  "rainbow-glass-folders@@glass-folder-blur": 8,
+  "rainbow-glass-folders@@glass-folder-vertical-padding-inside": 4
+}

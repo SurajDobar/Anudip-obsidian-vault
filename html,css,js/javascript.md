@@ -34,6 +34,23 @@
   - [While Loop](#"While""Loop")
   - [Do While Loop](#"Do""While""Loop")
   - [For Of Loop](#"For""Of""Loop")
+- [JavaScript Events](#"JavaScript""Events")
+  - [What Are Events](#"What""Are""Events")
+- [Mouse Events](#"Mouse""Events")
+  - [Onclick Event](#"Onclick""Event")
+  - [OnDoubleClick Event](#"OnDoubleClick""Event")
+  - [OnMouseDown Event](#"OnMouseDown""Event")
+  - [OnMouseOver Event](#"OnMouseOver""Event")
+  - [OnMouseUp Event](#"OnMouseUp""Event")
+  - [Mouse Events Summary](#"Mouse""Events""Summary")
+- [Form Events](#"Form""Events")
+  - [OnSubmit Event](#"OnSubmit""Event")
+  - [OnFocus Event](#"OnFocus""Event")
+  - [OnBlur Event](#"OnBlur""Event")
+  - [OnInput Event](#"OnInput""Event")
+  - [OnChange Event](#"OnChange""Event")
+  - [OnInvalid Event](#"OnInvalid""Event")
+  - [Form Events Summary](#"Form""Events""Summary")
 
 ---
 
@@ -680,3 +697,155 @@ for (let [name, score] of scores) {
 ---
 
 > **Remember:** `if/else` handles conditional logic. `switch` is cleaner for matching one value against many cases — always use `break`. `for` loop = known iterations, `while` = condition first (may skip), `do...while` = body first (runs once minimum), `for...of` = values of iterables (arrays, strings). Always use `let` in loops, never `var`. `innerHTML` sets content, `getElementById()` selects elements.
+
+---
+
+# Day 9
+
+## JavaScript Events
+
+##### What Are Events
+Events are actions or occurrences that happen in the browser — user clicks, key presses, mouse movements, form submissions, page loads, or any interaction. JavaScript can "listen" for these events and execute code in response. This is what makes web pages interactive. You can handle events using HTML attributes (`onclick`), JavaScript properties (`element.onclick`), or the modern `addEventListener()` method. Events are the core of front-end interactivity — every button click, form submission, hover effect, and keyboard shortcut is powered by events.
+
+---
+
+## Mouse Events
+
+##### Onclick Event
+The `onclick` event fires when the user clicks an element. It's the most commonly used event. Attach it directly in HTML with the `onclick` attribute, or in JavaScript using `element.onclick` or `addEventListener("click", ...)`. The event handler can call a function or execute inline code.
+
+```html
+<button onclick="welcome()">Click me</button>
+
+<script>
+function welcome() {
+  alert("Onclick event is triggered");
+}
+</script>
+```
+
+##### OnDoubleClick Event
+The `ondblclick` event fires when the user double-clicks an element. Two rapid clicks trigger this event. Useful for edit-on-double-click patterns, image zoom, or file open behavior (like desktop file managers).
+
+```html
+<h1 id="text">Double click to change color</h1>
+<button ondblclick="changecolor()">Double Click</button>
+
+<script>
+function changecolor() {
+  document.getElementById("text").style.color = "red";
+}
+</script>
+```
+
+##### OnMouseDown Event
+The `onmousedown` event fires when the user presses a mouse button down (before releasing it). Fires before `onclick`. Useful for drag-and-drop, drawing applications, or detecting button hold. The opposite is `onmouseup`.
+
+```html
+<button onmousedown="alert('Mouse button pressed')">Hold me</button>
+```
+
+##### OnMouseOver Event
+The `onmouseover` event fires when the mouse cursor enters an element's area. Commonly used for hover effects — showing tooltips, changing styles, or revealing hidden content. The opposite is `onmouseout` (cursor leaves the element).
+
+```html
+<button onmouseover="alert('Mouse entered')">Hover me</button>
+```
+
+##### OnMouseUp Event
+The `onmouseup` event fires when the user releases a mouse button after pressing it. Fires after `onclick`. Used in combination with `onmousedown` for drag-and-drop, custom button press effects, or measuring click duration.
+
+```html
+<button onmouseup="alert('Mouse released')">Release me</button>
+```
+
+##### Mouse Events Summary
+
+| Event | When It Fires |
+|-------|---------------|
+| `onclick` | Element is clicked (press + release) |
+| `ondblclick` | Element is double-clicked |
+| `onmousedown` | Mouse button is pressed down |
+| `onmouseup` | Mouse button is released |
+| `onmouseover` | Mouse enters the element |
+| `onmouseout` | Mouse leaves the element |
+| `onmousemove` | Mouse moves inside the element |
+
+**Interview point:** Event order: `onmousedown` → `onmouseup` → `onclick` → `ondblclick`. For hover effects, use `onmouseover`/`onmouseout`. For click actions, use `onclick`. `onmousedown` fires even if the user moves the mouse away before releasing — this is important for drag-and-drop behavior.
+
+---
+day 9
+## Form Events
+
+##### OnSubmit Event
+The `onsubmit` event fires when a form is submitted (user clicks submit button or presses Enter). Use `return false` to prevent the default form submission (which reloads the page). This is essential for client-side form validation — validate the data first, then submit with JavaScript or AJAX if valid.
+
+```html
+<form onsubmit="alert('Form submitted'); return false;">
+  <input type="text" placeholder="Enter your name">
+  <button type="submit">Submit</button>
+</form>
+```
+
+**Interview point:** `return false` in the event handler prevents the default browser behavior (page reload). In modern code, use `event.preventDefault()` instead — it's cleaner and more explicit.
+
+##### OnFocus Event
+The `onfocus` event fires when an element receives focus — user clicks on an input, tabs into it, or focuses it programmatically. Useful for highlighting focused fields, showing help text, or expanding input areas. The opposite is `onblur`.
+
+```html
+<input type="text" onfocus="alert('Focus event triggered')" placeholder="Click here">
+```
+
+##### OnBlur Event
+The `onblur` event fires when an element loses focus — user clicks away, tabs to the next field, or presses Escape. Commonly used for form validation — validate input when the user finishes typing (not on every keystroke). More user-friendly than validating on every input change.
+
+```html
+<input type="text" onblur="alert('Blur event triggered')" placeholder="Type then click away">
+```
+
+##### OnInput Event
+The `oninput` event fires every time the value of an input changes — on every keystroke, paste, or cut. Useful for real-time character counting, live search filtering, or instant preview of user input. Fires continuously as the user types.
+
+```html
+<input type="text" oninput="alert('Input event triggered')" placeholder="Start typing...">
+```
+
+##### OnChange Event
+The `onchange` event fires when the value changes AND the element loses focus (for text inputs) or when a selection is made (for dropdowns, checkboxes, radio buttons). Unlike `oninput`, it doesn't fire on every keystroke — only when the user finishes changing the value. Better for select dropdowns and checkbox toggles.
+
+```html
+<input type="text" onchange="alert('Change event triggered')">
+
+<select onchange="alert('Selected: ' + this.value)">
+  <option value="html">HTML</option>
+  <option value="css">CSS</option>
+  <option value="js">JavaScript</option>
+</select>
+```
+
+##### OnInvalid Event
+The `oninvalid` event fires when an input fails HTML5 validation — required field is empty, email format is wrong, number is out of range. This triggers when the user tries to submit the form. Use it to show custom error messages instead of browser defaults.
+
+```html
+<form>
+  <input type="email" oninvalid="alert('Email is invalid')" required>
+  <button type="submit">Submit</button>
+</form>
+```
+
+##### Form Events Summary
+
+| Event | When It Fires |
+|-------|---------------|
+| `onsubmit` | Form is submitted |
+| `onfocus` | Input receives focus (click/tab into) |
+| `onblur` | Input loses focus (click away/tab out) |
+| `oninput` | Value changes (every keystroke) |
+| `onchange` | Value changes + loses focus |
+| `oninvalid` | Input fails validation |
+
+**Interview point:** `oninput` fires on every keystroke (real-time feedback). `onchange` fires when the user finishes editing (blur + change). Use `oninput` for live search/character count. Use `onchange` for select dropdowns and form validation. `onblur` is the most common place to run validation — after the user finishes typing.
+
+---
+
+> **Remember:** Events make pages interactive. `onclick` = click, `ondblclick` = double-click, `onmouseover` = hover in, `onmouseout` = hover out. Form events: `onsubmit` (validate before sending), `onfocus`/`onblur` (input focus), `oninput` (every keystroke), `onchange` (value finalized), `oninvalid` (validation failed). Use `event.preventDefault()` instead of `return false` in modern code.
