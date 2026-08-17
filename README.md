@@ -12,21 +12,21 @@ git clone https://github.com/SurajDobar/Anudip-obsidian-vault.git
 
 Example:
 
+<img src="src/R1.png">
 
-<img src="https://raw.githubusercontent.com/SurajDobar/Anudip-obsidian-vault/refs/heads/main/src/Pasted%20image%2020260605205437.png">
 
 3. open obsidian 
 
 4. go into open folder as vault 
-<img src="https://raw.githubusercontent.com/SurajDobar/Anudip-obsidian-vault/refs/heads/main/src/Pasted%20image%2020260605205133.png">
+<img src="src/R2.png">
 
 5. select the cloned file as shown (only the Anudip-obsidian-vault)
-<img src="https://raw.githubusercontent.com/SurajDobar/Anudip-obsidian-vault/refs/heads/main/src/Pasted%20image%2020260605205532.png" >
+<img src="src/R3.png" >
 
 6. go to settings and community plugins then turn on community plugins
 
-<img src="https://raw.githubusercontent.com/SurajDobar/Anudip-obsidian-vault/refs/heads/main/src/IMG20260605211358.jpg">
+<img src="src/R4.jpg">
 
 
 7. check for updates if any 
-<img src="https://raw.githubusercontent.com/SurajDobar/Anudip-obsidian-vault/refs/heads/main/src/IMG20260605211417.jpg">
+<img src="src/R5.jpg">

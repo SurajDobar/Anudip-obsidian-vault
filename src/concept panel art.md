@@ -17,7 +17,7 @@ Made by  ^X7Hy3ZHP
 Suraj Dobar ^fmGDzheg
 
 ## Embedded Files
-cf9e11a3a522498ea075f87ce987788b9ef479f6: [[unnamed (1).jpg]]
+cf9e11a3a522498ea075f87ce987788b9ef479f6: [[pfp.jpg]]
 
 a3636c913c390aead300a0f32437c3973ff30e5c: [[download.webp]]
 
