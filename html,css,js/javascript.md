@@ -51,6 +51,19 @@
   - [OnChange Event](#"OnChange""Event")
   - [OnInvalid Event](#"OnInvalid""Event")
   - [Form Events Summary](#"Form""Events""Summary")
+- [DOM Selection Methods](#"DOM""Selection""Methods")
+  - [What Is DOM](#"What""Is""DOM")
+  - [Get Element By ID](#"Get""Element""By""ID")
+  - [InnerText And InnerHTML](#"InnerText""And""InnerHTML")
+  - [Get Elements By Name](#"Get""Elements""By""Name")
+  - [Get Elements By ClassName](#"Get""Elements""By""ClassName")
+  - [DOM Selection Methods Summary](#"DOM""Selection""Methods""Summary")
+- [Keyboard Events](#"Keyboard""Events")
+  - [KeyDown Event](#"KeyDown""Event")
+  - [KeyUp Event](#"KeyUp""Event")
+  - [Keyboard Events Summary](#"Keyboard""Events""Summary")
+- [AddEventListener Method](#"AddEventListener""Method")
+  - [AddEventListener](#"AddEventListener")
 
 ---
 
@@ -849,3 +862,211 @@ The `oninvalid` event fires when an input fails HTML5 validation — required fi
 ---
 
 > **Remember:** Events make pages interactive. `onclick` = click, `ondblclick` = double-click, `onmouseover` = hover in, `onmouseout` = hover out. Form events: `onsubmit` (validate before sending), `onfocus`/`onblur` (input focus), `oninput` (every keystroke), `onchange` (value finalized), `oninvalid` (validation failed). Use `event.preventDefault()` instead of `return false` in modern code.
+
+---
+
+# Day 10
+
+## DOM Selection Methods
+
+##### What Is DOM
+The DOM (Document Object Model) is a tree-structured representation of the entire HTML page. Every HTML element becomes a JavaScript object that you can access, read, modify, add, or delete. The browser creates the DOM when the page loads. JavaScript interacts with the page through the DOM — changing text, styles, attributes, and structure dynamically without reloading the page. DOM manipulation is the core skill of front-end JavaScript development.
+
+##### Get Element By ID
+`document.getElementById()` selects a single element by its unique `id` attribute. Returns the element object or `null` if not found. This is the most common and fastest selection method — IDs should be unique per page, so there's no ambiguity. Use `.value` to read input values, `.innerHTML` to read/write HTML content, and `.textContent` for plain text.
+
+```html
+Enter the number: <input type="text" id="number" name="number"><br>
+<input type="button" value="Cube" onclick="get_cube()">
+
+<script>
+function get_cube() {
+  var s = document.getElementById("number").value;
+  alert(s * s * s);
+}
+</script>
+```
+
+**Interview point:** `.value` returns a string, not a number. Always convert with `Number()`, `parseInt()`, or `parseFloat()` before doing math. `document.getElementById("number").value` returns `"5"`, not `5`.
+
+##### InnerText and InnerHTML
+Two ways to set content inside an element:
+- `.innerText` — Sets plain text content (HTML tags are displayed as text, not rendered). Safer against XSS attacks. Faster for plain text.
+- `.innerHTML` — Sets HTML content (tags are rendered as actual HTML). More powerful but dangerous with user input (XSS vulnerability). Use when you need to add HTML elements.
+
+```html
+<form name="myform">
+  <label>Enter the password:</label>
+  <input type="password" name="user_pass" onkeyup="validate()"><br>
+  Password status: <span id="s1"></span>
+</form>
+
+<script>
+function validate() {
+  let result;
+  if (document.myform.user_pass.value.length > 8) {
+    result = "Strong password";
+  } else {
+    result = "Weak password";
+  }
+  document.getElementById("s1").innerText = result;
+}
+</script>
+```
+
+**Interview point:** `innerText` only gets/sets visible text (ignores hidden elements). `textContent` gets all text including hidden elements and scripts. `innerHTML` can inject malicious code if used with unsanitized user input — always sanitize user data before using `innerHTML`.
+
+##### Get Elements By Name
+`document.getElementsByName()` returns a **NodeList** (array-like collection) of all elements with the given `name` attribute. Returns empty NodeList if none found. Commonly used for radio buttons, checkboxes, and form fields that share the same `name` to create a group. Access individual elements with index `[0]`, `[1]`, etc. Check `.length` for total count.
+
+```html
+<form>
+  Male: <input type="radio" name="gender" value="male">
+  Female: <input type="radio" name="gender" value="female">
+  Other: <input type="radio" name="gender" value="other">
+  <input type="button" value="Total Gender" onclick="total_elements()">
+
+  <script>
+  function total_elements() {
+    let count = document.getElementsByName("gender");
+    alert("Total gender: " + count.length);  // 3
+  }
+  </script>
+</form>
+```
+
+```javascript
+// Get selected radio button value
+let radios = document.getElementsByName("gender");
+for (let radio of radios) {
+  if (radio.checked) {
+    console.log(radio.value);  // "male", "female", or "other"
+  }
+}
+```
+
+##### Get Elements By Class Name
+`document.getElementsByClassName()` returns a **HTMLCollection** (array-like) of all elements with the given `class` attribute. Unlike ID selection, class selection returns multiple elements because classes are reusable. Access elements by index `[0]`, `[1]`, etc. The collection is live — it updates automatically when elements are added/removed from the DOM.
+
+```html
+<div class="dom">Sabihaa</div>
+
+<script>
+let name = document.getElementsByClassName("dom");
+document.write("My name is: " + name[0].innerHTML);
+</script>
+```
+
+##### DOM Selection Methods Summary
+
+| Method | Returns | Use Case |
+|--------|---------|----------|
+| `getElementById()` | Single element | Unique elements by ID |
+| `getElementsByName()` | NodeList | Form fields by name attribute |
+| `getElementsByClassName()` | HTMLCollection | Elements by class |
+| `getElementsByTagName()` | HTMLCollection | Elements by tag name |
+| `querySelector()` | First matching element | CSS selector (most flexible) |
+| `querySelectorAll()` | NodeList of all matches | CSS selector (all matches) |
+
+**Interview point:** `getElementById` returns one element. All other `getElementsBy*` methods return collections. `querySelector()` and `querySelectorAll()` are the most flexible — they accept any CSS selector string. `querySelector()` is the modern replacement for most selection methods.
+
+---
+
+## Keyboard Events
+
+##### KeyDown Event
+The `keydown` event fires when a keyboard key is **pressed down** (before the key is released). It fires continuously if the key is held down. The `event` object provides details: `event.key` returns the key name (e.g., `"Enter"`, `"a"`, `"Shift"`), `event.code` returns the physical key code, and `event.preventDefault()` stops default browser behavior (like preventing Enter from submitting a form).
+
+```html
+<input type="text" id="input" placeholder="Press a key">
+<p id="result"></p>
+
+<script>
+var i = document.getElementById("input");
+i.addEventListener("keydown", function(event) {
+  alert("Key pressed: " + event.key);
+});
+</script>
+```
+
+```javascript
+// Practical example: Enter key submits input
+input.addEventListener("keydown", function(event) {
+  if (event.key === "Enter") {
+    console.log("User submitted:", input.value);
+  }
+});
+```
+
+##### KeyUp Event
+The `keyup` event fires when a keyboard key is **released** (after pressing). It fires once per key release, unlike `keydown` which fires continuously while held. Use `keyup` when you need to detect the completed action (user finished typing a character). The `event.key` property identifies which key was released.
+
+```html
+<input type="text" id="input">
+
+<script>
+let x = document.getElementById("input");
+x.addEventListener("keyup", function(event) {
+  if (event.key === "Enter") {
+    alert("Enter key released");
+  } else {
+    alert("Key released: " + event.key);
+  }
+});
+</script>
+```
+
+##### Keyboard Events Summary
+
+| Event | When It Fires | Repeats While Held? |
+|-------|---------------|---------------------|
+| `keydown` | Key pressed down | Yes (continuous) |
+| `keyup` | Key released | No (once) |
+| `keypress` | Key pressed (deprecated) | Yes |
+
+```javascript
+// Common keyboard event patterns
+document.addEventListener("keydown", function(e) {
+  if (e.key === "Escape") closeModal();
+  if (e.key === "Enter") submitForm();
+  if (e.ctrlKey && e.key === "s") saveDocument();  // Ctrl+S
+});
+```
+
+**Interview point:** `keydown` fires before the character appears in the input, `keyup` fires after. Use `keydown` for shortcuts and preventing default behavior. Use `keyup` for detecting completed input. `keypress` is deprecated — use `keydown` instead. `event.ctrlKey`, `event.shiftKey`, `event.altKey` detect modifier keys.
+
+
+
+## addEventListener Method
+
+##### AddEventListener
+`addEventListener()` is the modern way to attach event handlers to elements. It takes two arguments: the event type (string) and the handler function. Unlike `onclick` attributes, you can attach **multiple handlers** to the same element. It's cleaner, more flexible, and the recommended approach in modern JavaScript. You can also remove handlers with `removeEventListener()`.
+
+```javascript
+// Modern approach: addEventListener
+let button = document.querySelector("button");
+
+button.addEventListener("click", function() {
+  alert("First handler");
+});
+
+button.addEventListener("click", function() {
+  alert("Second handler");  // Both fire on click
+});
+```
+
+```javascript
+// Named function (can be removed later)
+function handleClick() {
+  console.log("Clicked!");
+}
+
+button.addEventListener("click", handleClick);
+button.removeEventListener("click", handleClick);
+```
+
+**Interview point:** `addEventListener` is better than `onclick` because: 1) Multiple handlers can be attached. 2) You can remove handlers. 3) It supports capture and bubble phases. 4) It works with `this` keyword properly. 5) It's the standard approach in modern JavaScript.
+
+---
+
+> **Remember:** DOM = Document Object Model — the tree structure of your HTML. `getElementById` = one element by ID, `getElementsByName` = collection by name (radio buttons), `getElementsByClassName` = collection by class. `.innerText` = plain text, `.innerHTML` = HTML content. `keydown` = key pressed (continuous), `keyup` = key released (once). Always use `addEventListener` over `onclick` for modern code. `.value` returns a string — convert to number before math.

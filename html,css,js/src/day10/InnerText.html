@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="myform">
+        <label>Enter the password:</label>
+        <input type="password" value="" name="user_pass" onkeyup="validate()"><br>
+        password status:<span id="s1"></span>
+    </form>
+    <script>
+        function validate(){
+            let result;
+            if(document.myform.user_pass.value.length>8){
+                result="strong password";
+            }else{
+                result="weak password";
+            }
+            document.getElementById('s1').innerText=result;
+        }
+    </script>
+</body>
+</html>

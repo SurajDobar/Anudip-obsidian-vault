@@ -1730,6 +1730,8 @@ aUi
 atf
 aSL
 applications
+attach
+attached
 changing
 created
 completed
@@ -2676,6 +2678,8 @@ ccv
 cPSSK
 cut
 counting
+collections
+capture
 is
 instead
 immediately
@@ -3522,6 +3526,8 @@ iJR
 iMB
 iyP
 instant
+interacts
+inject
 for
 failure
 final
@@ -4257,6 +4263,7 @@ fires
 finishes
 filtering
 fire
+fastest
 value
 values
 variable
@@ -4921,6 +4928,7 @@ vgA
 vTu
 veR
 validating
+vulnerability
 not
 necessarily
 neither
@@ -5624,6 +5632,7 @@ nuY
 nKYn
 nWi
 nDx
+none
 known
 keywords
 know
@@ -7809,6 +7818,7 @@ tHY
 tooltips
 tabs
 tries
+tree
 It
 Invokes
 Inside
@@ -8601,6 +8611,8 @@ Idk
 IDATpfk
 ION
 ICC
+InnerText
+InnerHTML
 you
 yYE
 yUv
@@ -9958,6 +9970,7 @@ hsN
 hZi
 hjn
 highlighting
+held
 eventual
 each
 event
@@ -11818,6 +11831,9 @@ sLGz
 sTA
 shortcut
 submitted
+sanitize
+submitting
+shortcuts
 or
 of
 one
@@ -13412,6 +13428,8 @@ release
 released
 reloads
 reload
+reloading
+rendered
 This
 The
 There
@@ -15773,6 +15791,7 @@ mUR
 mooG
 mnD
 mAm
+malicious
 diagram
 doesnt
 does
@@ -16582,6 +16601,8 @@ dMgs
 drag
 detecting
 dropdowns
+dangerous
+detect
 Protoypal
 Purpose
 Promise
@@ -19476,6 +19497,7 @@ bRXK
 bna
 bAD
 blur
+bubble
 upon
 underneath
 use
@@ -20119,6 +20141,7 @@ uui
 uuvY
 uFs
 uBAU
+unsanitized
 Hello
 HKM
 Haa
@@ -20769,6 +20792,8 @@ HWv
 HvIkK
 HfY
 HwG
+HTMLCollection
+Held
 Which
 While
 Web
@@ -22910,6 +22935,7 @@ SJx
 SqK
 SkSa
 SiQ
+Safer
 JavaScript
 JS
 JJJ
@@ -24440,6 +24466,7 @@ RpC
 Rwh
 Rkk
 RajN
+Repeats
 Async
 Allows
 Await
@@ -25129,6 +25156,7 @@ Ahh
 Aoz
 Attach
 AJAX
+AddEventListener
 queue
 qGG
 qv
@@ -28570,6 +28598,7 @@ CCH
 Cei
 CyL
 CuK
+ClassName
 Modules
 MDN
 Ms
@@ -30716,6 +30745,7 @@ NJq
 NrS
 NHh
 Nji
+NodeList
 Xn
 XE
 XR
@@ -35480,6 +35510,9 @@ KJz
 KhP
 KkK
 KMP
+Keyboard
+KeyDown
+KeyUp
 QJM
 Ql
 Qss

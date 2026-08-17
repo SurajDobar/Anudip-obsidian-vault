@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>key press event</title>
+</head>
+<body>
+    <input type="text" id="input" placeholder="Press a key"/>
+    <br>
+    <p id="result" ></p>
+    <script>
+        var i=document.getElementById("input");
+        var result=document.getElementById("result");
+        i.addEventListener("keydown",function(event){
+            alert("Key pressed " + event.key);
+        });
+    </script>
+</body>
+</html>
