@@ -6,11 +6,11 @@
     "emojiStyle": "native",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "RiSpeakFill",
-      "LiCommand",
-      "FarFilePdf",
-      "LiAArrowUp",
-      "FabHtml5"
+      "LiImages",
+      "LiImage",
+      "SiMarkdown",
+      "SiDjango",
+      "RiSpeakFill"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -142,5 +142,17 @@
   "SS": {
     "iconName": "RiSpeakFill",
     "iconColor": "#000000"
+  },
+  "django": {
+    "iconName": "SiDjango",
+    "iconColor": "#000000"
+  },
+  "django/django.md": {
+    "iconName": "SiMarkdown",
+    "iconColor": "#ff00ff"
+  },
+  "django/src": {
+    "iconName": "LiImages",
+    "iconColor": "#00fffb"
   }
 }

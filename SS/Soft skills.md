@@ -321,3 +321,24 @@ what do you see yourself in 2 years
 	and so this what i see myself in 2 years thankyou 
 
 ```
+
+
+---
+
+mam ++
+
+## revision 
+### self intro 
+basically it should be in *60* seconds and so it should be confident and memorable 
+- make it so that u give the answers which is important (skills,location experience etc)
+
+```ss
+basically all things in intro 
+
+why are u sitting in front of the recruiter (company goals why u are worth it etc )
+
+```
+
+most important at the end how to end it 
+>why are u sitting in front of the recruiter (company goals why u are worth it etc )
+
