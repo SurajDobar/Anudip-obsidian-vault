@@ -1,3 +1,5 @@
+<img src="https://raw.githubusercontent.com/SurajDobar/Anudip-obsidian-vault/refs/heads/main/src/concept%20panel%20art.png" >
+
 1. install obsidian on your device 
 ```
 https://obsidian.md/download
