@@ -329,7 +329,7 @@ mam ++
 
 ## revision 
 ### self intro 
-basically it should be in *60* seconds and so it should be confident and memorable 
+basically it should be in *60* seconds and so it should be confident and memorable to make sense
 - make it so that u give the answers which is important (skills,location experience etc)
 
 ```ss
